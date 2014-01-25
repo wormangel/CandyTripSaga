@@ -20,7 +20,9 @@
                     <param id="0" name="Object">Kurt</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-9" name="Destroy" sid="6227933273435557" type="Candy" />
+            </actions>
             <sub-events>
                 <event-block sid="1702068580542295">
                     <conditions>
@@ -41,21 +43,23 @@
                         </action>
                         <action id="-10" name="Set value" sid="288069042863073" type="Kurt">
                             <param id="0" name="Instance variable">MoveSpeedModifier</param>
-                            <param id="1" name="Value">0</param>
+                            <param id="1" name="Value">5</param>
                         </action>
                         <action id="-10" name="Set value" sid="3993558423032718" type="Kurt">
                             <param id="0" name="Instance variable">ShotSpeedModifier</param>
-                            <param id="1" name="Value">0</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-10" name="Set value" sid="9762414268316498" type="Kurt">
                             <param id="0" name="Instance variable">CrazyControlsModifier</param>
-                            <param id="1" name="Value">0</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-10" name="Set value" sid="8537467423279843" type="Kurt">
                             <param id="0" name="Instance variable">HealthLossModifier</param>
-                            <param id="1" name="Value">0</param>
+                            <param id="1" name="Value">2</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="9959251510334578" type="Candy" />
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="9847954018850145" type="Kurt">
+                            <param id="0" name="Max Speed">Kurt.8Direction.MaxSpeed * Kurt.MoveSpeedModifier</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4472609107412347">
@@ -91,7 +95,9 @@
                             <param id="0" name="Instance variable">HealthLossModifier</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="8403143738006217" type="Candy" />
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="5325106931071005" type="Kurt">
+                            <param id="0" name="Max Speed">Kurt.8Direction.MaxSpeed * Kurt.MoveSpeedModifier</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3289044759910964">
@@ -127,7 +133,9 @@
                             <param id="0" name="Instance variable">HealthLossModifier</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="4061863933292819" type="Candy" />
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="3476333346608998" type="Kurt">
+                            <param id="0" name="Max Speed">Kurt.8Direction.MaxSpeed * Kurt.MoveSpeedModifier</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="830793737439712">
@@ -163,7 +171,9 @@
                             <param id="0" name="Instance variable">HealthLossModifier</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="1072146129543201" type="Candy" />
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="2102468456898365" type="Kurt">
+                            <param id="0" name="Max Speed">Kurt.8Direction.MaxSpeed * Kurt.MoveSpeedModifier</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
