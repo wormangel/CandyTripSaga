@@ -694,5 +694,31 @@
                 <action id="-9" name="Destroy" sid="7515056016301004" type="EnemyProjectile" />
             </actions>
         </event-block>
+        <event-block sid="2406093354871705">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5125709102196539" type="Projectile">
+                    <param id="0" name="Object">Enemies</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1106874096489918" type="Projectile" />
+                <action id="-12" name="Subtract from" sid="1424352200115244" type="Enemies">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8510005666598274">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2738013689258834" type="Enemies">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3827768315556204" type="Enemies" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
