@@ -565,6 +565,30 @@
                     <param id="0" name="Angle">RandomMovingEnemy.CustomMovement.MovingAngle + 180</param>
                 </action>
             </actions>
+		</event-block>
+        <comment>Add bounds to projectiles too</comment>
+        <event-block any="1" sid="8205947450298427">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="3859675224085842" type="Projectile">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="6567936238665987" type="Projectile">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">1024 - BOUNDRIGHT</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="5797030685870231" type="Projectile">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="6273135066001983" type="Projectile">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">768 - BOUNDBOTTOM</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="743978373603037" type="Projectile" />
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
