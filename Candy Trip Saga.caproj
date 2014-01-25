@@ -10,8 +10,8 @@
     <unique-id>29u83kuz5ho3d</unique-id>
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -46,7 +46,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-folder expanded="0" name="Backgrounds">
+        <object-folder expanded="1" name="Backgrounds">
             <object-type name="TiledBackground" sid="3450383196980433">
                 <plugin id="TiledBg" />
                 <texture />
