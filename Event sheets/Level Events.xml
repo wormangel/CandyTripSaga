@@ -70,6 +70,10 @@
                             <param id="0" name="Instance variable">Life</param>
                             <param id="1" name="Value">50</param>
                         </action>
+                        <action id="4" name="Set animation" sid="1545245379107511" type="LevelBackground">
+                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4472609107412347">
@@ -111,6 +115,10 @@
                         <action id="-11" name="Add to" sid="4240831422398751" type="Kurt">
                             <param id="0" name="Instance variable">Life</param>
                             <param id="1" name="Value">50</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="2573315139044708" type="LevelBackground">
+                            <param id="0" name="Animation">&quot;Cocaine&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -154,6 +162,10 @@
                             <param id="0" name="Instance variable">Life</param>
                             <param id="1" name="Value">50</param>
                         </action>
+                        <action id="4" name="Set animation" sid="5990118441258367" type="LevelBackground">
+                            <param id="0" name="Animation">&quot;LSD&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="830793737439712">
@@ -195,6 +207,10 @@
                         <action id="-11" name="Add to" sid="4967470342474003" type="Kurt">
                             <param id="0" name="Instance variable">Life</param>
                             <param id="1" name="Value">50</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5464662414469288" type="LevelBackground">
+                            <param id="0" name="Animation">&quot;Alcohol&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
