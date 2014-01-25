@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level Events</name>
     <events>
+        <variable comment="Player score" constant="0" name="score" sid="8993865553163559" static="0" type="number">0</variable>
         <comment>These are used for fading</comment>
         <variable constant="0" name="transitionState" sid="9058277340274296" static="0" type="text">FadeIn</variable>
         <variable constant="0" name="luminosity" sid="6099894249677563" static="0" type="number">0</variable>
@@ -791,6 +792,46 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="3827768315556204" type="Enemies" />
+            </actions>
+        </event-block>
+        <comment>Score</comment>
+        <event-block sid="9581257313881393">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="52364600295774" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="3083130247859242" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="0" name="Set text" sid="7014327482126705" type="ScoreText">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2477106793890145">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3926530306484482" type="Exit">
+                    <param id="0" name="Object">Kurt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="4334852142789959" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9941472473675578">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4678198919452273" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8420387411010581" type="ScoreText">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
+                </action>
             </actions>
         </event-block>
     </events>

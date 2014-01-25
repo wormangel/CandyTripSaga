@@ -443,6 +443,9 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="ScoreText" sid="8550440044665772">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="Other">
             <object-type name="Keyboard" sid="493858274240027">
@@ -734,8 +737,8 @@
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
-    <files-folder expanded="0">
-        <file-folder expanded="1" name="Icons">
+    <files-folder expanded="1">
+        <file-folder expanded="0" name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />
