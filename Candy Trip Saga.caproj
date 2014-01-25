@@ -537,8 +537,12 @@
         <family name="Enemies" plugin-id="Sprite" sid="9556733787711666">
             <members>
                 <member>EnemyProjectile</member>
+                <member>RandomMovingEnemy</member>
                 <member>StaticEnemy</member>
             </members>
+            <instance-variables>
+                <instance-variable name="Life" sid="2500653558670109" type="number" />
+            </instance-variables>
         </family>
     </families>
     <layout-folder expanded="1">

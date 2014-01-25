@@ -745,5 +745,54 @@
                 <action id="-9" name="Destroy" sid="743978373603037" type="Projectile" />
             </actions>
         </event-block>
+        <event-block any="1" sid="6915197167745009">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="9084514302302335" type="EnemyProjectile">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="3793583163914269" type="EnemyProjectile">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">1024 - BOUNDRIGHT</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="6181783850364103" type="EnemyProjectile">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="3940679421867306" type="EnemyProjectile">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">768 - BOUNDBOTTOM</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7515056016301004" type="EnemyProjectile" />
+            </actions>
+        </event-block>
+        <event-block sid="2406093354871705">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5125709102196539" type="Projectile">
+                    <param id="0" name="Object">Enemies</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1106874096489918" type="Projectile" />
+                <action id="-12" name="Subtract from" sid="1424352200115244" type="Enemies">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8510005666598274">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2738013689258834" type="Enemies">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3827768315556204" type="Enemies" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
