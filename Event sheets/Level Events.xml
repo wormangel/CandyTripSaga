@@ -63,6 +63,10 @@
                 <action behavior="Turret" id="1" name="Add object to target" sid="1117280328107965" type="StaticEnemyShooter">
                     <param id="0" name="Target">Kurt</param>
                 </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="1993944376495386" type="RandomMovingEnemy">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">100</param>
+                </action>
             </actions>
         </event-block>
         <comment>Start each level by fading out</comment>
@@ -513,11 +517,46 @@
                 </action>
             </actions>
         </event-block>
-
         <event-block sid="6754521886582596">
             <conditions />
             <actions />
         </event-block>
-
+        <event-block sid="3922978043869796">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6339867938633793" type="System">
+                    <param id="0" name="Interval (seconds)">random(3)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="7312562161941922" type="RandomMovingEnemy">
+                    <param id="0" name="Angle">int(random(4)) * 90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="4208352205427508">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="2214542740884123" type="RandomMovingEnemy">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">62</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="3681115039379412" type="RandomMovingEnemy">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">1024-53-64</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="7835004093834042" type="RandomMovingEnemy">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">250</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="5868518014041935" type="RandomMovingEnemy">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">768 - 70 - 64</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="5815579814580758" type="RandomMovingEnemy">
+                    <param id="0" name="Angle">RandomMovingEnemy.CustomMovement.MovingAngle + 180</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -11,15 +11,16 @@
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
-        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="brightness">Brightness</effect>
@@ -160,7 +161,7 @@
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0" hotspotY="0">
-                            <image-point name="hand" x="0.472868" y="0.72093" />
+                            <image-point name="hand" x="0.46875" y="0.71875" />
                             <collision-poly>
                                 <point x="0.140625" y="0.140625" />
                                 <point x="0.5" y="0" />
@@ -187,7 +188,7 @@
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0" hotspotY="0">
-                            <image-point name="Imagepoint 1" x="0.449612" y="0.728682" />
+                            <image-point name="Imagepoint 1" x="0.453125" y="0.734375" />
                             <collision-poly>
                                 <point x="0.328125" y="0.328125" />
                                 <point x="0.5" y="0.046875" />
@@ -202,7 +203,7 @@
                     </animation>
                     <animation framecount="2" loop="1" name="MovingD" pingpong="0" repeatcount="1" repeatto="0" sid="5500762735301372" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
-                            <image-point name="Imagepoint 1" x="0.387597" y="0.728682" />
+                            <image-point name="Imagepoint 1" x="0.390625" y="0.734375" />
                             <collision-poly>
                                 <point x="0.125" y="0.125" />
                                 <point x="0.5" y="0" />
@@ -214,7 +215,7 @@
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0" hotspotY="0">
-                            <image-point name="Imagepoint 1" x="0.44186" y="0.713178" />
+                            <image-point name="Imagepoint 1" x="0.4375" y="0.71875" />
                             <collision-poly>
                                 <point x="0.140625" y="0.140625" />
                                 <point x="0.5" y="0" />
@@ -266,6 +267,32 @@
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5321705929674417" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RandomMovingEnemy" sid="3651595002193397">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="BoundToLayout" sid="4035528577912605">
+                        <behavior id="bound" />
+                    </behavior-type>
+                    <behavior-type name="CustomMovement" sid="5187559590469803">
+                        <behavior id="custom" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="977332941362879" speed="5">
+                        <frame duration="1" hotspotX="0.507692" hotspotY="0.507692">
+                            <collision-poly>
+                                <point x="0.215385" y="0.215385" />
+                                <point x="0.492308" y="0.0307692" />
+                                <point x="0.876923" y="0.123077" />
+                                <point x="0.6" y="0.6" />
+                                <point x="0.492308" y="0.938462" />
+                                <point x="0.276923" y="0.723077" />
+                                <point x="0.276923" y="0.492308" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
