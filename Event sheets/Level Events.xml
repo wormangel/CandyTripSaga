@@ -44,15 +44,15 @@
                         </action>
                         <action id="-10" name="Set value" sid="288069042863073" type="Kurt">
                             <param id="0" name="Instance variable">MoveSpeedModifier</param>
-                            <param id="1" name="Value">5</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-10" name="Set value" sid="3993558423032718" type="Kurt">
                             <param id="0" name="Instance variable">ShotSpeedModifier</param>
-                            <param id="1" name="Value">0.25</param>
+                            <param id="1" name="Value">0.1</param>
                         </action>
                         <action id="-10" name="Set value" sid="9762414268316498" type="Kurt">
                             <param id="0" name="Instance variable">CrazyControlsModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                         <action id="-10" name="Set value" sid="8537467423279843" type="Kurt">
                             <param id="0" name="Instance variable">HealthLossModifier</param>
@@ -82,15 +82,15 @@
                         </action>
                         <action id="-10" name="Set value" sid="9172067952805325" type="Kurt">
                             <param id="0" name="Instance variable">MoveSpeedModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">3</param>
                         </action>
                         <action id="-10" name="Set value" sid="8508520816212695" type="Kurt">
                             <param id="0" name="Instance variable">ShotSpeedModifier</param>
-                            <param id="1" name="Value">0.1</param>
+                            <param id="1" name="Value">0.25</param>
                         </action>
                         <action id="-10" name="Set value" sid="289928545079729" type="Kurt">
                             <param id="0" name="Instance variable">CrazyControlsModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                         <action id="-10" name="Set value" sid="4242703953647641" type="Kurt">
                             <param id="0" name="Instance variable">HealthLossModifier</param>
@@ -128,7 +128,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="5341875331777369" type="Kurt">
                             <param id="0" name="Instance variable">CrazyControlsModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                         <action id="-10" name="Set value" sid="3650473214615887" type="Kurt">
                             <param id="0" name="Instance variable">HealthLossModifier</param>
@@ -166,7 +166,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="5127476743213834" type="Kurt">
                             <param id="0" name="Instance variable">CrazyControlsModifier</param>
-                            <param id="1" name="Value">2</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-10" name="Set value" sid="1230787180775978" type="Kurt">
                             <param id="0" name="Instance variable">HealthLossModifier</param>
@@ -196,6 +196,10 @@
                     <param id="0" name="Object">Projectile</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="5243355107529455" type="Projectile">
+                    <param id="0" name="Animation">Kurt.CurrentCandy</param>
+                    <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="1652396011828836" type="System">
                     <param id="0" name="Variable">Reload</param>

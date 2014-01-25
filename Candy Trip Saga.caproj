@@ -511,17 +511,59 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6902250867774548" speed="5">
-                    <frame duration="1" hotspotX="0.53125" hotspotY="0.453125">
+                <animation framecount="1" loop="0" name="Marijuana" pingpong="0" repeatcount="1" repeatto="0" sid="6902250867774548" speed="5">
+                    <frame duration="1" hotspotX="0.515625" hotspotY="0.515625">
                         <collision-poly>
-                            <point x="0.296875" y="0.296875" />
-                            <point x="0.5" y="0.171875" />
-                            <point x="0.734375" y="0.265625" />
-                            <point x="0.796875" y="0.5" />
-                            <point x="0.671875" y="0.671875" />
-                            <point x="0.5" y="0.71875" />
-                            <point x="0.34375" y="0.65625" />
-                            <point x="0.25" y="0.5" />
+                            <point x="0.40625" y="0.40625" />
+                            <point x="0.5" y="0.359375" />
+                            <point x="0.625" y="0.390625" />
+                            <point x="0.671875" y="0.5" />
+                            <point x="0.609375" y="0.609375" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.390625" y="0.625" />
+                            <point x="0.359375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Cocaine" pingpong="0" repeatcount="1" repeatto="0" sid="8996172291996543" speed="5">
+                    <frame duration="1" hotspotX="0.515625" hotspotY="0.515625">
+                        <collision-poly>
+                            <point x="0.40625" y="0.40625" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.609375" y="0.40625" />
+                            <point x="0.671875" y="0.5" />
+                            <point x="0.609375" y="0.609375" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.390625" y="0.625" />
+                            <point x="0.375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="LSD" pingpong="0" repeatcount="1" repeatto="0" sid="2326752248399029" speed="5">
+                    <frame duration="1" hotspotX="0.515625" hotspotY="0.515625">
+                        <collision-poly>
+                            <point x="0.40625" y="0.40625" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.609375" y="0.40625" />
+                            <point x="0.671875" y="0.5" />
+                            <point x="0.609375" y="0.609375" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.390625" y="0.625" />
+                            <point x="0.375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Alcohol" pingpong="0" repeatcount="1" repeatto="0" sid="5173882476714479" speed="5">
+                    <frame duration="1" hotspotX="0.515625" hotspotY="0.515625">
+                        <collision-poly>
+                            <point x="0.40625" y="0.40625" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.609375" y="0.40625" />
+                            <point x="0.671875" y="0.5" />
+                            <point x="0.609375" y="0.609375" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.390625" y="0.625" />
+                            <point x="0.375" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
