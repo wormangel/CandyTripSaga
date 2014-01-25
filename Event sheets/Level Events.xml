@@ -397,7 +397,6 @@
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">Self.Life - enemiesDamage</param>
                 </action>
-                <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
             </actions>
         </event-block>
         <event-block sid="7385715972911868">
