@@ -33,7 +33,7 @@
                 </action>
             </actions>
         </event-block>
-        <comment>Display the sugar bar once the level loads</comment>
+        <comment>Display the HUD elements once the level loads</comment>
         <event-block sid="5633030378825208">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="6854953953550797" type="System" />
@@ -51,6 +51,79 @@
                     <param id="0" name="Target">Kurt</param>
                 </action>
             </actions>
+        </event-block>
+        <comment>Start each level by fading out</comment>
+        <event-block sid="3958838691127565">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5377524102918544" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1177807909414602" type="System">
+                    <param id="0" name="Variable">transitioning</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2746994701799672" type="System">
+                    <param id="0" name="Variable">transitionState</param>
+                    <param id="1" name="Value">&quot;FadeIn&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block collapsed="1" sid="7292356579909998">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1334261957462421" type="System">
+                    <param id="0" name="Variable">transitioning</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5130944589818028">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6730340189796286" type="System">
+                            <param id="0" name="Variable">transitionState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;FadeIn&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6977215013139725" type="System">
+                            <param id="0" name="Variable">luminosity</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="9152021048816244" type="System">
+                            <param id="0" name="Variable">luminosity</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-31" name="Set layout effect parameter" sid="4999564902785503" type="System">
+                            <param id="0" name="Effect">&quot;Brightness&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">luminosity</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2041957429163769">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9533091000353573" type="System">
+                            <param id="0" name="Variable">transitionState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;FadeIn&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="513202049386312" type="System">
+                            <param id="0" name="Variable">luminosity</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2990288977803764" type="System">
+                            <param id="0" name="Variable">transitioning</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <comment>Keeps the sugar bar updated</comment>
         <event-block sid="3003431054682057">
@@ -221,79 +294,6 @@
                     <param id="0" name="Vector Y">0</param>
                 </action>
             </actions>
-        </event-block>
-        <comment>Start each level by fading out</comment>
-        <event-block sid="3958838691127565">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="5377524102918544" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="1177807909414602" type="System">
-                    <param id="0" name="Variable">transitioning</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="2746994701799672" type="System">
-                    <param id="0" name="Variable">transitionState</param>
-                    <param id="1" name="Value">&quot;FadeIn&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7292356579909998">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="1334261957462421" type="System">
-                    <param id="0" name="Variable">transitioning</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="5130944589818028">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="6730340189796286" type="System">
-                            <param id="0" name="Variable">transitionState</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;FadeIn&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="6977215013139725" type="System">
-                            <param id="0" name="Variable">luminosity</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">100</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="9152021048816244" type="System">
-                            <param id="0" name="Variable">luminosity</param>
-                            <param id="1" name="Value">2</param>
-                        </action>
-                        <action id="-31" name="Set layout effect parameter" sid="4999564902785503" type="System">
-                            <param id="0" name="Effect">&quot;Brightness&quot;</param>
-                            <param id="1" name="Parameter index">0</param>
-                            <param id="2" name="Value">luminosity</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="2041957429163769">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="9533091000353573" type="System">
-                            <param id="0" name="Variable">transitionState</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;FadeIn&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="513202049386312" type="System">
-                            <param id="0" name="Variable">luminosity</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">100</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="2990288977803764" type="System">
-                            <param id="0" name="Variable">transitioning</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
