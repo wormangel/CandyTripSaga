@@ -13,5 +13,56 @@
                 <action id="-9" name="Destroy" sid="9959251510334578" type="Candy" />
             </actions>
         </event-block>
+        <event-block sid="5633030378825208">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6854953953550797" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="3367820583498985" type="InnerBar">
+                    <param id="0" name="X">ExternalBar.X</param>
+                    <param id="1" name="Y">ExternalBar.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="5196475388559625" type="InnerBar">
+                    <param id="0" name="Instance variable">InitialWidth</param>
+                    <param id="1" name="Value">Self.Width</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3003431054682057">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9243923745695915" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="4729997778361857" type="InnerBar">
+                    <param id="0" name="Width">(Self.InitialWidth + (Kurt.Life - Kurt.MaxLife) * (Self.InitialWidth/Kurt.MaxLife))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3674372772691214">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2346815577418842" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="6993166764499677" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">Self.Life-0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3114393595112236">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="1275985097970072" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="7094376141314203" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
