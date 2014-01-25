@@ -325,7 +325,7 @@
             <actions>
                 <action id="-10" name="Set value" sid="6993166764499677" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">Self.Life-0.1</param>
+                    <param id="1" name="Value">Self.Life-(0.1 * Self.HealthLossModifier)</param>
                 </action>
             </actions>
         </event-block>
