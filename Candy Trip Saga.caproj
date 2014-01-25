@@ -10,15 +10,16 @@
     <unique-id>29u83kuz5ho3d</unique-id>
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -64,6 +65,7 @@
                 <instance-variables>
                     <instance-variable name="Life" sid="194786203824394" type="number" />
                     <instance-variable name="MaxLife" sid="2708475470111301" type="number" />
+                    <instance-variable comment="Holds the name of the current candy held by Kurt" name="CurrentCandy" sid="5878201182934916" type="string" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Solid" sid="7693127725273758">
@@ -305,7 +307,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="HUD">
+        <object-folder expanded="1" name="HUD">
             <object-type name="ExternalBar" sid="3863823518531159">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
@@ -344,6 +346,47 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="CandyHolder" sid="8451069135204459">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1998565400201614" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.078125" y="0.078125" />
+                                <point x="0.5" y="0.109375" />
+                                <point x="0.921875" y="0.078125" />
+                                <point x="0.953125" y="0.5" />
+                                <point x="0.921875" y="0.921875" />
+                                <point x="0.5" y="0.890625" />
+                                <point x="0.078125" y="0.921875" />
+                                <point x="0.046875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="CandyHudIcon" sid="1749667761627339">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="None" pingpong="0" repeatcount="1" repeatto="0" sid="2122351367200481" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Marijuana" pingpong="0" repeatcount="1" repeatto="0" sid="1572575025047033" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.326667" y="0.324503" />
+                                <point x="0.5" y="0.225166" />
+                                <point x="0.91" y="0.089404" />
+                                <point x="0.776667" y="0.5" />
+                                <point x="0.666667" y="0.668874" />
+                                <point x="0.5" y="0.774834" />
+                                <point x="0.09" y="0.910596" />
+                                <point x="0.206667" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="Other">
             <object-type name="Keyboard" sid="493858274240027">
@@ -352,8 +395,11 @@
         </object-folder>
         <object-type name="Candy" sid="8075092672256927">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Type" sid="9092312251634828" type="string" />
+            </instance-variables>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3613064221287112" speed="5">
+                <animation framecount="1" loop="0" name="Marijuana" pingpong="0" repeatcount="1" repeatto="0" sid="3613064221287112" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0">
                         <collision-poly>
                             <point x="0.326667" y="0.324503" />
@@ -366,6 +412,15 @@
                             <point x="0.206667" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Cocaine" pingpong="0" repeatcount="1" repeatto="0" sid="9965659943204056" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="LSD" pingpong="0" repeatcount="1" repeatto="0" sid="9211587438576343" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Alcohol" pingpong="0" repeatcount="1" repeatto="0" sid="9747526563729428" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -436,6 +491,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="6916652124689838">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>

@@ -7,6 +7,7 @@
         <variable constant="0" name="transitionState" sid="9058277340274296" static="0" type="text">FadeIn</variable>
         <variable constant="0" name="luminosity" sid="6099894249677563" static="0" type="number">0</variable>
         <variable constant="0" name="transitioning" sid="6937824924987025" static="0" type="number">0</variable>
+        <comment>Boundaries</comment>
         <variable constant="1" name="BOUNDRIGHT" sid="5458458674312225" static="0" type="number">53</variable>
         <variable constant="1" name="BOUNDBOTTOM" sid="3760721337283236" static="0" type="number">64</variable>
         <variable constant="1" name="BOUNDTOP" sid="6054817498218233" static="0" type="number">220</variable>
@@ -19,9 +20,29 @@
                     <param id="0" name="Object">Kurt</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="9959251510334578" type="Candy" />
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="1702068580542295">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="5180631442429102" type="Candy">
+                            <param id="0" name="Instance variable">Type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Marijuana&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8869649901018424" type="CandyHudIcon">
+                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1196848838988083" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Value">&quot;Marijuana&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9959251510334578" type="Candy" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <comment>Kurt can shoot</comment>
         <event-block sid="7156737183236879">
@@ -79,6 +100,10 @@
                 <condition id="-2" name="On start of layout" sid="5377524102918544" type="System" />
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="1429679506153009" type="System">
+                    <param id="0" name="Variable">luminosity</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action id="-9" name="Set value" sid="1177807909414602" type="System">
                     <param id="0" name="Variable">transitioning</param>
                     <param id="1" name="Value">1</param>
@@ -89,7 +114,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block collapsed="1" sid="7292356579909998">
+        <event-block sid="7292356579909998">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="1334261957462421" type="System">
                     <param id="0" name="Variable">transitioning</param>
@@ -584,29 +609,6 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="743978373603037" type="Projectile" />
-            </actions>
-        </event-block>
-        <event-block any="1" sid="6915197167745009">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="9084514302302335" type="EnemyProjectile">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="3793583163914269" type="EnemyProjectile">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">1024 - BOUNDRIGHT</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="6181783850364103" type="EnemyProjectile">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="3940679421867306" type="EnemyProjectile">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">768 - BOUNDBOTTOM</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="7515056016301004" type="EnemyProjectile" />
             </actions>
         </event-block>
     </events>
