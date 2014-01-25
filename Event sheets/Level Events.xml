@@ -41,6 +41,9 @@
                     <param id="0" name="Instance variable">InitialWidth</param>
                     <param id="1" name="Value">Self.Width</param>
                 </action>
+                <action behavior="Turret" id="1" name="Add object to target" sid="1117280328107965" type="StaticEnemy">
+                    <param id="0" name="Target">Kurt</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3003431054682057">
@@ -77,6 +80,54 @@
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">50</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="3941027102799597">
+            <conditions>
+                <condition behavior="Turret" id="1" name="On shoot" sid="8643175289940287" type="StaticEnemy" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="9864118416570529" type="StaticEnemy">
+                    <param id="0" name="Object">EnemyProjectile</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8255972754156182">
+            <conditions>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="4807222850280381" type="Kurt" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2812956487710485" type="Kurt">
+                    <param id="0" name="Animation">&quot;MovingR&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4439485327861176">
+            <conditions>
+                <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="8224787568375179" type="Kurt" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8744159953368979" type="Kurt">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8447638002056397">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9181870075609327" type="EnemyProjectile">
+                    <param id="0" name="Object">Kurt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">Self.Life - EnemyProjectile.damage</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
             </actions>
         </event-block>
     </events>
