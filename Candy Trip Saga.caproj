@@ -13,7 +13,11 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -48,11 +52,42 @@
                 <texture />
             </object-type>
         </object-folder>
+        <object-folder expanded="1" name="Chars">
+            <object-type name="Kurt" sid="4621629528559873">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="7693127725273758">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="2136581133295236">
+                        <behavior id="bound" />
+                    </behavior-type>
+                    <behavior-type name="8Direction" sid="2545911568910781">
+                        <behavior id="EightDir" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7434589922976345" speed="5">
+                        <frame duration="1" hotspotX="0.507692" hotspotY="0.507692">
+                            <collision-poly>
+                                <point x="0.215385" y="0.215385" />
+                                <point x="0.492308" y="0.0307692" />
+                                <point x="0.876923" y="0.123077" />
+                                <point x="0.6" y="0.6" />
+                                <point x="0.492308" y="0.938462" />
+                                <point x="0.276923" y="0.723077" />
+                                <point x="0.276923" y="0.492308" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Candy" sid="8075092672256927">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3613064221287112" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND">
                         <collision-poly>
                             <point x="0.326667" y="0.324503" />
                             <point x="0.5" y="0.225166" />
