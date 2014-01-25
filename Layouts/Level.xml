@@ -138,6 +138,10 @@
                         <Life>50</Life>
                         <MaxLife>100</MaxLife>
                         <CurrentCandy>&quot;None&quot;</CurrentCandy>
+                        <MoveSpeedModifier>0</MoveSpeedModifier>
+                        <ShotSpeedModifier>0</ShotSpeedModifier>
+                        <CrazyControlsModifier>0</CrazyControlsModifier>
+                        <HealthLossModifier>0</HealthLossModifier>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">

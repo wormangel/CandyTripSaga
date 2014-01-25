@@ -66,6 +66,10 @@
                     <instance-variable name="Life" sid="194786203824394" type="number" />
                     <instance-variable name="MaxLife" sid="2708475470111301" type="number" />
                     <instance-variable comment="Holds the name of the current candy held by Kurt" name="CurrentCandy" sid="5878201182934916" type="string" />
+                    <instance-variable comment="Movement Speed modifier" name="MoveSpeedModifier" sid="6948657320704311" type="number" />
+                    <instance-variable comment="Shot Speed modifier" name="ShotSpeedModifier" sid="6053237275242107" type="number" />
+                    <instance-variable comment="Crazy controls modifier" name="CrazyControlsModifier" sid="8724933913135987" type="number" />
+                    <instance-variable comment="Health Loss modifier" name="HealthLossModifier" sid="3917711328254563" type="number" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Solid" sid="7693127725273758">

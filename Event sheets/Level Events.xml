@@ -39,6 +39,22 @@
                             <param id="0" name="Instance variable">CurrentCandy</param>
                             <param id="1" name="Value">&quot;Marijuana&quot;</param>
                         </action>
+                        <action id="-10" name="Set value" sid="288069042863073" type="Kurt">
+                            <param id="0" name="Instance variable">MoveSpeedModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="3993558423032718" type="Kurt">
+                            <param id="0" name="Instance variable">ShotSpeedModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="9762414268316498" type="Kurt">
+                            <param id="0" name="Instance variable">CrazyControlsModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="8537467423279843" type="Kurt">
+                            <param id="0" name="Instance variable">HealthLossModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                         <action id="-9" name="Destroy" sid="9959251510334578" type="Candy" />
                     </actions>
                 </event-block>
@@ -59,7 +75,23 @@
                             <param id="0" name="Instance variable">CurrentCandy</param>
                             <param id="1" name="Value">&quot;Cocaine&quot;</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="7336182960286618" type="Candy" />
+                        <action id="-10" name="Set value" sid="9172067952805325" type="Kurt">
+                            <param id="0" name="Instance variable">MoveSpeedModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="8508520816212695" type="Kurt">
+                            <param id="0" name="Instance variable">ShotSpeedModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="289928545079729" type="Kurt">
+                            <param id="0" name="Instance variable">CrazyControlsModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="4242703953647641" type="Kurt">
+                            <param id="0" name="Instance variable">HealthLossModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8403143738006217" type="Candy" />
                     </actions>
                 </event-block>
                 <event-block sid="3289044759910964">
@@ -79,7 +111,23 @@
                             <param id="0" name="Instance variable">CurrentCandy</param>
                             <param id="1" name="Value">&quot;LSD&quot;</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="9427832592993807" type="Candy" />
+                        <action id="-10" name="Set value" sid="6367925432425337" type="Kurt">
+                            <param id="0" name="Instance variable">MoveSpeedModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1676484687922423" type="Kurt">
+                            <param id="0" name="Instance variable">ShotSpeedModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5341875331777369" type="Kurt">
+                            <param id="0" name="Instance variable">CrazyControlsModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="3650473214615887" type="Kurt">
+                            <param id="0" name="Instance variable">HealthLossModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="4061863933292819" type="Candy" />
                     </actions>
                 </event-block>
                 <event-block sid="830793737439712">
@@ -99,7 +147,23 @@
                             <param id="0" name="Instance variable">CurrentCandy</param>
                             <param id="1" name="Value">&quot;Alcohol&quot;</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="1444769081369005" type="Candy" />
+                        <action id="-10" name="Set value" sid="3475742056919687" type="Kurt">
+                            <param id="0" name="Instance variable">MoveSpeedModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5909697087486854" type="Kurt">
+                            <param id="0" name="Instance variable">ShotSpeedModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5127476743213834" type="Kurt">
+                            <param id="0" name="Instance variable">CrazyControlsModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1230787180775978" type="Kurt">
+                            <param id="0" name="Instance variable">HealthLossModifier</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="1072146129543201" type="Candy" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -669,29 +733,6 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="743978373603037" type="Projectile" />
-            </actions>
-        </event-block>
-        <event-block any="1" sid="6915197167745009">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="9084514302302335" type="EnemyProjectile">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="3793583163914269" type="EnemyProjectile">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">1024 - BOUNDRIGHT</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="6181783850364103" type="EnemyProjectile">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="3940679421867306" type="EnemyProjectile">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">768 - BOUNDBOTTOM</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="7515056016301004" type="EnemyProjectile" />
             </actions>
         </event-block>
     </events>
