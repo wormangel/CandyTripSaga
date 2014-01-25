@@ -42,6 +42,66 @@
                         <action id="-9" name="Destroy" sid="9959251510334578" type="Candy" />
                     </actions>
                 </event-block>
+                <event-block sid="4472609107412347">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1949729380551701" type="Candy">
+                            <param id="0" name="Instance variable">Type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Cocaine&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1961307280748125" type="CandyHudIcon">
+                            <param id="0" name="Animation">&quot;Cocaine&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="9967707229878453" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Value">&quot;Cocaine&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7336182960286618" type="Candy" />
+                    </actions>
+                </event-block>
+                <event-block sid="3289044759910964">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7862358121708154" type="Candy">
+                            <param id="0" name="Instance variable">Type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;LSD&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4496130211293646" type="CandyHudIcon">
+                            <param id="0" name="Animation">&quot;LSD&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="8251989079101917" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Value">&quot;LSD&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9427832592993807" type="Candy" />
+                    </actions>
+                </event-block>
+                <event-block sid="830793737439712">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="939680202341909" type="Candy">
+                            <param id="0" name="Instance variable">Type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Alcohol&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6299955172249812" type="CandyHudIcon">
+                            <param id="0" name="Animation">&quot;Alcohol&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="7513348227384757" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Value">&quot;Alcohol&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="1444769081369005" type="Candy" />
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <comment>Kurt can shoot</comment>
@@ -229,16 +289,16 @@
         </event-block>
         <event-block sid="8447638002056397">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="9181870075609327" type="EnemyProjectile">
+                <condition id="0" name="On collision with another object" sid="9181870075609327" type="Enemies">
                     <param id="0" name="Object">Kurt</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
-                <action id="-10" name="Set value" sid="4574153207337821" type="Kurt">
+                <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">Self.Life  - StaticEnemy.damage</param>
+                    <param id="1" name="Value">Self.Life - enemiesDamage</param>
                 </action>
+                <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
             </actions>
         </event-block>
         <event-block sid="7385715972911868">
@@ -248,14 +308,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-23" name="Move at angle" sid="5077365707260819" type="Kurt">
-                    <param id="0" name="Angle">lastDirection * 90</param>
-                    <param id="1" name="Distance">-120</param>
-                </action>
-                <action id="-10" name="Set value" sid="9846249989159993" type="Kurt">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">Self.Life - StaticEnemy.damage</param>
-                </action>
+                <action behavior="8Direction" id="1" name="Reverse" sid="5077365707260819" type="Kurt" />
             </actions>
         </event-block>
         <comment>Setting Kurt animations</comment>
@@ -328,6 +381,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">Self.Life - enemiesDamage</param>
+                </action>
                 <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
             </actions>
         </event-block>
@@ -614,31 +671,5 @@
                 <action id="-9" name="Destroy" sid="743978373603037" type="Projectile" />
             </actions>
         </event-block>
-<<<<<<< HEAD
-=======
-        <event-block any="1" sid="6915197167745009">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="9084514302302335" type="EnemyProjectile">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="3793583163914269" type="EnemyProjectile">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">1024 - BOUNDRIGHT</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="6181783850364103" type="EnemyProjectile">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="3940679421867306" type="EnemyProjectile">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">768 - BOUNDBOTTOM</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="7515056016301004" type="EnemyProjectile" />
-            </actions>
-        </event-block>
->>>>>>> 213151b2ab756f5852aadf2872673a6dc9ae1b23
     </events>
 </c2eventsheet>
