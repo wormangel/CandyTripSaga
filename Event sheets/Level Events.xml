@@ -339,9 +339,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="7094376141314203" type="Kurt">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">50</param>
+                <action id="-2" name="Go to layout" sid="7094376141314203" type="System">
+                    <param id="0" name="Layout">GameOver</param>
                 </action>
             </actions>
         </event-block>

@@ -10,17 +10,17 @@
     <unique-id>29u83kuz5ho3d</unique-id>
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
-        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
@@ -34,6 +34,7 @@
         <height>768</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
+    <first-layout>Level</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -55,6 +56,14 @@
                 <texture />
             </object-type>
             <object-type name="BackgroundMari" sid="3783392235591484">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="GameOverBackground" sid="8059131482995241">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="MenuBackground" sid="3269224036670965">
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
@@ -589,9 +598,13 @@
     </families>
     <layout-folder expanded="1">
         <layout>Level.xml</layout>
+        <layout>GameOver.xml</layout>
+        <layout>Menu.xml</layout>
     </layout-folder>
-    <event-folder expanded="0">
+    <event-folder expanded="1">
         <event-sheet>Level Events.xml</event-sheet>
+        <event-sheet>Game Over Events.xml</event-sheet>
+        <event-sheet>Menu Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="10" />
