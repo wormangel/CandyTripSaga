@@ -337,7 +337,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Life>50</Life>
+                        <Life>10</Life>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
