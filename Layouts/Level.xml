@@ -113,6 +113,31 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Candy" uid="17">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Alcohol</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Type>Alcohol</Type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>832</x>
+                        <y>576</y>
+                        <z>0</z>
+                        <width>65</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.011962608</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -141,10 +166,10 @@
                         <Life>50</Life>
                         <MaxLife>100</MaxLife>
                         <CurrentCandy>&quot;None&quot;</CurrentCandy>
-                        <MoveSpeedModifier>0</MoveSpeedModifier>
-                        <ShotSpeedModifier>0</ShotSpeedModifier>
-                        <CrazyControlsModifier>0</CrazyControlsModifier>
-                        <HealthLossModifier>0</HealthLossModifier>
+                        <MoveSpeedModifier>1</MoveSpeedModifier>
+                        <ShotSpeedModifier>1</ShotSpeedModifier>
+                        <CrazyControlsModifier>1</CrazyControlsModifier>
+                        <HealthLossModifier>1</HealthLossModifier>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -197,7 +222,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>704</x>
+                        <x>832</x>
                         <y>320</y>
                         <z>0</z>
                         <width>64</width>
@@ -363,6 +388,56 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Candy" uid="15">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Cocaine</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Type>Cocaine</Type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>576</x>
+                        <y>320</y>
+                        <z>0</z>
+                        <width>65</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.011962608</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Candy" uid="16">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>LSD</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Type>LSD</Type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>576</x>
+                        <y>576</y>
+                        <z>0</z>
+                        <width>65</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.011962608</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
