@@ -629,14 +629,6 @@
         <object-type name="Text" sid="6916652124689838">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite" sid="2222073985958292">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5188229909277713" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="TryAgain" sid="41964680905267">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
@@ -754,6 +746,7 @@
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="9556733787711666">
             <members>
+                <member>EnemyProjectile</member>
                 <member>RandomMovingEnemy</member>
                 <member>StaticEnemy</member>
             </members>
