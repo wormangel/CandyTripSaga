@@ -132,11 +132,6 @@
             </object-type>
             <object-type name="StaticEnemy" sid="3794374515010828">
                 <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Turret" sid="8207630041433532">
-                        <behavior id="Turret" />
-                    </behavior-type>
-                </behaviors>
                 <container>
                     <type>StaticEnemy</type>
                     <type>StaticEnemyShooter</type>
@@ -160,13 +155,18 @@
             </object-type>
             <object-type name="StaticEnemyShooter" sid="6827063765929523">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Turret" sid="607126539422548">
+                        <behavior id="Turret" />
+                    </behavior-type>
+                </behaviors>
                 <container>
                     <type>StaticEnemy</type>
                     <type>StaticEnemyShooter</type>
                 </container>
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5321705929674417" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>

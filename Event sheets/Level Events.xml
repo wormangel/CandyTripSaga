@@ -47,7 +47,7 @@
                     <param id="0" name="Instance variable">InitialWidth</param>
                     <param id="1" name="Value">Self.Width</param>
                 </action>
-                <action behavior="Turret" id="1" name="Add object to target" sid="1117280328107965" type="StaticEnemy">
+                <action behavior="Turret" id="1" name="Add object to target" sid="1117280328107965" type="StaticEnemyShooter">
                     <param id="0" name="Target">Kurt</param>
                 </action>
             </actions>
@@ -93,13 +93,18 @@
         </event-block>
         <event-block sid="3941027102799597">
             <conditions>
-                <condition behavior="Turret" id="1" name="On shoot" sid="8643175289940287" type="StaticEnemy" />
+                <condition behavior="Turret" id="1" name="On shoot" sid="8643175289940287" type="StaticEnemyShooter" />
             </conditions>
             <actions>
-                <action id="0" name="Spawn another object" sid="9864118416570529" type="StaticEnemy">
-                    <param id="0" name="Object">EnemyProjectile</param>
+                <action id="-3" name="Create object" sid="160847482478893" type="System">
+                    <param id="0" name="Object to create">EnemyProjectile</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="Image point">0</param>
+                    <param id="2" name="X">StaticEnemy.X</param>
+                    <param id="3" name="Y">StaticEnemy.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="809554643185722" type="EnemyProjectile">
+                    <param id="0" name="X">Kurt.X + Kurt.Width/2</param>
+                    <param id="1" name="Y">Kurt.Y + Kurt.Height/2</param>
                 </action>
             </actions>
         </event-block>

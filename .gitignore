@@ -1,2 +1,3 @@
 *.capx.autosave
 *.capx.backup1
+*.uistate.xml
