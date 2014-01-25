@@ -47,6 +47,42 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="RandomMovingEnemy" uid="11">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="CustomMovement">
+                            <properties>
+                                <stepping-mode>None</stepping-mode>
+                                <pixels-per-step>5</pixels-per-step>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>223</x>
+                        <y>568</y>
+                        <z>0</z>
+                        <width>65</width>
+                        <height>65</height>
+                        <depth>0</depth>
+                        <hotspotX>0.507692337</hotspotX>
+                        <hotspotY>0.507692337</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -163,8 +199,8 @@
                         <width>64</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.53125</hotspotX>
+                        <hotspotY>0.453125</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -255,8 +291,8 @@
                         <width>64</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.53125</hotspotX>
+                        <hotspotY>0.453125</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
