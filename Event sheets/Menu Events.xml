@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu Events</name>
+    <events>
+        <event-block sid="3343324567349141">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2013512019519531" type="Mouse">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7374859411269567" type="Start">
+                    <param id="0" name="Animation">&quot;MouseDown&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1712407371475498">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="4087369475665429" type="Mouse">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1607526534331539" type="Start">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7567086031612196">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6372147968552797" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1726867395857678" type="System">
+                    <param id="0" name="Layout">Level</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6311428732370887">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1683073174883233" type="Mouse">
+                    <param id="0" name="Object">Credits</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1077438807286682" type="Credits">
+                    <param id="0" name="Animation">&quot;MouseDown&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8503033478628711">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="2512080519526293" type="Mouse">
+                    <param id="0" name="Object">Credits</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="533915574155482" type="Credits">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

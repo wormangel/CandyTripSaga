@@ -10,18 +10,19 @@
     <unique-id>29u83kuz5ho3d</unique-id>
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
-        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
-        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="brightness">Brightness</effect>
@@ -34,6 +35,7 @@
         <height>768</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
+    <first-layout>Level</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -55,6 +57,14 @@
                 <texture />
             </object-type>
             <object-type name="BackgroundMari" sid="3783392235591484">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="GameOverBackground" sid="8059131482995241">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="MenuBackground" sid="3269224036670965">
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
@@ -433,6 +443,9 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="ScoreText" sid="8550440044665772">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="Other">
             <object-type name="Keyboard" sid="493858274240027">
@@ -616,6 +629,127 @@
         <object-type name="Text" sid="6916652124689838">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Sprite" sid="2222073985958292">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5188229909277713" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TryAgain" sid="41964680905267">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2982646673226969" speed="5">
+                    <frame duration="1" hotspotX="0.501845" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.498155" y="0.25" />
+                            <point x="0.870849" y="0.178572" />
+                            <point x="0.856089" y="0.910714" />
+                            <point x="0.505535" y="0.839286" />
+                            <point x="0.151292" y="0.857143" />
+                            <point x="0.136531" y="0.214286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="MouseDown" pingpong="0" repeatcount="1" repeatto="0" sid="2978052028982456" speed="5">
+                    <frame duration="1" hotspotX="0.501845" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.143911" y="0.910714" />
+                            <point x="0.457565" y="0.910714" />
+                            <point x="0.874539" y="0.857143" />
+                            <point x="0.885609" y="0.125" />
+                            <point x="0.531366" y="0.214286" />
+                            <point x="0.136531" y="0.142857" />
+                            <point x="0.140221" y="0.607143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="3296877568335691">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="BackToMenu" sid="6180472970482814">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3327357718678948" speed="5">
+                    <frame duration="1" hotspotX="0.501845" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0516605" y="0.232143" />
+                            <point x="0.505535" y="0.232143" />
+                            <point x="0.944649" y="0.232143" />
+                            <point x="0.94834" y="0.821429" />
+                            <point x="0.498155" y="0.839286" />
+                            <point x="0.0516605" y="0.785714" />
+                            <point x="0.0516605" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="MouseDown" pingpong="0" repeatcount="1" repeatto="0" sid="8238749216086408" speed="5">
+                    <frame duration="1" hotspotX="0.501845" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0516605" y="0.160714" />
+                            <point x="0.498155" y="0.107143" />
+                            <point x="0.96679" y="0.160714" />
+                            <point x="0.95203" y="0.910714" />
+                            <point x="0.516605" y="0.910714" />
+                            <point x="0.0442804" y="0.857143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Start" sid="9415596026772147">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5447613632209526" speed="5">
+                    <frame duration="1" hotspotX="0.501845" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.745388" y="0.267857" />
+                            <point x="0.726937" y="0.910714" />
+                            <point x="0.273063" y="0.875" />
+                            <point x="0.269373" y="0.267857" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="MouseDown" pingpong="0" repeatcount="1" repeatto="0" sid="6092065487660105" speed="5">
+                    <frame duration="1" hotspotX="0.501845" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.730627" y="0.142857" />
+                            <point x="0.741698" y="0.857143" />
+                            <point x="0.254613" y="0.875" />
+                            <point x="0.250923" y="0.178571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Credits" sid="1419209180059238">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5634096049360323" speed="5">
+                    <frame duration="1" hotspotX="0.501845" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.782288" y="0.303571" />
+                            <point x="0.749077" y="0.964286" />
+                            <point x="0.236162" y="0.928571" />
+                            <point x="0.214022" y="0.303571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="MouseDown" pingpong="0" repeatcount="1" repeatto="0" sid="8760424967849763" speed="5">
+                    <frame duration="1" hotspotX="0.501845" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.793358" y="0.160714" />
+                            <point x="0.778598" y="0.892857" />
+                            <point x="0.214022" y="0.892857" />
+                            <point x="0.214022" y="0.142857" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="9556733787711666">
@@ -629,19 +763,24 @@
             </instance-variables>
         </family>
     </families>
-    <layout-folder expanded="1">
+    <layout-folder expanded="0">
         <layout>Level.xml</layout>
+        <layout>GameOver.xml</layout>
+        <layout>Menu.xml</layout>
     </layout-folder>
-    <event-folder expanded="0">
+    <event-folder expanded="1">
         <event-sheet>Level Events.xml</event-sheet>
+        <event-sheet>Game Over Events.xml</event-sheet>
+        <event-sheet>Menu Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="10" />
+        <global-instance type="Mouse" uid="18" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
-    <files-folder expanded="0">
-        <file-folder expanded="1" name="Icons">
+    <files-folder expanded="1">
+        <file-folder expanded="0" name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />

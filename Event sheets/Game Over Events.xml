@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game Over Events</name>
+    <events>
+        <event-block sid="5012666755693688">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="8375132734951552" type="Mouse">
+                    <param id="0" name="Object">TryAgain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8534192783983274" type="TryAgain">
+                    <param id="0" name="Animation">&quot;MouseDown&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9373127357465814">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="2929915881381776" type="Mouse">
+                    <param id="0" name="Object">TryAgain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5713161887076079" type="TryAgain">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="116472277264255">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="3906010434387298" type="Mouse">
+                    <param id="0" name="Object">BackToMenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1529476563158269" type="BackToMenu">
+                    <param id="0" name="Animation">&quot;MouseDown&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6627174583053315">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="2487115052522821" type="Mouse">
+                    <param id="0" name="Object">BackToMenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7714118142745339" type="BackToMenu">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="208617018386966">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9534579569353728" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">TryAgain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="751870774673225" type="System">
+                    <param id="0" name="Layout">Level</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="54196739864942">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3319623449047702" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BackToMenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8586355463859567" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
