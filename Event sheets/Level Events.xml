@@ -793,6 +793,58 @@
                 <action id="-9" name="Destroy" sid="7515056016301004" type="EnemyProjectile" />
             </actions>
         </event-block>
+        <event-block sid="9376136972176731">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="7947089413618353" type="Enemies">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="9024161093117787" type="Enemies">
+                    <param id="0" name="X">BOUNDLEFT</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4233226596338422">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="2631265890016714" type="Enemies">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">1024 - Enemies.Width - BOUNDRIGHT</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="3576168405102161" type="Enemies">
+                    <param id="0" name="X">1024 - BOUNDRIGHT - Enemies.Width</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8768394797271468">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="4055718208812116" type="Enemies">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="9506969038073295" type="Enemies">
+                    <param id="0" name="Y">BOUNDTOP</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1668966271798958">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="4305057049449896" type="Enemies">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">768 - Enemies.Height - BOUNDBOTTOM</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="3080709436745473" type="Enemies">
+                    <param id="0" name="Y">768 - Enemies.Height - BOUNDBOTTOM</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="2406093354871705">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="5125709102196539" type="Projectile">
