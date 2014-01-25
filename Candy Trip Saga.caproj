@@ -38,6 +38,16 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder expanded="1">
+        <object-folder expanded="1" name="Backgrounds">
+            <object-type name="TiledBackground" sid="3450383196980433">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="BackgroundMari" sid="3783392235591484">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+        </object-folder>
         <object-type name="Candy" sid="8075092672256927">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
@@ -56,10 +66,6 @@
                     </frame>
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="TiledBackground" sid="3450383196980433">
-            <plugin id="TiledBg" />
-            <texture />
         </object-type>
     </object-folder>
     <families />
