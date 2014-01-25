@@ -149,7 +149,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>512</x>
-                        <y>192</y>
+                        <y>212</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -358,9 +358,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <instance-variables>
-                        <Life>50</Life>
-                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>

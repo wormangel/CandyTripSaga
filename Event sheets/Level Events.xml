@@ -928,6 +928,10 @@
                 <action id="0" name="Set text" sid="8420387411010581" type="ScoreText">
                     <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
                 </action>
+                <action id="5" name="Set web font" sid="2717746272694225" type="ScoreText">
+                    <param id="0" name="Family name">&quot;vtcgaragesaleregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1818946944339115">
