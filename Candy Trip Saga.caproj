@@ -11,6 +11,7 @@
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -37,7 +38,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-type name="Sprite" sid="8075092672256927">
+        <object-type name="Candy" sid="8075092672256927">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3613064221287112" speed="5">
@@ -56,13 +57,17 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TiledBackground" sid="3450383196980433">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout>Layout 1.xml</layout>
+        <layout>Level.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Level Events.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder expanded="1" />
