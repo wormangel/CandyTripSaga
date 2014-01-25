@@ -66,6 +66,10 @@
                         <action behavior="8Direction" id="4" name="Set max speed" sid="9847954018850145" type="Kurt">
                             <param id="0" name="Max Speed">BASEMAXSPEED * Kurt.MoveSpeedModifier</param>
                         </action>
+                        <action id="-11" name="Add to" sid="4773897334177184" type="Kurt">
+                            <param id="0" name="Instance variable">Life</param>
+                            <param id="1" name="Value">50</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4472609107412347">
@@ -103,6 +107,10 @@
                         </action>
                         <action behavior="8Direction" id="4" name="Set max speed" sid="5325106931071005" type="Kurt">
                             <param id="0" name="Max Speed">BASEMAXSPEED * Kurt.MoveSpeedModifier</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="4240831422398751" type="Kurt">
+                            <param id="0" name="Instance variable">Life</param>
+                            <param id="1" name="Value">50</param>
                         </action>
                     </actions>
                 </event-block>
@@ -142,6 +150,10 @@
                         <action behavior="8Direction" id="4" name="Set max speed" sid="3476333346608998" type="Kurt">
                             <param id="0" name="Max Speed">BASEMAXSPEED * Kurt.MoveSpeedModifier</param>
                         </action>
+                        <action id="-11" name="Add to" sid="9522549869947422" type="Kurt">
+                            <param id="0" name="Instance variable">Life</param>
+                            <param id="1" name="Value">50</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="830793737439712">
@@ -179,6 +191,10 @@
                         </action>
                         <action behavior="8Direction" id="4" name="Set max speed" sid="2102468456898365" type="Kurt">
                             <param id="0" name="Max Speed">BASEMAXSPEED * Kurt.MoveSpeedModifier</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="4967470342474003" type="Kurt">
+                            <param id="0" name="Instance variable">Life</param>
+                            <param id="1" name="Value">50</param>
                         </action>
                     </actions>
                 </event-block>
