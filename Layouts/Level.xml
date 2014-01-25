@@ -104,8 +104,8 @@
                         <x>256</x>
                         <y>384</y>
                         <z>0</z>
-                        <width>129</width>
-                        <height>129</height>
+                        <width>64</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -234,9 +234,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <instance-variables>
-                        <damage>5</damage>
-                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>

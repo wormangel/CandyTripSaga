@@ -7,6 +7,7 @@
         <variable constant="0" name="transitionState" sid="9058277340274296" static="0" type="text">FadeIn</variable>
         <variable constant="0" name="luminosity" sid="6099894249677563" static="0" type="number">0</variable>
         <variable constant="0" name="transitioning" sid="6937824924987025" static="0" type="number">0</variable>
+        <variable comment="Damage caused by all enemies" constant="0" name="enemiesDamage" sid="1208001635472111" static="0" type="number">10</variable>
         <comment>When Kurt gets a candy, the candy should disappear</comment>
         <event-block sid="3463074638746736">
             <conditions>
@@ -176,6 +177,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Enemies events</comment>
         <event-block sid="3941027102799597">
             <conditions>
                 <condition behavior="Turret" id="1" name="On shoot" sid="8643175289940287" type="StaticEnemyShooter" />
@@ -192,13 +194,79 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8447638002056397">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9181870075609327" type="Enemies">
+                    <param id="0" name="Object">Kurt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">Self.Life - enemiesDamage</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
+            </actions>
+        </event-block>
+        <event-block sid="7385715972911868">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1253680629334755" type="Kurt">
+                    <param id="0" name="Object">StaticEnemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="1" name="Reverse" sid="5077365707260819" type="Kurt" />
+            </actions>
+        </event-block>
+        <comment>Setting Kurt animations</comment>
         <event-block sid="8255972754156182">
             <conditions>
-                <condition behavior="8Direction" id="0" name="Is moving" sid="4807222850280381" type="Kurt" />
+                <condition id="0" name="On key pressed" sid="4807222850280381" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2812956487710485" type="Kurt">
                     <param id="0" name="Animation">&quot;MovingR&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9844623800946209">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8771085422082938" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5790569365525572" type="Kurt">
+                    <param id="0" name="Animation">&quot;MovingD&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4852187517949229">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="914637640361674" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2710973125453525" type="Kurt">
+                    <param id="0" name="Animation">&quot;MovingL&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1581629800284058">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8715634043765749" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="16151979396761" type="Kurt">
+                    <param id="0" name="Animation">&quot;MovingU&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -208,9 +276,8 @@
                 <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="8224787568375179" type="Kurt" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="8744159953368979" type="Kurt">
-                    <param id="0" name="Animation">&quot;Idle&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="5" name="Set frame" sid="8744159953368979" type="Kurt">
+                    <param id="0" name="Frame number">2</param>
                 </action>
             </actions>
         </event-block>
@@ -223,7 +290,7 @@
             <actions>
                 <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">Self.Life - EnemyProjectile.damage</param>
+                    <param id="1" name="Value">Self.Life - enemiesDamage</param>
                 </action>
                 <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
             </actions>
@@ -446,5 +513,11 @@
                 </action>
             </actions>
         </event-block>
+
+        <event-block sid="6754521886582596">
+            <conditions />
+            <actions />
+        </event-block>
+
     </events>
 </c2eventsheet>
