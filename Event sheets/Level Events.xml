@@ -14,7 +14,6 @@
                 <action id="-9" name="Destroy" sid="9959251510334578" type="Candy" />
             </actions>
         </event-block>
-<<<<<<< HEAD
         <event-block sid="7156737183236879">
             <conditions>
                 <condition id="2" name="Key is down" sid="5538933329818861" type="Keyboard">
@@ -26,7 +25,9 @@
                     <param id="0" name="Object">Projectile</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">0</param>
-=======
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="5633030378825208">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="6854953953550797" type="System" />
@@ -75,7 +76,6 @@
                 <action id="-10" name="Set value" sid="7094376141314203" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">50</param>
->>>>>>> bdd5b658d7d4ab15dbf4b1e969802e01907e07b5
                 </action>
             </actions>
         </event-block>

@@ -108,7 +108,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-<<<<<<< HEAD
         <object-type name="Projectile" sid="9038358573225725">
             <plugin id="Sprite" />
             <behaviors>
@@ -124,7 +123,7 @@
         </object-type>
         <object-type name="Keyboard" sid="493858274240027">
             <plugin id="Keyboard" />
-=======
+        </object-type>
         <object-type name="ExternalBar" sid="3863823518531159">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
@@ -162,7 +161,6 @@
                     </frame>
                 </animation>
             </animation-folder>
->>>>>>> bdd5b658d7d4ab15dbf4b1e969802e01907e07b5
         </object-type>
     </object-folder>
     <families />
