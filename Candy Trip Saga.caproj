@@ -11,15 +11,15 @@
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
         <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
-        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="brightness">Brightness</effect>
@@ -78,6 +78,7 @@
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="7545332491153987" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="hand" x="0.472868" y="0.72093" />
                             <collision-poly>
                                 <point x="0.612403" y="0.496124" />
                                 <point x="0.573643" y="0.573643" />
@@ -92,6 +93,7 @@
                     </animation>
                     <animation framecount="3" loop="0" name="MovingR" pingpong="0" repeatcount="1" repeatto="0" sid="7434589922976345" speed="8">
                         <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="Imagepoint 1" x="0.449612" y="0.728682" />
                             <collision-poly>
                                 <point x="0.612403" y="0.496124" />
                                 <point x="0.573643" y="0.573643" />
@@ -104,6 +106,7 @@
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="Imagepoint 1" x="0.387597" y="0.728682" />
                             <collision-poly>
                                 <point x="0.612403" y="0.496124" />
                                 <point x="0.573643" y="0.573643" />
@@ -116,6 +119,7 @@
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="Imagepoint 1" x="0.44186" y="0.713178" />
                             <collision-poly>
                                 <point x="0.612403" y="0.496124" />
                                 <point x="0.573643" y="0.573643" />
@@ -139,6 +143,7 @@
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6584927167314284" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="center" x="0.53125" y="0.53125" />
                             <collision-poly>
                                 <point x="0.171875" y="0.171875" />
                                 <point x="0.5" y="0.046875" />
@@ -244,7 +249,7 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6902250867774548" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="0.453125">
                         <collision-poly>
                             <point x="0.296875" y="0.296875" />
                             <point x="0.5" y="0.171875" />
@@ -291,7 +296,7 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616741012812246" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="0.453125">
                         <collision-poly>
                             <point x="0.296875" y="0.296875" />
                             <point x="0.5" y="0.171875" />

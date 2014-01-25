@@ -21,15 +21,27 @@
         <comment>Kurt can shoot</comment>
         <event-block sid="7156737183236879">
             <conditions>
-                <condition id="2" name="Key is down" sid="5538933329818861" type="Keyboard">
+                <condition id="3" name="On key released" sid="5538933329818861" type="Keyboard">
                     <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9321017227432982" type="System">
+                    <param id="0" name="Variable">Reload</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0.25</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Spawn another object" sid="4399011760776154" type="Kurt">
+                <action id="0" name="Spawn another object" sid="2816951133791187" type="Kurt">
                     <param id="0" name="Object">Projectile</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="1652396011828836" type="System">
+                    <param id="0" name="Variable">Reload</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="3083682876279493" type="Projectile">
+                    <param id="0" name="Angle">90 * lastDirection</param>
                 </action>
             </actions>
         </event-block>
@@ -169,11 +181,10 @@
                 <condition behavior="Turret" id="1" name="On shoot" sid="8643175289940287" type="StaticEnemyShooter" />
             </conditions>
             <actions>
-                <action id="-3" name="Create object" sid="160847482478893" type="System">
-                    <param id="0" name="Object to create">EnemyProjectile</param>
+                <action id="0" name="Spawn another object" sid="160847482478893" type="StaticEnemy">
+                    <param id="0" name="Object">EnemyProjectile</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">StaticEnemy.X</param>
-                    <param id="3" name="Y">StaticEnemy.Y</param>
+                    <param id="2" name="Image point">1</param>
                 </action>
                 <action id="-22" name="Set angle toward position" sid="809554643185722" type="EnemyProjectile">
                     <param id="0" name="X">Kurt.X + Kurt.Width/2</param>
@@ -292,6 +303,146 @@
                 </action>
                 <action behavior="8Direction" id="10" name="Set vector Y" sid="5130683613654341" type="Kurt">
                     <param id="0" name="Vector Y">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Start each level by fading out</comment>
+        <event-block sid="3958838691127565">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5377524102918544" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1177807909414602" type="System">
+                    <param id="0" name="Variable">transitioning</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2746994701799672" type="System">
+                    <param id="0" name="Variable">transitionState</param>
+                    <param id="1" name="Value">&quot;FadeIn&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7292356579909998">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1334261957462421" type="System">
+                    <param id="0" name="Variable">transitioning</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5130944589818028">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6730340189796286" type="System">
+                            <param id="0" name="Variable">transitionState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;FadeIn&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6977215013139725" type="System">
+                            <param id="0" name="Variable">luminosity</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="9152021048816244" type="System">
+                            <param id="0" name="Variable">luminosity</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-31" name="Set layout effect parameter" sid="4999564902785503" type="System">
+                            <param id="0" name="Effect">&quot;Brightness&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">luminosity</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2041957429163769">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9533091000353573" type="System">
+                            <param id="0" name="Variable">transitionState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;FadeIn&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="513202049386312" type="System">
+                            <param id="0" name="Variable">luminosity</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2990288977803764" type="System">
+                            <param id="0" name="Variable">transitioning</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Adjust firerate</comment>
+        <variable constant="0" name="Reload" sid="2750814173308067" static="0" type="number">0</variable>
+        <event-block sid="8628004244081067">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9041447745646265" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="2664420483470233" type="System">
+                    <param id="0" name="Variable">Reload</param>
+                    <param id="1" name="Value">dt</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Determine player&apos;s direction</comment>
+        <variable constant="0" name="lastDirection" sid="5130037124171002" static="0" type="number">0</variable>
+        <event-block sid="8611634392934235">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6674176367915161" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4956216817994123" type="System">
+                    <param id="0" name="Variable">lastDirection</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8145022066448316">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1361213788117925" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1882920665314498" type="System">
+                    <param id="0" name="Variable">lastDirection</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4022208561938731">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8049763017774547" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3923695995196009" type="System">
+                    <param id="0" name="Variable">lastDirection</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1511832001151655">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8754149063330743" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3999203578415115" type="System">
+                    <param id="0" name="Variable">lastDirection</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
