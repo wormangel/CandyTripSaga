@@ -2,5 +2,16 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level Events</name>
-    <events />
+    <events>
+        <event-block sid="3463074638746736">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9636036512899571" type="Candy">
+                    <param id="0" name="Object">Kurt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9959251510334578" type="Candy" />
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

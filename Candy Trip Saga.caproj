@@ -87,7 +87,7 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3613064221287112" speed="5">
-                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND">
+                    <frame duration="1" hotspotX="-1" hotspotY="-1">
                         <collision-poly>
                             <point x="0.326667" y="0.324503" />
                             <point x="0.5" y="0.225166" />
