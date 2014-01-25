@@ -39,7 +39,7 @@
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
-        <prop name="Enable WebGL">On</prop>
+        <prop name="Enable WebGL">Off</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
         <prop name="Loader style">Progress bar &amp; logo</prop>
@@ -51,7 +51,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-folder expanded="1" name="Backgrounds">
+        <object-folder expanded="0" name="Backgrounds">
             <object-type name="TiledBackground" sid="3450383196980433">
                 <plugin id="TiledBg" />
                 <texture />
@@ -69,7 +69,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="Chars">
+        <object-folder expanded="0" name="Chars">
             <object-type name="Kurt" sid="4621629528559873">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -458,17 +458,17 @@
                 <instance-variable name="Type" sid="9092312251634828" type="string" />
             </instance-variables>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Marijuana" pingpong="0" repeatcount="1" repeatto="0" sid="3613064221287112" speed="5">
+                <animation framecount="1" loop="1" name="Marijuana" pingpong="0" repeatcount="1" repeatto="0" sid="3613064221287112" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0">
                         <collision-poly>
-                            <point x="0.195652" y="0.177778" />
-                            <point x="0.5" y="0.0222222" />
-                            <point x="0.826087" y="0.155556" />
-                            <point x="0.978261" y="0.488889" />
-                            <point x="0.826087" y="0.822222" />
-                            <point x="0.5" y="0.955556" />
-                            <point x="0.152174" y="0.844444" />
-                            <point x="0.0434783" y="0.488889" />
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0.171875" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -762,7 +762,7 @@
             </instance-variables>
         </family>
     </families>
-    <layout-folder expanded="0">
+    <layout-folder expanded="1">
         <layout>Level.xml</layout>
         <layout>GameOver.xml</layout>
         <layout>Menu.xml</layout>
@@ -787,5 +787,10 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="stylesheet.css" />
+        <file name="vtc-garagesale-webfont.eot" />
+        <file name="vtc-garagesale-webfont.svg" />
+        <file name="vtc-garagesale-webfont.ttf" />
+        <file name="vtc-garagesale-webfont.woff" />
     </files-folder>
 </c2project>
