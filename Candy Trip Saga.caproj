@@ -10,8 +10,8 @@
     <unique-id>29u83kuz5ho3d</unique-id>
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -46,7 +46,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-folder expanded="1" name="Backgrounds">
+        <object-folder expanded="0" name="Backgrounds">
             <object-type name="TiledBackground" sid="3450383196980433">
                 <plugin id="TiledBg" />
                 <texture />
@@ -170,11 +170,56 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder expanded="0" name="HUD">
+            <object-type name="ExternalBar" sid="3863823518531159">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7801816561322923" speed="5">
+                        <frame duration="1" hotspotX="0.0521739" hotspotY="0.459016">
+                            <collision-poly>
+                                <point x="0.0144928" y="0.0819672" />
+                                <point x="0.498551" y="0.0327869" />
+                                <point x="0.985507" y="0.0819672" />
+                                <point x="0.997101" y="0.491803" />
+                                <point x="0.985507" y="0.918033" />
+                                <point x="0.498551" y="0.967213" />
+                                <point x="0.0144928" y="0.918033" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="InnerBar" sid="2044094845951805">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="InitialWidth" sid="1932907717836602" type="number" />
+                </instance-variables>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2210105152584706" speed="5">
+                        <frame duration="1" hotspotX="0.00319489" hotspotY="0.52381">
+                            <collision-poly>
+                                <point x="0.00638978" y="0.0952381" />
+                                <point x="0.498403" y="0.0952381" />
+                                <point x="0.990415" y="0.142857" />
+                                <point x="0.990415" y="0.857143" />
+                                <point x="0.498403" y="0.904762" />
+                                <point x="0.00638978" y="0.904762" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder expanded="0" name="Other">
+            <object-type name="Keyboard" sid="493858274240027">
+                <plugin id="Keyboard" />
+            </object-type>
+        </object-folder>
         <object-type name="Candy" sid="8075092672256927">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3613064221287112" speed="5">
-                    <frame duration="1" hotspotX="-1" hotspotY="-1">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
                         <collision-poly>
                             <point x="0.326667" y="0.324503" />
                             <point x="0.5" y="0.225166" />
@@ -213,47 +258,21 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Keyboard" sid="493858274240027">
-            <plugin id="Keyboard" />
-        </object-type>
-        <object-type name="ExternalBar" sid="3863823518531159">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7801816561322923" speed="5">
-                    <frame duration="1" hotspotX="0.0521739" hotspotY="0.459016">
-                        <collision-poly>
-                            <point x="0.0144928" y="0.0819672" />
-                            <point x="0.498551" y="0.0327869" />
-                            <point x="0.985507" y="0.0819672" />
-                            <point x="0.997101" y="0.491803" />
-                            <point x="0.985507" y="0.918033" />
-                            <point x="0.498551" y="0.967213" />
-                            <point x="0.0144928" y="0.918033" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="InnerBar" sid="2044094845951805">
+        <object-type name="Exit" sid="9543094242993239">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="InitialWidth" sid="1932907717836602" type="number" />
             </instance-variables>
-            <behaviors>
-                <behavior-type name="Anchor" sid="1895333809948946">
-                    <behavior id="Anchor" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2210105152584706" speed="5">
-                    <frame duration="1" hotspotX="0.00319489" hotspotY="0.52381">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5356916651642048" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
                         <collision-poly>
-                            <point x="0.00638978" y="0.0952381" />
-                            <point x="0.498403" y="0.0952381" />
-                            <point x="0.990415" y="0.142857" />
-                            <point x="0.990415" y="0.857143" />
-                            <point x="0.498403" y="0.904762" />
-                            <point x="0.00638978" y="0.904762" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.75" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -291,7 +310,7 @@
     <layout-folder expanded="1">
         <layout>Level.xml</layout>
     </layout-folder>
-    <event-folder expanded="1">
+    <event-folder expanded="0">
         <event-sheet>Level Events.xml</event-sheet>
     </event-folder>
     <global-instances>
@@ -299,7 +318,7 @@
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
-    <files-folder expanded="1">
+    <files-folder expanded="0">
         <file-folder expanded="1" name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />

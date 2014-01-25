@@ -14,6 +14,7 @@
                 <action id="-9" name="Destroy" sid="9959251510334578" type="Candy" />
             </actions>
         </event-block>
+        <comment>Kurt can shoot</comment>
         <event-block sid="7156737183236879">
             <conditions>
                 <condition id="2" name="Key is down" sid="5538933329818861" type="Keyboard">
@@ -28,6 +29,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Display the sugar bar once the level loads</comment>
         <event-block sid="5633030378825208">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="6854953953550797" type="System" />
@@ -46,6 +48,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Keeps the sugar bar updated</comment>
         <event-block sid="3003431054682057">
             <conditions>
                 <condition id="-1" name="Every tick" sid="9243923745695915" type="System" />
@@ -56,6 +59,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Kurt&apos;s life never stops dropping</comment>
         <event-block sid="3674372772691214">
             <conditions>
                 <condition id="-1" name="Every tick" sid="2346815577418842" type="System" />
@@ -67,6 +71,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>When life reaches zero, restore it (TODO KILL IT)</comment>
         <event-block sid="3114393595112236">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="1275985097970072" type="Kurt">
@@ -126,8 +131,20 @@
                 <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">Self.Life - EnemyProjectile.damage</param>
-                </action>
+					</action>
                 <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
+            </actions>
+		</event-block>
+        <event-block sid="9979674562648613">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9410317469518844" type="Exit">
+                    <param id="0" name="Object">Kurt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1659347250784935" type="System">
+                    <param id="0" name="Layout">Level</param>
+                </action>
             </actions>
         </event-block>
     </events>
