@@ -167,7 +167,7 @@
                         <MaxLife>100</MaxLife>
                         <CurrentCandy>&quot;None&quot;</CurrentCandy>
                         <MoveSpeedModifier>1</MoveSpeedModifier>
-                        <ShotSpeedModifier>1</ShotSpeedModifier>
+                        <ShotSpeedModifier>0.25</ShotSpeedModifier>
                         <CrazyControlsModifier>1</CrazyControlsModifier>
                         <HealthLossModifier>1</HealthLossModifier>
                     </instance-variables>

@@ -12,6 +12,7 @@
         <variable constant="1" name="BOUNDBOTTOM" sid="3760721337283236" static="0" type="number">64</variable>
         <variable constant="1" name="BOUNDTOP" sid="6054817498218233" static="0" type="number">220</variable>
         <variable constant="1" name="BoundLeft" sid="7131441206905355" static="0" type="number">62</variable>
+        <variable comment="Initial Max Speed" constant="1" name="BaseMaxSpeed" sid="9967375517095143" static="0" type="number">300</variable>
         <variable comment="Damage caused by all enemies" constant="0" name="enemiesDamage" sid="1208001635472111" static="0" type="number">10</variable>
         <comment>When Kurt gets a candy, the candy should disappear</comment>
         <event-block sid="3463074638746736">
@@ -47,7 +48,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="3993558423032718" type="Kurt">
                             <param id="0" name="Instance variable">ShotSpeedModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0.25</param>
                         </action>
                         <action id="-10" name="Set value" sid="9762414268316498" type="Kurt">
                             <param id="0" name="Instance variable">CrazyControlsModifier</param>
@@ -58,7 +59,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action behavior="8Direction" id="4" name="Set max speed" sid="9847954018850145" type="Kurt">
-                            <param id="0" name="Max Speed">Kurt.8Direction.MaxSpeed * Kurt.MoveSpeedModifier</param>
+                            <param id="0" name="Max Speed">BASEMAXSPEED * Kurt.MoveSpeedModifier</param>
                         </action>
                     </actions>
                 </event-block>
@@ -85,7 +86,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="8508520816212695" type="Kurt">
                             <param id="0" name="Instance variable">ShotSpeedModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0.1</param>
                         </action>
                         <action id="-10" name="Set value" sid="289928545079729" type="Kurt">
                             <param id="0" name="Instance variable">CrazyControlsModifier</param>
@@ -96,7 +97,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action behavior="8Direction" id="4" name="Set max speed" sid="5325106931071005" type="Kurt">
-                            <param id="0" name="Max Speed">Kurt.8Direction.MaxSpeed * Kurt.MoveSpeedModifier</param>
+                            <param id="0" name="Max Speed">BASEMAXSPEED * Kurt.MoveSpeedModifier</param>
                         </action>
                     </actions>
                 </event-block>
@@ -123,7 +124,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="1676484687922423" type="Kurt">
                             <param id="0" name="Instance variable">ShotSpeedModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0.25</param>
                         </action>
                         <action id="-10" name="Set value" sid="5341875331777369" type="Kurt">
                             <param id="0" name="Instance variable">CrazyControlsModifier</param>
@@ -131,10 +132,10 @@
                         </action>
                         <action id="-10" name="Set value" sid="3650473214615887" type="Kurt">
                             <param id="0" name="Instance variable">HealthLossModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0.5</param>
                         </action>
                         <action behavior="8Direction" id="4" name="Set max speed" sid="3476333346608998" type="Kurt">
-                            <param id="0" name="Max Speed">Kurt.8Direction.MaxSpeed * Kurt.MoveSpeedModifier</param>
+                            <param id="0" name="Max Speed">BASEMAXSPEED * Kurt.MoveSpeedModifier</param>
                         </action>
                     </actions>
                 </event-block>
@@ -161,18 +162,18 @@
                         </action>
                         <action id="-10" name="Set value" sid="5909697087486854" type="Kurt">
                             <param id="0" name="Instance variable">ShotSpeedModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0.25</param>
                         </action>
                         <action id="-10" name="Set value" sid="5127476743213834" type="Kurt">
                             <param id="0" name="Instance variable">CrazyControlsModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-10" name="Set value" sid="1230787180775978" type="Kurt">
                             <param id="0" name="Instance variable">HealthLossModifier</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action behavior="8Direction" id="4" name="Set max speed" sid="2102468456898365" type="Kurt">
-                            <param id="0" name="Max Speed">Kurt.8Direction.MaxSpeed * Kurt.MoveSpeedModifier</param>
+                            <param id="0" name="Max Speed">BASEMAXSPEED * Kurt.MoveSpeedModifier</param>
                         </action>
                     </actions>
                 </event-block>
@@ -187,7 +188,7 @@
                 <condition id="-14" name="Compare variable" sid="9321017227432982" type="System">
                     <param id="0" name="Variable">Reload</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">0.25</param>
+                    <param id="2" name="Value">Kurt.ShotSpeedModifier</param>
                 </condition>
             </conditions>
             <actions>
