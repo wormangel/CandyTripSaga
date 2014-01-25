@@ -204,16 +204,16 @@
         </event-block>
         <event-block sid="8447638002056397">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="9181870075609327" type="Enemies">
+                <condition id="0" name="On collision with another object" sid="9181870075609327" type="EnemyProjectile">
                     <param id="0" name="Object">Kurt</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">Self.Life - enemiesDamage</param>
-                </action>
                 <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
+                <action id="-10" name="Set value" sid="4574153207337821" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">Self.Life  - StaticEnemy.damage</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="7385715972911868">
@@ -223,7 +223,14 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="1" name="Reverse" sid="5077365707260819" type="Kurt" />
+                <action id="-23" name="Move at angle" sid="5077365707260819" type="Kurt">
+                    <param id="0" name="Angle">lastDirection * 90</param>
+                    <param id="1" name="Distance">-120</param>
+                </action>
+                <action id="-10" name="Set value" sid="9846249989159993" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">Self.Life - StaticEnemy.damage</param>
+                </action>
             </actions>
         </event-block>
         <comment>Setting Kurt animations</comment>
@@ -296,10 +303,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">Self.Life - enemiesDamage</param>
-                </action>
                 <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
             </actions>
         </event-block>
