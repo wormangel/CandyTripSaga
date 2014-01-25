@@ -241,6 +241,9 @@
             </object-type>
             <object-type name="StaticEnemy" sid="3794374515010828">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="damage" sid="9504354074518993" type="number" />
+                </instance-variables>
                 <container>
                     <type>StaticEnemy</type>
                     <type>StaticEnemyShooter</type>

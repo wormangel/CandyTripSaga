@@ -229,16 +229,16 @@
         </event-block>
         <event-block sid="8447638002056397">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="9181870075609327" type="Enemies">
+                <condition id="0" name="On collision with another object" sid="9181870075609327" type="EnemyProjectile">
                     <param id="0" name="Object">Kurt</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">Self.Life - enemiesDamage</param>
-                </action>
                 <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
+                <action id="-10" name="Set value" sid="4574153207337821" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">Self.Life  - StaticEnemy.damage</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="7385715972911868">
@@ -248,7 +248,14 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="1" name="Reverse" sid="5077365707260819" type="Kurt" />
+                <action id="-23" name="Move at angle" sid="5077365707260819" type="Kurt">
+                    <param id="0" name="Angle">lastDirection * 90</param>
+                    <param id="1" name="Distance">-120</param>
+                </action>
+                <action id="-10" name="Set value" sid="9846249989159993" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">Self.Life - StaticEnemy.damage</param>
+                </action>
             </actions>
         </event-block>
         <comment>Setting Kurt animations</comment>
@@ -321,10 +328,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">Self.Life - enemiesDamage</param>
-                </action>
                 <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
             </actions>
         </event-block>
@@ -611,5 +614,31 @@
                 <action id="-9" name="Destroy" sid="743978373603037" type="Projectile" />
             </actions>
         </event-block>
+<<<<<<< HEAD
+=======
+        <event-block any="1" sid="6915197167745009">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="9084514302302335" type="EnemyProjectile">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="3793583163914269" type="EnemyProjectile">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">1024 - BOUNDRIGHT</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="6181783850364103" type="EnemyProjectile">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="3940679421867306" type="EnemyProjectile">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">768 - BOUNDBOTTOM</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7515056016301004" type="EnemyProjectile" />
+            </actions>
+        </event-block>
+>>>>>>> 213151b2ab756f5852aadf2872673a6dc9ae1b23
     </events>
 </c2eventsheet>
