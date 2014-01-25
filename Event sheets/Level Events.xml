@@ -614,8 +614,6 @@
                 <action id="-9" name="Destroy" sid="743978373603037" type="Projectile" />
             </actions>
         </event-block>
-<<<<<<< HEAD
-=======
         <event-block any="1" sid="6915197167745009">
             <conditions>
                 <condition id="-1" name="Compare X" sid="9084514302302335" type="EnemyProjectile">
@@ -639,6 +637,5 @@
                 <action id="-9" name="Destroy" sid="7515056016301004" type="EnemyProjectile" />
             </actions>
         </event-block>
->>>>>>> 213151b2ab756f5852aadf2872673a6dc9ae1b23
     </events>
 </c2eventsheet>
