@@ -839,17 +839,55 @@
                 <action id="-9" name="Destroy" sid="7515056016301004" type="EnemyProjectile" />
             </actions>
         </event-block>
-        <event-block sid="2406093354871705">
+        <event-block sid="9376136972176731">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="5125709102196539" type="Projectile">
-                    <param id="0" name="Object">Enemies</param>
+                <condition id="-1" name="Compare X" sid="7947089413618353" type="Enemies">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="1106874096489918" type="Projectile" />
-                <action id="-12" name="Subtract from" sid="1424352200115244" type="Enemies">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">10</param>
+                <action id="-1" name="Set X" sid="9024161093117787" type="Enemies">
+                    <param id="0" name="X">BOUNDLEFT</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4233226596338422">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="2631265890016714" type="Enemies">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">1024 - Enemies.Width - BOUNDRIGHT</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="3576168405102161" type="Enemies">
+                    <param id="0" name="X">1024 - BOUNDRIGHT - Enemies.Width</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8768394797271468">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="4055718208812116" type="Enemies">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="9506969038073295" type="Enemies">
+                    <param id="0" name="Y">BOUNDTOP</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1668966271798958">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="4305057049449896" type="Enemies">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">768 - Enemies.Height - BOUNDBOTTOM</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="3080709436745473" type="Enemies">
+                    <param id="0" name="Y">768 - Enemies.Height - BOUNDBOTTOM</param>
                 </action>
             </actions>
         </event-block>
@@ -887,13 +925,23 @@
                 <condition id="-2" name="On start of layout" sid="4678198919452273" type="System" />
             </conditions>
             <actions>
-                <action id="5" name="Set web font" sid="4893830299857671" type="ScoreText">
-                    <param id="0" name="Family name">&quot;vtcgaragesaleregular&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                </action>
                 <action id="0" name="Set text" sid="8420387411010581" type="ScoreText">
                     <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="1818946944339115">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9221465586402115" type="Projectile">
+                    <param id="0" name="Object">Enemies</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="6515589434420438" type="Enemies">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5631225345874259" type="Projectile" />
             </actions>
         </event-block>
     </events>
