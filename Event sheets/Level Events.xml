@@ -7,6 +7,10 @@
         <variable constant="0" name="transitionState" sid="9058277340274296" static="0" type="text">FadeIn</variable>
         <variable constant="0" name="luminosity" sid="6099894249677563" static="0" type="number">0</variable>
         <variable constant="0" name="transitioning" sid="6937824924987025" static="0" type="number">0</variable>
+        <variable constant="1" name="BOUNDRIGHT" sid="5458458674312225" static="0" type="number">53</variable>
+        <variable constant="1" name="BOUNDBOTTOM" sid="3760721337283236" static="0" type="number">64</variable>
+        <variable constant="1" name="BOUNDTOP" sid="6054817498218233" static="0" type="number">220</variable>
+        <variable constant="1" name="BoundLeft" sid="7131441206905355" static="0" type="number">62</variable>
         <variable comment="Damage caused by all enemies" constant="0" name="enemiesDamage" sid="1208001635472111" static="0" type="number">10</variable>
         <comment>When Kurt gets a candy, the candy should disappear</comment>
         <event-block sid="3463074638746736">
@@ -321,12 +325,12 @@
             <conditions>
                 <condition id="-1" name="Compare X" sid="9699452458575978" type="Kurt">
                     <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">62</param>
+                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-1" name="Set X" sid="4407669519535328" type="Kurt">
-                    <param id="0" name="X">62</param>
+                    <param id="0" name="X">BOUNDLEFT</param>
                 </action>
                 <action behavior="8Direction" id="9" name="Set vector X" sid="1670119673412655" type="Kurt">
                     <param id="0" name="Vector X">0</param>
@@ -337,12 +341,12 @@
             <conditions>
                 <condition id="-1" name="Compare X" sid="3960172350141074" type="Kurt">
                     <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">1024-53-64</param>
+                    <param id="1" name="X co-ordinate">1024-BOUNDRIGHT-Kurt.Width</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-1" name="Set X" sid="377751587872577" type="Kurt">
-                    <param id="0" name="X">1024-53-64</param>
+                    <param id="0" name="X">1024-BOUNDRIGHT-Kurt.Width</param>
                 </action>
                 <action behavior="8Direction" id="9" name="Set vector X" sid="7905082232097841" type="Kurt">
                     <param id="0" name="Vector X">0</param>
@@ -353,12 +357,12 @@
             <conditions>
                 <condition id="-2" name="Compare Y" sid="8525259884964468" type="Kurt">
                     <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">250</param>
+                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="9822818091435101" type="Kurt">
-                    <param id="0" name="Y">250</param>
+                    <param id="0" name="Y">BOUNDTOP</param>
                 </action>
                 <action behavior="8Direction" id="10" name="Set vector Y" sid="6830618501325234" type="Kurt">
                     <param id="0" name="Vector Y">0</param>
@@ -369,12 +373,12 @@
             <conditions>
                 <condition id="-2" name="Compare Y" sid="689761392515438" type="Kurt">
                     <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">768 - 70 - 64</param>
+                    <param id="1" name="Y co-ordinate">768 - Kurt.Height - BOUNDBOTTOM</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="3115299335652547" type="Kurt">
-                    <param id="0" name="Y">768 - 70 - 64</param>
+                    <param id="0" name="Y">768 - Kurt.Height - BOUNDBOTTOM</param>
                 </action>
                 <action behavior="8Direction" id="10" name="Set vector Y" sid="5130683613654341" type="Kurt">
                     <param id="0" name="Vector Y">0</param>
