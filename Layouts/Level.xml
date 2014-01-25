@@ -264,13 +264,16 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Exit" uid="7">
+                <instance type="Exit" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <InitialWidth>0</InitialWidth>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -303,7 +306,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="ExternalBar" uid="3">
+                <instance type="ExternalBar" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -325,7 +328,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="InnerBar" uid="5">
+                <instance type="InnerBar" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -335,17 +338,6 @@
                     <instance-variables>
                         <InitialWidth>50</InitialWidth>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Anchor">
-                            <properties>
-                                <left-edge>Window left</left-edge>
-                                <top-edge>Window top</top-edge>
-                                <right-edge>Window right</right-edge>
-                                <bottom-edge>None</bottom-edge>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -366,5 +358,14 @@
         </layer>
     </layers>
     <nonworld-instances />
-    <effects />
+    <effects>
+        <effect-type name="Brightness">
+            <effect id="brightness" />
+            <effect-instance type="Brightness">
+                <parameters>
+                    <brightness>1</brightness>
+                </parameters>
+            </effect-instance>
+        </effect-type>
+    </effects>
 </c2layout>
