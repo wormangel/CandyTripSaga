@@ -23,6 +23,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-10" name="Add to" sid="9935331792871583" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">10</param>
+                </action>
                 <action id="-9" name="Destroy" sid="6227933273435557" type="Candy" />
             </actions>
             <sub-events>
@@ -340,8 +344,9 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="7094376141314203" type="System">
-                    <param id="0" name="Layout">GameOver</param>
+                <action id="-10" name="Set value" sid="7094376141314203" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">50</param>
                 </action>
             </actions>
         </event-block>
@@ -373,6 +378,7 @@
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">Self.Life - enemiesDamage</param>
                 </action>
+                <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
             </actions>
         </event-block>
         <event-block sid="7385715972911868">
@@ -798,16 +804,13 @@
         <event-block sid="9581257313881393">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="52364600295774" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
+                    <param id="0" name="Interval (seconds)">1</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="3083130247859242" type="System">
                     <param id="0" name="Variable">score</param>
                     <param id="1" name="Value">3</param>
-                </action>
-                <action id="0" name="Set text" sid="7014327482126705" type="ScoreText">
-                    <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
                 </action>
             </actions>
         </event-block>
@@ -824,12 +827,12 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="9941472473675578">
+        <event-block sid="180532304826534">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="4678198919452273" type="System" />
+                <condition id="-1" name="Every tick" sid="1808760693210798" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="8420387411010581" type="ScoreText">
+                <action id="0" name="Set text" sid="1855050249388987" type="ScoreText">
                     <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
                 </action>
             </actions>
