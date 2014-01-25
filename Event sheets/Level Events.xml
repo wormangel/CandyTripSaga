@@ -397,7 +397,6 @@
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">Self.Life - enemiesDamage</param>
                 </action>
-                <action id="-9" name="Destroy" sid="5271837925365111" type="EnemyProjectile" />
             </actions>
         </event-block>
         <event-block sid="7385715972911868">
@@ -854,6 +853,10 @@
                 <condition id="-2" name="On start of layout" sid="4678198919452273" type="System" />
             </conditions>
             <actions>
+                <action id="5" name="Set web font" sid="4893830299857671" type="ScoreText">
+                    <param id="0" name="Family name">&quot;vtcgaragesaleregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
                 <action id="0" name="Set text" sid="8420387411010581" type="ScoreText">
                     <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
                 </action>
