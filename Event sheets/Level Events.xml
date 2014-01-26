@@ -1688,5 +1688,18 @@
                 <action id="-9" name="Destroy" sid="5288676222796545" type="CanBeKilled" />
             </actions>
         </event-block>
+        <event-block sid="6906749762425556">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="876964843226139" type="Kurt">
+                    <param id="0" name="Object">Hazard</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="1057896115706205" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">Hazard.Damage</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
