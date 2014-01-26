@@ -68,7 +68,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="LevelBackground" sid="9556982530006625">
+            <object-type global="1" name="LevelBackground" sid="9556982530006625">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Marijuana" pingpong="0" repeatcount="1" repeatto="0" sid="5686077310543343" speed="5">

@@ -64,6 +64,20 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-10" name="Set value" sid="880797950559529" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+                <action id="-10" name="Set value" sid="7434325334353208" type="Kurt">
+                    <param id="0" name="Instance variable">CurrentCandy</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+                <action id="-1" name="Set X" sid="9423883123506105" type="Kurt">
+                    <param id="0" name="X">BOUNDLEFT + 20</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5879659983932651" type="Kurt">
+                    <param id="0" name="Y">768/2</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="751870774673225" type="System">
                     <param id="0" name="Layout">Level</param>
                 </action>
