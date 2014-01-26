@@ -2344,6 +2344,9 @@
                 <member>Rock</member>
                 <member>Zombie</member>
             </members>
+            <instance-variables>
+                <instance-variable name="Life" sid="307275275672165" type="number" />
+            </instance-variables>
         </family>
         <family name="InstantKill" plugin-id="Sprite" sid="8874167040245023">
             <members>
