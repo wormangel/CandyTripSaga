@@ -33,7 +33,7 @@
         <height>768</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
-    <first-layout>Level</first-layout>
+    <first-layout>Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
