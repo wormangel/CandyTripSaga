@@ -521,7 +521,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
                 <instance type="CandyHolder" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
