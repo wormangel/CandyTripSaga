@@ -102,24 +102,6 @@
                             <param id="0" name="Animation">&quot;Marijuana&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="9601337203214711" type="RandomMovingEnemy">
-                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="5969233571874198" type="StalkingEnemy">
-                            <param id="0" name="Object">RandomMovingEnemy</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="8610859954043801" type="RandomMovingEnemy">
-                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="7974479601988867" type="StalkingEnemy" />
-                        <action id="4" name="Set animation" sid="9157297559022158" type="StaticEnemy">
-                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="4807390042235866">
@@ -228,24 +210,6 @@
                             <param id="0" name="Animation">&quot;Cocaine&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="8431562633215095" type="StalkingEnemy">
-                            <param id="0" name="Animation">&quot;Cocaine&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="778954951051653" type="RandomMovingEnemy">
-                            <param id="0" name="Object">StalkingEnemy</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="6959558282511202" type="StalkingEnemy">
-                            <param id="0" name="Animation">&quot;Cocaine&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="3529900399395912" type="RandomMovingEnemy" />
-                        <action id="4" name="Set animation" sid="2449844460616094" type="StaticEnemy">
-                            <param id="0" name="Animation">&quot;Cocaine&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="2417338830847492">
@@ -310,7 +274,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block collapsed="1" sid="3289044759910964">
+                <event-block sid="3289044759910964">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="7862358121708154" type="Candy">
                             <param id="0" name="Instance variable">Type</param>
@@ -351,24 +315,6 @@
                             <param id="1" name="Value">25</param>
                         </action>
                         <action id="4" name="Set animation" sid="5990118441258367" type="LevelBackground">
-                            <param id="0" name="Animation">&quot;LSD&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="2886036235169434" type="RandomMovingEnemy">
-                            <param id="0" name="Animation">&quot;LSD&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="3421869646288618" type="StalkingEnemy">
-                            <param id="0" name="Object">RandomMovingEnemy</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="9051589217266286" type="RandomMovingEnemy">
-                            <param id="0" name="Animation">&quot;LSD&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="5362651863827497" type="StalkingEnemy" />
-                        <action id="4" name="Set animation" sid="8850252316830425" type="StaticEnemy">
                             <param id="0" name="Animation">&quot;LSD&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -482,24 +428,6 @@
                         </action>
                         <action id="4" name="Set animation" sid="2751942591775166" type="Kurt">
                             <param id="0" name="Animation">&quot;MovingRY&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="1542293969024068" type="StalkingEnemy">
-                            <param id="0" name="Animation">&quot;Alcohol&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="6683714753243896" type="RandomMovingEnemy">
-                            <param id="0" name="Object">StalkingEnemy</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="635740971621347" type="StalkingEnemy">
-                            <param id="0" name="Animation">&quot;Alcohol&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="816366012286385" type="RandomMovingEnemy" />
-                        <action id="4" name="Set animation" sid="1636161845095341" type="StaticEnemy">
-                            <param id="0" name="Animation">&quot;Alcohol&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -616,17 +544,10 @@
                 <action id="-10" name="Set value" sid="8632182195813745" type="Slider">
                     <param id="0" name="Instance variable">InitialX</param>
                     <param id="1" name="Value">Self.X</param>
-				</action>
+                </action>
                 <action id="-10" name="Add to" sid="5434564707360578" type="System">
                     <param id="0" name="Variable">roomNumber</param>
                     <param id="1" name="Value">1</param>
-                </action>
-                <action behavior="Turret" id="1" name="Add object to target" sid="1117280328107965" type="StaticEnemyShooter">
-                    <param id="0" name="Target">Kurt</param>
-                </action>
-                <action behavior="CustomMovement" id="2" name="Set speed" sid="1993944376495386" type="RandomMovingEnemy">
-                    <param id="0" name="Which">0</param>
-                    <param id="1" name="Speed">100</param>
                 </action>
             </actions>
             <sub-events>
@@ -846,43 +767,13 @@
             </actions>
         </event-block>
         <comment>Enemies events</comment>
-        <event-block sid="3941027102799597">
-            <conditions>
-                <condition behavior="Turret" id="1" name="On shoot" sid="8643175289940287" type="StaticEnemyShooter" />
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="160847482478893" type="StaticEnemy">
-                    <param id="0" name="Object">EnemyProjectile</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-                <action id="-22" name="Set angle toward position" sid="809554643185722" type="EnemyProjectile">
-                    <param id="0" name="X">Kurt.X + Kurt.Width/2</param>
-                    <param id="1" name="Y">Kurt.Y + Kurt.Height/2</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="8447638002056397">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="9181870075609327" type="Enemies">
-                    <param id="0" name="Object">Kurt</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">Self.Life - enemiesDamage</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="7385715972911868">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="1253680629334755" type="Kurt">
-                    <param id="0" name="Object">StaticEnemy</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="8Direction" id="1" name="Reverse" sid="5077365707260819" type="Kurt" />
             </actions>
         </event-block>
         <comment>Setting Kurt animations</comment>
@@ -1266,11 +1157,6 @@
                 <condition id="0" name="On collision with another object" sid="9410317469518844" type="Exit">
                     <param id="0" name="Object">Kurt</param>
                 </condition>
-                <condition id="-8" name="Compare two values" sid="3354161477864134" type="System">
-                    <param id="0" name="First value">Enemies.Count</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">0</param>
-                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="1659347250784935" type="System">
@@ -1418,43 +1304,6 @@
             <conditions />
             <actions />
         </event-block>
-        <event-block sid="3922978043869796">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="6339867938633793" type="System">
-                    <param id="0" name="Interval (seconds)">random(3)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="7312562161941922" type="RandomMovingEnemy">
-                    <param id="0" name="Angle">int(random(4)) * 90</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block any="1" sid="4208352205427508">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="2214542740884123" type="RandomMovingEnemy">
-                    <param id="0" name="Comparison">3</param>
-                    <param id="1" name="X co-ordinate">62</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="3681115039379412" type="RandomMovingEnemy">
-                    <param id="0" name="Comparison">5</param>
-                    <param id="1" name="X co-ordinate">1024-53-64</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="7835004093834042" type="RandomMovingEnemy">
-                    <param id="0" name="Comparison">3</param>
-                    <param id="1" name="Y co-ordinate">250</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="5868518014041935" type="RandomMovingEnemy">
-                    <param id="0" name="Comparison">5</param>
-                    <param id="1" name="Y co-ordinate">768 - 70 - 64</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="5815579814580758" type="RandomMovingEnemy">
-                    <param id="0" name="Angle">RandomMovingEnemy.CustomMovement.MovingAngle + 180</param>
-                </action>
-            </actions>
-        </event-block>
         <comment>Add bounds to projectiles too</comment>
         <event-block any="1" sid="8205947450298427">
             <conditions>
@@ -1512,70 +1361,6 @@
                 <action id="-9" name="Destroy" sid="7515056016301004" type="EnemyProjectile" />
             </actions>
         </event-block>
-        <event-block sid="9376136972176731">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="7947089413618353" type="Enemies">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-1" name="Set X" sid="9024161093117787" type="Enemies">
-                    <param id="0" name="X">BOUNDLEFT</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="4233226596338422">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="2631265890016714" type="Enemies">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">1024 - Enemies.Width - BOUNDRIGHT</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-1" name="Set X" sid="3576168405102161" type="Enemies">
-                    <param id="0" name="X">1024 - BOUNDRIGHT - Enemies.Width</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8768394797271468">
-            <conditions>
-                <condition id="-2" name="Compare Y" sid="4055718208812116" type="Enemies">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Set Y" sid="9506969038073295" type="Enemies">
-                    <param id="0" name="Y">BOUNDTOP</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1668966271798958">
-            <conditions>
-                <condition id="-2" name="Compare Y" sid="4305057049449896" type="Enemies">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">768 - Enemies.Height - BOUNDBOTTOM</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Set Y" sid="3080709436745473" type="Enemies">
-                    <param id="0" name="Y">768 - Enemies.Height - BOUNDBOTTOM</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8510005666598274">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="2738013689258834" type="Enemies">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="3827768315556204" type="Enemies" />
-            </actions>
-        </event-block>
         <comment>Score</comment>
         <event-block sid="9581257313881393">
             <conditions>
@@ -1608,16 +1393,8 @@
             </actions>
         </event-block>
         <event-block sid="1818946944339115">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="9221465586402115" type="Projectile">
-                    <param id="0" name="Object">Enemies</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
-                <action id="-12" name="Subtract from" sid="6515589434420438" type="Enemies">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">10</param>
-                </action>
                 <action id="4" name="Set animation" sid="3028673030382384" type="Projectile">
                     <param id="0" name="Animation">&quot;Exploding&quot;</param>
                     <param id="1" name="From">1</param>
@@ -1629,17 +1406,6 @@
                     <param id="0" name="Seconds">0.35</param>
                 </action>
                 <action id="-9" name="Destroy" sid="5631225345874259" type="Projectile" />
-            </actions>
-        </event-block>
-        <event-block sid="739376597424931">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="5041158420164322" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="CustomMovement" id="2" name="Set speed" sid="1540019514262027" type="StalkingEnemy">
-                    <param id="0" name="Which">0</param>
-                    <param id="1" name="Speed">50</param>
-                </action>
             </actions>
         </event-block>
         <event-block any="1" sid="18575144621071">
