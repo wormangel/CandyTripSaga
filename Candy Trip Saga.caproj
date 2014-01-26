@@ -86,8 +86,8 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Chars">
-            <object-type name="Kurt" sid="4621629528559873">
+        <object-folder expanded="1" name="Chars">
+            <object-type global="1" name="Kurt" sid="4621629528559873">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="Life" sid="194786203824394" type="number" />
@@ -396,7 +396,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="CandyHudIcon" sid="1749667761627339">
+            <object-type global="1" name="CandyHudIcon" sid="1749667761627339">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="None" pingpong="0" repeatcount="1" repeatto="0" sid="2122351367200481" speed="5">
