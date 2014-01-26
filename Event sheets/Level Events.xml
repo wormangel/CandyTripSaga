@@ -1460,5 +1460,17 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8588605112084777">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2498070971408939" type="CanBeKilled">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5288676222796545" type="CanBeKilled" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
