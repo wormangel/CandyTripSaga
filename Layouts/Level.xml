@@ -339,6 +339,7 @@
                         <ShotSpeedModifier>0.25</ShotSpeedModifier>
                         <CrazyControlsModifier>1</CrazyControlsModifier>
                         <HealthLossModifier>1</HealthLossModifier>
+                        <Dying>false</Dying>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
