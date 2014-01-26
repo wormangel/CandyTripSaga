@@ -2147,6 +2147,28 @@
                 <action behavior="CustomMovement" id="2" name="Set speed" sid="1961191611342436" type="EnemiesThatWander">
                     <param id="0" name="Which">0</param>
                     <param id="1" name="Speed">200</param>
+				</action>
+            </actions>
+        </event-block>
+        <event-block sid="1469034128772192">
+            <conditions>
+                <condition id="-18" name="On created" sid="2436164205486233" type="Globe" />
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="0" name="Acquire target" sid="9042523193917783" type="Globe">
+                    <param id="0" name="Target">Kurt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8279113064904042">
+            <conditions>
+                <condition behavior="Turret" id="1" name="On shoot" sid="3168484189565465" type="Globe" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="6025586205306772" type="Globe">
+                    <param id="0" name="Object">EnemyProjectile</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
                 </action>
             </actions>
         </event-block>

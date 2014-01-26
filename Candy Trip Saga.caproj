@@ -19,6 +19,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -1438,9 +1439,14 @@
             </object-type>
             <object-type name="Globe" sid="9272660867156006">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Turret" sid="9792158734114378">
+                        <behavior id="Turret" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6335913039554097" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.493333">
                             <collision-poly>
                                 <point x="0.230769" y="0.24" />
                                 <point x="0.5" y="0.16" />
@@ -2363,19 +2369,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616741012812246" speed="8">
-                    <frame duration="1" hotspotX="0.53125" hotspotY="0.4375">
-                        <collision-poly>
-                            <point x="0.101449" y="0.304348" />
-                            <point x="0.492754" y="0.173913" />
-                            <point x="0.913043" y="0.26087" />
-                            <point x="0.942029" y="0.478261" />
-                            <point x="0.913043" y="0.73913" />
-                            <point x="0.492754" y="0.869565" />
-                            <point x="0.0869565" y="0.73913" />
-                            <point x="0.0724638" y="0.478261" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="7" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616741012812246" speed="8">
                     <frame duration="1" hotspotX="0.507246" hotspotY="0.521739">
                         <collision-poly>
                             <point x="0.0869565" y="0.26087" />
