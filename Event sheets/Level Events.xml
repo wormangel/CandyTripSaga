@@ -64,6 +64,16 @@
                     <param id="0" name="Instance variable">Dying</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-26" name="Move to layer" sid="4019984295305562" type="Kurt">
+                    <param id="0" name="Layer">1</param>
+                </action>
+                <action id="-26" name="Move to layer" sid="4761196128526186" type="CandyHudIcon">
+                    <param id="0" name="Layer">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="3011667418017403" type="CandyHudIcon">
+                    <param id="0" name="Animation">Kurt.CurrentCandy</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
             <sub-events>
                 <comment>When Kurt gets a candy, the candy should disappear</comment>
