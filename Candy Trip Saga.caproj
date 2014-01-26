@@ -1701,6 +1701,21 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="InstructionText" sid="1841027215206572">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2574689011472172" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.509268" y="0.654948" />
+                                <point x="0.795122" y="0.726563" />
+                                <point x="0.499512" y="0.811198" />
+                                <point x="0.205854" y="0.72526" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder expanded="1" name="Credits">
             <object-type name="CreditsScreen" sid="553219589212926">
@@ -2942,13 +2957,14 @@
             </instance-variables>
         </family>
     </families>
-    <layout-folder expanded="0">
+    <layout-folder expanded="1">
         <layout>Level.xml</layout>
         <layout>Intro.xml</layout>
         <layout>GameOver.xml</layout>
         <layout>Menu.xml</layout>
         <layout>Placeholder.xml</layout>
         <layout>Credits.xml</layout>
+        <layout>Instructions.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Level Events.xml</event-sheet>
@@ -2956,6 +2972,7 @@
         <event-sheet>Menu Events.xml</event-sheet>
         <event-sheet>Intro Events.xml</event-sheet>
         <event-sheet>Credit Events.xml</event-sheet>
+        <event-sheet>Instructions Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="31" />
