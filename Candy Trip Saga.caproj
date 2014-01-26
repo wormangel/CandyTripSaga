@@ -2406,6 +2406,30 @@
                 <member>Zombie</member>
             </members>
         </family>
+        <family name="LsdEnemies" plugin-id="Sprite" sid="6212803581036418">
+            <members>
+                <member>Fairy</member>
+                <member>Globe</member>
+            </members>
+        </family>
+        <family name="MarijuanaEnemies" plugin-id="Sprite" sid="1775855653406316">
+            <members>
+                <member>Ghost</member>
+                <member>Hole</member>
+            </members>
+        </family>
+        <family name="CokeEnemies" plugin-id="Sprite" sid="7449471454265839">
+            <members>
+                <member>Lava</member>
+                <member>Monster</member>
+            </members>
+        </family>
+        <family name="AlcoholEnemies" plugin-id="Sprite" sid="6098416730585577">
+            <members>
+                <member>Rock</member>
+                <member>Zombie</member>
+            </members>
+        </family>
     </families>
     <layout-folder expanded="0">
         <layout>Level.xml</layout>
