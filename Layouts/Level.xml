@@ -543,7 +543,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="13">
+                <instance type="CandyText" uid="13">
                     <properties>
                         <text>Candy</text>
                         <initial-visibility>Visible</initial-visibility>
