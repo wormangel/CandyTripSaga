@@ -629,6 +629,25 @@
                     <param id="1" name="Speed">100</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="9351295125870116">
+                    <conditions>
+                        <condition id="-10" name="For" sid="5841235833863992" type="System">
+                            <param id="0" name="Name">&quot;&quot;</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">random(roomNumber / 2)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="5274934757220476" type="System">
+                            <param id="0" name="Object to create">Candy</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">BOUNDLEFT + random(1024-BOUNDRIGHT)</param>
+                            <param id="3" name="Y">BOUNDTOP + random(768-BOUNDBOTTOM)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <comment>Start each level by fading out</comment>
         <event-block sid="3958838691127565">
