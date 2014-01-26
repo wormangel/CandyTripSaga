@@ -1359,7 +1359,7 @@
                     <param id="1" name="Value">3</param>
                 </action>
                 <action id="0" name="Set text" sid="7014327482126705" type="ScoreText">
-                    <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
+                    <param id="0" name="Text">score</param>
                 </action>
             </actions>
         </event-block>
@@ -1369,7 +1369,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="8420387411010581" type="ScoreText">
-                    <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
+                    <param id="0" name="Text">score</param>
                 </action>
                 <action id="5" name="Set web font" sid="2717746272694225" type="ScoreText">
                     <param id="0" name="Family name">&quot;vtcgaragesaleregular&quot;</param>
