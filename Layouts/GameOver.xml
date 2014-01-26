@@ -36,10 +36,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-2</x>
-                        <y>-0.316650391</y>
+                        <y>-0.158325195</y>
                         <z>0</z>
-                        <width>1026.731201172</width>
-                        <height>767.316650391</height>
+                        <width>1027</width>
+                        <height>767</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -91,7 +91,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GameOverScore" uid="29">
+                <instance type="GameOverScore" uid="23">
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
