@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level Events</name>
     <events>
+        <comment>SugarBarSize</comment>
+        <variable constant="1" name="SUGARBARSIZE" sid="683639583847932" static="0" type="number">488</variable>
         <variable comment="Player score" constant="0" name="score" sid="8993865553163559" static="0" type="number">0</variable>
         <comment>These are used for fading</comment>
         <variable constant="0" name="transitionState" sid="9058277340274296" static="0" type="text">FadeIn</variable>
@@ -577,6 +579,10 @@
                     <param id="0" name="Instance variable">InitialWidth</param>
                     <param id="1" name="Value">Self.Width</param>
                 </action>
+                <action id="-10" name="Set value" sid="8632182195813745" type="Slider">
+                    <param id="0" name="Instance variable">InitialX</param>
+                    <param id="1" name="Value">Self.X</param>
+                </action>
                 <action behavior="Turret" id="1" name="Add object to target" sid="1117280328107965" type="StaticEnemyShooter">
                     <param id="0" name="Target">Kurt</param>
                 </action>
@@ -671,6 +677,9 @@
             <actions>
                 <action id="-5" name="Set width" sid="4729997778361857" type="InnerBar">
                     <param id="0" name="Width">(Self.InitialWidth + (Kurt.Life - Kurt.MaxLife) * (Self.InitialWidth/Kurt.MaxLife))</param>
+                </action>
+                <action id="-1" name="Set X" sid="8920090322716153" type="Slider">
+                    <param id="0" name="X">Self.InitialX + ((SliderEnd.X-Self.InitialX) * (100-(Kurt.MaxLife - Kurt.Life))/100)</param>
                 </action>
             </actions>
         </event-block>
@@ -1447,6 +1456,41 @@
                 <action behavior="CustomMovement" id="2" name="Set speed" sid="1540019514262027" type="StalkingEnemy">
                     <param id="0" name="Which">0</param>
                     <param id="1" name="Speed">50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="18575144621071">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="8705962583854009" type="System">
+                    <param id="0" name="First value">Kurt.Life</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">20</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="1224712719287738" type="System">
+                    <param id="0" name="First value">Kurt.Life</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">80</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6066250371016197" type="SugarLevel">
+                    <param id="0" name="Animation">&quot;Danger&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2986351654659074">
+            <conditions>
+                <condition id="-21" name="Is between values" sid="725090149838935" type="System">
+                    <param id="0" name="Value">Kurt.Life</param>
+                    <param id="1" name="Lower bound">20.1</param>
+                    <param id="2" name="Upper bound">79.9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2754971917541548" type="SugarLevel">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>

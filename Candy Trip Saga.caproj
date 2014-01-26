@@ -2118,6 +2118,60 @@
         <object-type name="GameOverScore" sid="2736499772144803">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Slider" sid="1803663277869332">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="InitialX" sid="97788263160064" type="number" />
+            </instance-variables>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2261221560070033" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197">
+                        <collision-poly>
+                            <point x="0.166667" y="0.0327869" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.0327869" />
+                            <point x="0.916667" y="0.491803" />
+                            <point x="0.833333" y="0.967213" />
+                            <point x="0.5" y="1" />
+                            <point x="0.166667" y="0.967213" />
+                            <point x="0" y="0.491803" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SugarLevel" sid="9850104608445764">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6227523107149039" speed="5">
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.509804">
+                        <collision-poly>
+                            <point x="0.0237154" y="0.117647" />
+                            <point x="0.498024" y="0.0392157" />
+                            <point x="0.968379" y="0.156863" />
+                            <point x="0.996047" y="0.490196" />
+                            <point x="0.980237" y="0.901961" />
+                            <point x="0.498024" y="0.960784" />
+                            <point x="0.0118577" y="0.941176" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Danger" pingpong="0" repeatcount="1" repeatto="0" sid="3625480173484218" speed="5">
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.509804">
+                        <collision-poly>
+                            <point x="0.173913" y="0.862745" />
+                            <point x="0.498024" y="0.0196078" />
+                            <point x="0.814229" y="0.490196" />
+                            <point x="0.498024" y="0.960784" />
+                            <point x="0.173913" y="0.137255" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SliderEnd" sid="4357147284892509">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="9556733787711666">
