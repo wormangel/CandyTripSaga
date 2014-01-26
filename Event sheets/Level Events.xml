@@ -82,6 +82,16 @@
                             <param id="0" name="Animation">&quot;Marijuana&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Spawn another object" sid="5969233571874198" type="StalkingEnemy">
+                            <param id="0" name="Object">RandomMovingEnemy</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="8610859954043801" type="RandomMovingEnemy">
+                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7974479601988867" type="StalkingEnemy" />
                     </actions>
                     <sub-events>
                         <event-block sid="4807390042235866">
@@ -190,6 +200,20 @@
                             <param id="0" name="Animation">&quot;Cocaine&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="8431562633215095" type="StalkingEnemy">
+                            <param id="0" name="Animation">&quot;Cocaine&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="778954951051653" type="RandomMovingEnemy">
+                            <param id="0" name="Object">StalkingEnemy</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="6959558282511202" type="StalkingEnemy">
+                            <param id="0" name="Animation">&quot;Cocaine&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="3529900399395912" type="RandomMovingEnemy" />
                     </actions>
                     <sub-events>
                         <event-block sid="2417338830847492">
@@ -254,7 +278,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="3289044759910964">
+                <event-block collapsed="1" sid="3289044759910964">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="7862358121708154" type="Candy">
                             <param id="0" name="Instance variable">Type</param>
@@ -306,6 +330,16 @@
                             <param id="0" name="Animation">&quot;LSD&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Spawn another object" sid="3421869646288618" type="StalkingEnemy">
+                            <param id="0" name="Object">RandomMovingEnemy</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="9051589217266286" type="RandomMovingEnemy">
+                            <param id="0" name="Animation">&quot;LSD&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="5362651863827497" type="StalkingEnemy" />
                     </actions>
                     <sub-events>
                         <event-block sid="6081260747637158">
@@ -418,6 +452,20 @@
                             <param id="0" name="Animation">&quot;MovingRY&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="1542293969024068" type="StalkingEnemy">
+                            <param id="0" name="Animation">&quot;Alcohol&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="6683714753243896" type="RandomMovingEnemy">
+                            <param id="0" name="Object">StalkingEnemy</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="635740971621347" type="StalkingEnemy">
+                            <param id="0" name="Animation">&quot;Alcohol&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="816366012286385" type="RandomMovingEnemy" />
                     </actions>
                     <sub-events>
                         <event-block sid="6898792552190126">
