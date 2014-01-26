@@ -2099,7 +2099,7 @@
                         <action id="0" name="Play" sid="4486799872881721" type="BgMusic">
                             <param id="0" name="Audio file">sfx_gameover</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">5</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-13" name="Set boolean" sid="3555777352605417" type="Kurt">
