@@ -20,6 +20,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
@@ -1218,7 +1219,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="Enemies">
+        <object-folder expanded="0" name="Enemies">
             <object-type name="Ghost" sid="9570974799698213">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
@@ -2581,12 +2582,22 @@
                 <member>Monster</member>
                 <member>Zombie</member>
             </members>
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="816428664907803">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
         </family>
         <family name="EnemiesThatWander" plugin-id="Sprite" sid="2001215982508194">
             <members>
                 <member>Fairy</member>
                 <member>Ghost</member>
             </members>
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="2739485170506089">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
         </family>
         <family name="EnemiesThatStalk" plugin-id="Sprite" sid="9074107247982501">
             <members>

@@ -919,7 +919,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="7292356579909998">
+        <event-block collapsed="1" sid="7292356579909998">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="1334261957462421" type="System">
                     <param id="0" name="Variable">transitioning</param>
@@ -1157,7 +1157,7 @@
             </actions>
         </event-block>
         <comment>Setting Kurt animations</comment>
-        <event-block sid="8255972754156182">
+        <event-block collapsed="1" sid="8255972754156182">
             <conditions>
                 <condition id="0" name="On key pressed" sid="4807222850280381" type="Keyboard">
                     <param id="0" name="Key">39 (Right arrow)</param>
@@ -1242,7 +1242,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="4852187517949229">
+        <event-block collapsed="1" sid="4852187517949229">
             <conditions>
                 <condition id="0" name="On key pressed" sid="914637640361674" type="Keyboard">
                     <param id="0" name="Key">37 (Left arrow)</param>
@@ -1327,7 +1327,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="9844623800946209">
+        <event-block collapsed="1" sid="9844623800946209">
             <conditions>
                 <condition id="0" name="On key pressed" sid="8771085422082938" type="Keyboard">
                     <param id="0" name="Key">40 (Down arrow)</param>
@@ -1412,7 +1412,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="1581629800284058">
+        <event-block collapsed="1" sid="1581629800284058">
             <conditions>
                 <condition id="0" name="On key pressed" sid="8715634043765749" type="Keyboard">
                     <param id="0" name="Key">38 (Up arrow)</param>
@@ -2039,6 +2039,54 @@
                 <action id="-12" name="Subtract from" sid="1057896115706205" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">Hazard.Damage</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3181850324547153">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8898855608238695" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="5509286325468914" type="EnemiesThatWander">
+                    <param id="0" name="Angle">int(random(4)) * 90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="1499987899610512">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="1509430120903758" type="EnemiesThatWander">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">BOUNDLEFT</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="6897352088206154" type="EnemiesThatWander">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">1024 - BOUNDRIGHT - EnemiesThatWander.Width</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="8520197166901946" type="EnemiesThatWander">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">BOUNDTOP</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="4033505207120756" type="EnemiesThatWander">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">768 -  EnemiesThatWander.Height - BOUNDBOTTOM</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="2341527115517405" type="EnemiesThatWander">
+                    <param id="0" name="Angle">EnemiesThatWander.CustomMovement.MovingAngle + 180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5696999372047014">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7399130055359847" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="1961191611342436" type="EnemiesThatWander">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">200</param>
                 </action>
             </actions>
         </event-block>
