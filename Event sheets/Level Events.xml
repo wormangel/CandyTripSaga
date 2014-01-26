@@ -1434,5 +1434,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="9499829573525332">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4924985837434858" type="Kurt">
+                    <param id="0" name="Object">InstantKill</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9304369719780712" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
