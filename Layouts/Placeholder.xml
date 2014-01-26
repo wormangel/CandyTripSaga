@@ -332,11 +332,11 @@
                         <x>121</x>
                         <y>62</y>
                         <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
+                        <width>69</width>
+                        <height>23</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.515625</hotspotY>
+                        <hotspotX>0.507246375</hotspotX>
+                        <hotspotY>0.521739125</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
