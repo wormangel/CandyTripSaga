@@ -593,6 +593,7 @@
             </actions>
             <sub-events>
                 <comment>Randomize the candies of the level</comment>
+                <variable constant="0" name="candyType" sid="4529329381260328" static="0" type="number">0</variable>
                 <variable constant="0" name="candyCount" sid="6881474638248695" static="0" type="number">0</variable>
                 <variable constant="1" name="MAX_CANDY" sid="6927700867495679" static="0" type="number">5</variable>
                 <variable constant="0" name="offy" sid="1614096542472607" static="0" type="number">0</variable>
@@ -796,7 +797,89 @@
                                     <param id="2" name="X">offx + random(w)</param>
                                     <param id="3" name="Y">offy + random(h)</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="818727707059563" type="System">
+                                    <param id="0" name="Variable">candyType</param>
+                                    <param id="1" name="Value">floor(random(4))</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="5175167398558204">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="1406907147086197" type="System">
+                                            <param id="0" name="First value">candyType</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="1342314930999717" type="Candy">
+                                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="3095899005518525" type="Candy">
+                                            <param id="0" name="Instance variable">Type</param>
+                                            <param id="1" name="Value">&quot;Marijuana&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="4883253833476173">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="3967954704961404" type="System">
+                                            <param id="0" name="First value">candyType</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="2690958318876916" type="Candy">
+                                            <param id="0" name="Animation">&quot;LSD&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="9924571085894243" type="Candy">
+                                            <param id="0" name="Instance variable">Type</param>
+                                            <param id="1" name="Value">&quot;LSD&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="6384932755984887">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="6437272192000452" type="System">
+                                            <param id="0" name="First value">candyType</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="1604591341625317" type="Candy">
+                                            <param id="0" name="Animation">&quot;Cocaine&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="6812121837257733" type="Candy">
+                                            <param id="0" name="Instance variable">Type</param>
+                                            <param id="1" name="Value">&quot;Cocaine&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="4191960429806496">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="3147280400884754" type="System">
+                                            <param id="0" name="First value">candyType</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="4695117307435281" type="Candy">
+                                            <param id="0" name="Animation">&quot;Alcohol&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="7036278839414463" type="Candy">
+                                            <param id="0" name="Instance variable">Type</param>
+                                            <param id="1" name="Value">&quot;Alcohol&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -1382,8 +1465,8 @@
                 </condition>
                 <condition id="-8" name="Compare two values" sid="9786698419409202" type="System">
                     <param id="0" name="First value">MustBeKilled.Count</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Second value">5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
                 </condition>
             </conditions>
             <actions>
