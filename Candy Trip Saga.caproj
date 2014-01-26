@@ -1324,7 +1324,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="8489009276799161" speed="5">
-                        <frame duration="1" hotspotX="0.504132" hotspotY="0.504505">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
                             <collision-poly>
                                 <point x="0.950413" y="0.495495" />
                                 <point x="0.809917" y="0.792793" />
@@ -2304,7 +2304,7 @@
             </instance-variables>
         </family>
     </families>
-    <layout-folder expanded="0">
+    <layout-folder expanded="1">
         <layout>Level.xml</layout>
         <layout>GameOver.xml</layout>
         <layout>Menu.xml</layout>

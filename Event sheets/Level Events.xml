@@ -17,7 +17,32 @@
         <variable constant="1" name="BoundLeft" sid="7131441206905355" static="0" type="number">62</variable>
         <variable comment="Initial Max Speed" constant="1" name="BaseMaxSpeed" sid="9967375517095143" static="0" type="number">300</variable>
         <variable comment="Damage caused by all enemies" constant="0" name="enemiesDamage" sid="1208001635472111" static="0" type="number">10</variable>
-        <comment>When Kurt gets a candy, the candy should disappear</comment>
+        <comment>Layout Init</comment>
+        <event-block sid="1953092471293326">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2592159804770671" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6203964237641216" type="Kurt">
+                    <param id="0" name="Animation">&quot;MovingR&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="8674818833547972" type="Kurt">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="8729379216001739" type="CandyHudIcon">
+                    <param id="0" name="Animation">&quot;None&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="3837960439629143" type="Kurt">
+                    <param id="0" name="Instance variable">Dying</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>When Kurt gets a candy, the candy should disappear</comment>
+            </sub-events>
+        </event-block>
         <event-block sid="3463074638746736">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="9636036512899571" type="Candy">
@@ -718,6 +743,10 @@
                             <param id="0" name="Animation">&quot;Dying&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="2485505287041259" type="CandyHudIcon">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="-13" name="Set time scale" sid="1716241417859856" type="System">
                             <param id="0" name="Time scale">0.25</param>
                         </action>
@@ -736,22 +765,11 @@
                         <action behavior="8Direction" id="2" name="Set ignoring input" sid="7325562173577145" type="Kurt">
                             <param id="0" name="Input">0</param>
                         </action>
-                        <action id="4" name="Set animation" sid="8745294561519687" type="Kurt">
-                            <param id="0" name="Animation">&quot;MovingRight&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="3398392360817738" type="Kurt">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
                         <action id="-13" name="Set time scale" sid="4791241057168961" type="System">
                             <param id="0" name="Time scale">1</param>
                         </action>
                         <action id="11" name="Set collisions enabled" sid="3081872763165082" type="Kurt">
                             <param id="0" name="Collisions">1</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="8645790119033335" type="Kurt">
-                            <param id="0" name="Instance variable">Dying</param>
-                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
