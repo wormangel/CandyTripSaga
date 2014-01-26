@@ -268,6 +268,475 @@
                             </collision-poly>
                         </frame>
                     </animation>
+                    <animation framecount="4" loop="1" name="MovingRG" pingpong="0" repeatcount="1" repeatto="0" sid="1505778394008668" speed="8">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.59375" />
+                            <collision-poly>
+                                <point x="0.609375" y="0.5" />
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.25" y="0.75" />
+                                <point x="0.25" y="0.5" />
+                                <point x="0.1875" y="0.1875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.4375" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.609375" y="0.5" />
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.25" y="0.75" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.4375" y="0.59375" />
+                            <collision-poly>
+                                <point x="0.609375" y="0.5" />
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.984375" />
+                                <point x="0.296875" y="0.703125" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.4375" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.234375" y="0.765625" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.859375" y="0.140625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="1" name="MovingLG" pingpong="0" repeatcount="1" repeatto="0" sid="5676585245368758" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.59375" />
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="0.75" y="0.5" />
+                                <point x="0.75" y="0.75" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.421875" y="0.578125" />
+                                <point x="0.390625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.453125" y="0.546875" />
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.75" y="0.75" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.421875" y="0.578125" />
+                                <point x="0.390625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.453125" y="0.5625" />
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.703125" y="0.703125" />
+                                <point x="0.5" y="0.984375" />
+                                <point x="0.421875" y="0.578125" />
+                                <point x="0.390625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.4375" y="0.53125" />
+                            <collision-poly>
+                                <point x="0.140625" y="0.140625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.765625" y="0.765625" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="MovingUG" pingpong="0" repeatcount="1" repeatto="0" sid="3847827312578335" speed="4">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.609375" y="0.34375" />
+                            <collision-poly>
+                                <point x="0.203125" y="0.203125" />
+                                <point x="0.5" y="0.015625" />
+                                <point x="0.796875" y="0.203125" />
+                                <point x="0.59375" y="0.5" />
+                                <point x="0.546875" y="0.546875" />
+                                <point x="0.5" y="0.90625" />
+                                <point x="0.296875" y="0.703125" />
+                                <point x="0.28125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.578125" y="0.234375" />
+                            <collision-poly>
+                                <point x="0.203125" y="0.203125" />
+                                <point x="0.5" y="0.015625" />
+                                <point x="0.78125" y="0.21875" />
+                                <point x="0.59375" y="0.5" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.28125" y="0.71875" />
+                                <point x="0.265625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="MovingDG" pingpong="0" repeatcount="1" repeatto="0" sid="7218183872779311" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.71875" y="0.71875" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.40625" y="0.59375" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.125" y="0.125" />
+                                <point x="0.5" y="0" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="0.75" y="0.5" />
+                                <point x="0.71875" y="0.71875" />
+                                <point x="0.5" y="0.921875" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="1" name="MovingRW" pingpong="0" repeatcount="1" repeatto="0" sid="1906240847953318" speed="8">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.53125" y="0.59375" />
+                            <collision-poly>
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.234375" y="0.765625" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.1875" y="0.1875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.5625" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.25" y="0.75" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.5625" y="0.59375" />
+                            <collision-poly>
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.984375" />
+                                <point x="0.296875" y="0.703125" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.5625" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.234375" y="0.765625" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.859375" y="0.140625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="1" name="MovingLW" pingpong="0" repeatcount="1" repeatto="0" sid="8062945685998449" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.59375" />
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.765625" y="0.765625" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.453125" y="0.546875" />
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.75" y="0.75" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.453125" y="0.5625" />
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.703125" y="0.703125" />
+                                <point x="0.5" y="0.984375" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.4375" y="0.53125" />
+                            <collision-poly>
+                                <point x="0.140625" y="0.140625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.765625" y="0.765625" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="MovingUW" pingpong="0" repeatcount="1" repeatto="0" sid="1469047567647559" speed="4">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.609375" y="0.34375" />
+                            <collision-poly>
+                                <point x="0.328125" y="0.328125" />
+                                <point x="0.5" y="0.046875" />
+                                <point x="0.9375" y="0.0625" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.734375" y="0.734375" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.453125" y="0.546875" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.578125" y="0.234375" />
+                            <collision-poly>
+                                <point x="0.328125" y="0.328125" />
+                                <point x="0.5" y="0.046875" />
+                                <point x="0.9375" y="0.0625" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.71875" y="0.71875" />
+                                <point x="0.5" y="0.921875" />
+                                <point x="0.453125" y="0.546875" />
+                                <point x="0.359375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="MovingDW" pingpong="0" repeatcount="1" repeatto="0" sid="3511984445611088" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.140625" y="0.140625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.71875" y="0.71875" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.40625" y="0.59375" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.125" y="0.125" />
+                                <point x="0.5" y="0" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="0.75" y="0.5" />
+                                <point x="0.71875" y="0.71875" />
+                                <point x="0.5" y="0.921875" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="1" name="MovingRP" pingpong="0" repeatcount="1" repeatto="0" sid="7434269409439889" speed="8">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.59375" />
+                            <collision-poly>
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.234375" y="0.765625" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.1875" y="0.1875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.4375" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.25" y="0.75" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.4375" y="0.59375" />
+                            <collision-poly>
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.984375" />
+                                <point x="0.296875" y="0.703125" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.859375" y="0.140625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.4375" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.625" y="0.5" />
+                                <point x="0.59375" y="0.59375" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.234375" y="0.765625" />
+                                <point x="0.234375" y="0.5" />
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.859375" y="0.140625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="1" name="MovingLP" pingpong="0" repeatcount="1" repeatto="0" sid="3279411859177795" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.59375" />
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.765625" y="0.765625" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.453125" y="0.546875" />
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.75" y="0.75" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.453125" y="0.5625" />
+                            <collision-poly>
+                                <point x="0.140625" y="0.140625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.703125" y="0.703125" />
+                                <point x="0.5" y="0.984375" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.4375" y="0.53125" />
+                            <collision-poly>
+                                <point x="0.140625" y="0.140625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.765625" y="0.765625" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.40625" y="0.59375" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="MovingUP" pingpong="0" repeatcount="1" repeatto="0" sid="8574303542554836" speed="4">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.609375" y="0.34375" />
+                            <collision-poly>
+                                <point x="0.328125" y="0.328125" />
+                                <point x="0.5" y="0.046875" />
+                                <point x="0.9375" y="0.0625" />
+                                <point x="0.734375" y="0.5" />
+                                <point x="0.734375" y="0.734375" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.453125" y="0.546875" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.578125" y="0.234375" />
+                            <collision-poly>
+                                <point x="0.328125" y="0.328125" />
+                                <point x="0.5" y="0.046875" />
+                                <point x="0.9375" y="0.0625" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.71875" y="0.71875" />
+                                <point x="0.5" y="0.90625" />
+                                <point x="0.453125" y="0.546875" />
+                                <point x="0.40625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="MovingDP" pingpong="0" repeatcount="1" repeatto="0" sid="6516743693799178" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.140625" y="0.140625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.71875" y="0.71875" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.40625" y="0.59375" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="mouth" x="0.46875" y="0.578125" />
+                            <collision-poly>
+                                <point x="0.125" y="0.125" />
+                                <point x="0.5" y="0" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.71875" y="0.71875" />
+                                <point x="0.5" y="0.921875" />
+                                <point x="0.421875" y="0.578125" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="StaticEnemy" sid="3794374515010828">

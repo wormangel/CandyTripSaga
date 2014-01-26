@@ -468,19 +468,38 @@
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="9844623800946209">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="8771085422082938" type="Keyboard">
-                    <param id="0" name="Key">40 (Down arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="5790569365525572" type="Kurt">
-                    <param id="0" name="Animation">&quot;MovingD&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <sub-events>
+                <event-block sid="4801248821152598">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3522091509280441" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Marijuana&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7235724986993003" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRG&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7355343930806661">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9014979492236715" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Cocaine&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="345012086387735" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRG&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="4852187517949229">
             <conditions>
@@ -494,6 +513,53 @@
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="4403209996362092">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7837972061963307" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Marijuana&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6006990281142415" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingLG&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9844623800946209">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8771085422082938" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5790569365525572" type="Kurt">
+                    <param id="0" name="Animation">&quot;MovingD&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4814406250098299">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3929980765863475" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Marijuana&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5999654144270883" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingDG&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="1581629800284058">
             <conditions>
@@ -507,6 +573,23 @@
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="129517594219797">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3030526279798037" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Marijuana&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4209422551658339" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingUG&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="4439485327861176">
             <conditions>
