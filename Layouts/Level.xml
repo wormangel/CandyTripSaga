@@ -38,10 +38,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>190.497802734</y>
+                        <y>-1.498413086</y>
                         <z>0</z>
                         <width>1024</width>
-                        <height>576.502197266</height>
+                        <height>770</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -104,8 +104,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1.13067627</x>
-                        <y>-2.118484497</y>
+                        <x>-0.13067627</x>
+                        <y>-3.118484497</y>
                         <z>0</z>
                         <width>1028</width>
                         <height>194</height>
@@ -442,6 +442,45 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Transparency" sid="3420411152136985">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="TransparencySprite" uid="5">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>513</x>
+                        <y>383</y>
+                        <z>0</z>
+                        <width>1023</width>
+                        <height>767</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500488758</hotspotX>
+                        <hotspotY>0.500651896</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
