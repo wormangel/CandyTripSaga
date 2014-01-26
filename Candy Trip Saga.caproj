@@ -2587,6 +2587,14 @@
                 <member>Monster</member>
                 <member>Zombie</member>
             </members>
+            <behaviors>
+                <behavior-type name="BoundToLayout2" sid="9574918168727927">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="3371038716590955">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
         </family>
         <family name="LsdEnemies" plugin-id="Sprite" sid="6212803581036418">
             <members>
