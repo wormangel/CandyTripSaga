@@ -10,6 +10,7 @@
     <unique-id>29u83kuz5ho3d</unique-id>
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -2516,6 +2517,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BgMusic" sid="9420230523773639">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families>
         <family name="MustBeKilled" plugin-id="Sprite" sid="2458958768239247">
@@ -2635,6 +2639,21 @@
     <global-instances>
         <global-instance type="Keyboard" uid="31" />
         <global-instance type="Mouse" uid="32" />
+        <global-instance type="BgMusic" uid="11">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1">
