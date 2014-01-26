@@ -97,5 +97,22 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="4055573684421389">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8499957859049283" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="1029961004406958" type="GameOverScore">
+                    <param id="0" name="Family name">&quot;vtcgaragesaleregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="3482926988090916" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Set text" sid="4693966111846861" type="GameOverScore">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp;score</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -1375,6 +1375,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="GameOverScore" sid="2736499772144803">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="9556733787711666">
