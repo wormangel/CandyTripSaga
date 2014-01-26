@@ -68,10 +68,6 @@
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">50</param>
                 </action>
-                <action id="-10" name="Set value" sid="7434325334353208" type="Kurt">
-                    <param id="0" name="Instance variable">CurrentCandy</param>
-                    <param id="1" name="Value">&quot;&quot;</param>
-                </action>
                 <action id="-1" name="Set X" sid="9423883123506105" type="Kurt">
                     <param id="0" name="X">285</param>
                 </action>

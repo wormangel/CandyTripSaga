@@ -91,6 +91,10 @@
                             <param id="0" name="Animation">&quot;MovingRG&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="7119429081908971" type="TransparencySprite">
+                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="6400543396753067">
@@ -104,6 +108,10 @@
                     <actions>
                         <action id="4" name="Set animation" sid="9059878563765815" type="Kurt">
                             <param id="0" name="Animation">&quot;MovingRW&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="7660126788108941" type="TransparencySprite">
+                            <param id="0" name="Animation">&quot;None&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -121,6 +129,10 @@
                             <param id="0" name="Animation">&quot;MovingRP&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="8236885609515231" type="TransparencySprite">
+                            <param id="0" name="Animation">&quot;LSD&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8137552896236793">
@@ -134,6 +146,10 @@
                     <actions>
                         <action id="4" name="Set animation" sid="8857673488783988" type="Kurt">
                             <param id="0" name="Animation">&quot;MovingRY&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="8774923111170004" type="TransparencySprite">
+                            <param id="0" name="Animation">&quot;None&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
