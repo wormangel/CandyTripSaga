@@ -16,7 +16,7 @@
                     <param id="0" name="Seconds">0.1</param>
                 </action>
                 <action id="0" name="Set text" sid="4693966111846861" type="GameOverScore">
-                    <param id="0" name="Text">&quot;Score: &quot; &amp; score</param>
+                    <param id="0" name="Text">score</param>
                 </action>
                 <action id="33" name="Stop all" sid="1505680699481497" type="BgMusic" />
             </actions>
