@@ -579,6 +579,10 @@
                 <comment>Randomize the candies of the level</comment>
                 <variable constant="0" name="candyCount" sid="6881474638248695" static="0" type="number">0</variable>
                 <variable constant="1" name="MAX_CANDY" sid="6927700867495679" static="0" type="number">5</variable>
+                <variable constant="0" name="offy" sid="1614096542472607" static="0" type="number">0</variable>
+                <variable constant="0" name="w" sid="2965118151519135" static="0" type="number">0</variable>
+                <variable constant="0" name="h" sid="1483503045266177" static="0" type="number">0</variable>
+                <variable constant="0" name="offx" sid="9944178593367658" static="0" type="number">0</variable>
                 <variable constant="0" name="candyProbability" sid="8914436086671182" static="0" type="number">1</variable>
                 <variable constant="0" name="r" sid="45247930952694" static="0" type="number">0</variable>
                 <event-block sid="9351295125870116">
@@ -630,14 +634,155 @@
                             <param id="2" name="End index">candyCount</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="5274934757220476" type="System">
-                            <param id="0" name="Object to create">Candy</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">BOUNDLEFT + random(1024-BOUNDRIGHT)</param>
-                            <param id="3" name="Y">BOUNDTOP + random(768-BOUNDBOTTOM)</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6727488516940799">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="5283034310166057" type="System">
+                                    <param id="0" name="First value">loopindex</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="3882114173887881" type="System">
+                                    <param id="0" name="Variable">offx</param>
+                                    <param id="1" name="Value">ZONE1_OFFX</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="7385993104668151" type="System">
+                                    <param id="0" name="Variable">offy</param>
+                                    <param id="1" name="Value">ZONE1_OFFY</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="3293508778715113" type="System">
+                                    <param id="0" name="Variable">w</param>
+                                    <param id="1" name="Value">ZONE1_W</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="7725534913908406" type="System">
+                                    <param id="0" name="Variable">h</param>
+                                    <param id="1" name="Value">ZONE1_H</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="755428764114009">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="139106317958715" type="System">
+                                    <param id="0" name="First value">loopindex</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="418823037935411" type="System">
+                                    <param id="0" name="Variable">offx</param>
+                                    <param id="1" name="Value">ZONE4_OFFX</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="217447713353628" type="System">
+                                    <param id="0" name="Variable">offy</param>
+                                    <param id="1" name="Value">ZONE4_OFFY</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="7774197268149087" type="System">
+                                    <param id="0" name="Variable">w</param>
+                                    <param id="1" name="Value">ZONE4_W+ZONE5_W</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9629114892537565" type="System">
+                                    <param id="0" name="Variable">h</param>
+                                    <param id="1" name="Value">ZONE4_H</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="895292213757889">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="4203082564896165" type="System">
+                                    <param id="0" name="First value">loopindex</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="5426859022096776" type="System">
+                                    <param id="0" name="Variable">offx</param>
+                                    <param id="1" name="Value">ZONE2_OFFX</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9399377888783737" type="System">
+                                    <param id="0" name="Variable">offy</param>
+                                    <param id="1" name="Value">ZONE2_OFFY</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5113315043860316" type="System">
+                                    <param id="0" name="Variable">w</param>
+                                    <param id="1" name="Value">ZONE2_W</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="6541499936566395" type="System">
+                                    <param id="0" name="Variable">h</param>
+                                    <param id="1" name="Value">ZONE2_H</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6432631020342865">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="8615718963615075" type="System">
+                                    <param id="0" name="First value">loopindex</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="6755904903163609" type="System">
+                                    <param id="0" name="Variable">offx</param>
+                                    <param id="1" name="Value">ZONE3_OFFX</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5620499496490975" type="System">
+                                    <param id="0" name="Variable">offy</param>
+                                    <param id="1" name="Value">ZONE3_OFFY</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="3988461716068248" type="System">
+                                    <param id="0" name="Variable">w</param>
+                                    <param id="1" name="Value">ZONE3_W</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5710064035016956" type="System">
+                                    <param id="0" name="Variable">h</param>
+                                    <param id="1" name="Value">ZONE3_H</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8170463344675233">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="3722709367295615" type="System">
+                                    <param id="0" name="First value">loopindex</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="8251367052810447" type="System">
+                                    <param id="0" name="Variable">offx</param>
+                                    <param id="1" name="Value">ZONE6_OFFX</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="851988758467304" type="System">
+                                    <param id="0" name="Variable">offy</param>
+                                    <param id="1" name="Value">ZONE6_OFFY</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1276304611007546" type="System">
+                                    <param id="0" name="Variable">w</param>
+                                    <param id="1" name="Value">ZONE6_W</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9068899052988307" type="System">
+                                    <param id="0" name="Variable">h</param>
+                                    <param id="1" name="Value">ZONE6_H</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2596972398173982">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Create object" sid="1454754281927343" type="System">
+                                    <param id="0" name="Object to create">Candy</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">offx + random(w)</param>
+                                    <param id="3" name="Y">offy + random(h)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
