@@ -767,15 +767,6 @@
             </actions>
         </event-block>
         <comment>Enemies events</comment>
-        <event-block sid="8447638002056397">
-            <conditions />
-            <actions>
-                <action id="-10" name="Set value" sid="892241358525268" type="Kurt">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">Self.Life - enemiesDamage</param>
-                </action>
-            </actions>
-        </event-block>
         <comment>Setting Kurt animations</comment>
         <event-block sid="8255972754156182">
             <conditions>

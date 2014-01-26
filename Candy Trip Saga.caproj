@@ -1218,7 +1218,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Enemies">
+        <object-folder expanded="1" name="Enemies">
             <object-type name="Ghost" sid="9570974799698213">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
