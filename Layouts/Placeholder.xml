@@ -307,7 +307,7 @@
                                 <rotate>Yes</rotate>
                                 <rotate-speed>360</rotate-speed>
                                 <target-mode>First in range</target-mode>
-                                <predictive-aim>Yes</predictive-aim>
+                                <predictive-aim>No</predictive-aim>
                                 <projectile-speed>500</projectile-speed>
                                 <initial-state>Enabled</initial-state>
                             </properties>

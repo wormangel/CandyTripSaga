@@ -3112,6 +3112,10 @@
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-22" name="Set angle toward position" sid="4122629446077099" type="EnemyProjectile">
+                    <param id="0" name="X">Kurt.X + Kurt.Width/2</param>
+                    <param id="1" name="Y">Kurt.Y + Kurt.Height/2</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2339543217918635">
