@@ -5,6 +5,7 @@
     <events>
         <comment>SugarBarSize</comment>
         <variable constant="1" name="SUGARBARSIZE" sid="683639583847932" static="0" type="number">488</variable>
+        <variable constant="0" name="roomNumber" sid="3257598143354206" static="0" type="number">0</variable>
         <variable comment="Player score" constant="0" name="score" sid="8993865553163559" static="0" type="number">0</variable>
         <comment>These are used for fading</comment>
         <variable constant="0" name="transitionState" sid="9058277340274296" static="0" type="text">FadeIn</variable>
@@ -615,6 +616,10 @@
                 <action id="-10" name="Set value" sid="8632182195813745" type="Slider">
                     <param id="0" name="Instance variable">InitialX</param>
                     <param id="1" name="Value">Self.X</param>
+				</action>
+                <action id="-10" name="Add to" sid="5434564707360578" type="System">
+                    <param id="0" name="Variable">roomNumber</param>
+                    <param id="1" name="Value">1</param>
                 </action>
                 <action behavior="Turret" id="1" name="Add object to target" sid="1117280328107965" type="StaticEnemyShooter">
                     <param id="0" name="Target">Kurt</param>
