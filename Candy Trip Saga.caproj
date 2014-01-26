@@ -2845,6 +2845,10 @@
         <object-type name="BgMusic" sid="9420230523773639">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="TiledBackground" sid="5473880831580959">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="MustBeKilled" plugin-id="Sprite" sid="2458958768239247">
