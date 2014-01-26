@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Intro Events</name>
+    <events>
+        <event-block sid="5540416970419451">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="413769798061741" type="System" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="7709867668498261" type="Intro">
+                    <param id="0" name="Instance variable">NextFrame</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="2" name="Stop" sid="7881013257510777" type="Intro" />
+                <action id="-3" name="Set position" sid="3307526721514044" type="Intro">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">-10</param>
+                </action>
+                <action id="5" name="Set frame" sid="4738192518281175" type="Intro">
+                    <param id="0" name="Frame number">Self.currentFrame</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9596678373009479">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="6739036523985463" type="Intro">
+                    <param id="0" name="Instance variable">NextFrame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="152907094668026" type="Intro">
+                    <param id="0" name="Instance variable">NextFrame</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-11" name="Add to" sid="1656897510259667" type="Intro">
+                    <param id="0" name="Instance variable">currentFrame</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="6646765041931359" type="Intro">
+                    <param id="0" name="Frame number">Self.currentFrame</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6924774604050386">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9108741128809797" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3612235862297576">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3249590792986656" type="Intro">
+                            <param id="0" name="Instance variable">currentFrame</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="3466651470428316" type="Intro">
+                            <param id="0" name="Instance variable">NextFrame</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="40641235375279">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1332745775116836" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="6548383416827441" type="System">
+                            <param id="0" name="Layout">Level</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
