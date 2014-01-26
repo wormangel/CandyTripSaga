@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level Events</name>
     <events>
+        <variable constant="0" name="enemyLifeToRemember" sid="4547962220968358" static="0" type="number">0</variable>
         <variable constant="0" name="angleToPlayer" sid="5557219377906546" static="0" type="number">-1</variable>
         <comment>SugarBarSize</comment>
         <variable constant="1" name="SUGARBARSIZE" sid="683639583847932" static="0" type="number">488</variable>
@@ -268,6 +269,108 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="8148356300864769">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="977277824024697" type="System">
+                                    <param id="0" name="Object">Fairy</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="1406909714094787" type="Fairy">
+                                    <param id="0" name="Object">Ghost</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="9321264943274035" type="Ghost">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Fairy.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="549632245665033" type="Fairy" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="5269629716266489">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="7762729599166571" type="System">
+                                    <param id="0" name="Object">Zombie</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="3543650772299617" type="Zombie">
+                                    <param id="0" name="Object">Ghost</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5325850357920324" type="Ghost">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Zombie.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="469286283274007" type="Zombie" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="9609923070294622">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="931357885754786" type="System">
+                                    <param id="0" name="Object">Monster</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="9534977882422465" type="Monster">
+                                    <param id="0" name="Object">Ghost</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5456369310975213" type="Ghost">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Monster.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="7659625290863519" type="Monster" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="103758117483033">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="8270798891424829" type="System">
+                                    <param id="0" name="Object">Lava</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="9603592215517752" type="Lava">
+                                    <param id="0" name="Object">Hole</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="2125956891477711" type="Lava" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="7563979832454652">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="4321986809242782" type="System">
+                                    <param id="0" name="Object">Rock</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="6784044019315952" type="Rock">
+                                    <param id="0" name="Object">Hole</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="641090269205375" type="Rock" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="5907449986040313">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="1081734095096361" type="System">
+                                    <param id="0" name="Object">Globe</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="420238346252783" type="Globe">
+                                    <param id="0" name="Object">Hole</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="3040289861574816" type="Globe" />
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="4472609107412347">
@@ -380,6 +483,108 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="1664653263074448">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="9155619347666372" type="System">
+                                    <param id="0" name="Object">Fairy</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="3526635235316548" type="Fairy">
+                                    <param id="0" name="Object">Monster</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="6882158099133713" type="Monster">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Fairy.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="5608505222159471" type="Fairy" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="6626147727733601">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="5928341505864343" type="System">
+                                    <param id="0" name="Object">Zombie</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="826984409691834" type="Zombie">
+                                    <param id="0" name="Object">Monster</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="2102457979894385" type="Monster">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Zombie.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="8847077284847589" type="Zombie" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="4124482030620038">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="5794812390585593" type="System">
+                                    <param id="0" name="Object">Ghost</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="1107179534284811" type="Ghost">
+                                    <param id="0" name="Object">Monster</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="2373743019045969" type="Monster">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Ghost.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="5265899546820874" type="Ghost" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="2130794341769834">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="7905560109349206" type="System">
+                                    <param id="0" name="Object">Hole</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="2567369987391292" type="Hole">
+                                    <param id="0" name="Object">Lava</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="6171272757215806" type="Hole" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="6576129857070603">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="2037826631030886" type="System">
+                                    <param id="0" name="Object">Rock</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="7766345409096878" type="Rock">
+                                    <param id="0" name="Object">Lava</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="6575997833919919" type="Rock" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="1233100963470376">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="448936813503992" type="System">
+                                    <param id="0" name="Object">Globe</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="3610874727922983" type="Globe">
+                                    <param id="0" name="Object">Lava</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="9856318536425669" type="Globe" />
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="3289044759910964">
@@ -490,6 +695,108 @@
                                     <param id="0" name="Animation">&quot;MovingUP&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4023114277952291">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="1288977726907854" type="System">
+                                    <param id="0" name="Object">Monster</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="6155420931776121" type="Monster">
+                                    <param id="0" name="Object">Fairy</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5400429749464228" type="Fairy">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Monster.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="1714037434582858" type="Monster" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="118729836161239">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="7638218010827155" type="System">
+                                    <param id="0" name="Object">Zombie</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="264899660503222" type="Zombie">
+                                    <param id="0" name="Object">Fairy</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="7920541505823747" type="Fairy">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Zombie.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="6113042287152975" type="Zombie" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="1719571410122463">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="6471874578127736" type="System">
+                                    <param id="0" name="Object">Ghost</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="521929191011371" type="Ghost">
+                                    <param id="0" name="Object">Fairy</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="7571627454300322" type="Fairy">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Ghost.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="7551295582164389" type="Ghost" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="6687254933778404">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="5554130557670661" type="System">
+                                    <param id="0" name="Object">Hole</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="2146383252022349" type="Hole">
+                                    <param id="0" name="Object">Globe</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="7278809659007402" type="Hole" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="890423950564708">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="4103949215478444" type="System">
+                                    <param id="0" name="Object">Rock</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="7255777899671472" type="Rock">
+                                    <param id="0" name="Object">Globe</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="7417725741635259" type="Rock" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="9602361557393934">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="6409068024248943" type="System">
+                                    <param id="0" name="Object">Lava</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="2220369315631275" type="Lava">
+                                    <param id="0" name="Object">Globe</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="1259457164239921" type="Lava" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -606,6 +913,108 @@
                                     <param id="0" name="Animation">&quot;MovingUY&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8111722766582237">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="7039186725392651" type="System">
+                                    <param id="0" name="Object">Monster</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="6282911958822922" type="Monster">
+                                    <param id="0" name="Object">Zombie</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="7449408172745219" type="Zombie">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Monster.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="7648166675282675" type="Monster" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="9260653909511237">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="5396147448154998" type="System">
+                                    <param id="0" name="Object">Fairy</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="5725873858405518" type="Fairy">
+                                    <param id="0" name="Object">Zombie</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5850857467257864" type="Zombie">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Fairy.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="3731132609660668" type="Fairy" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="7053163106483041">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="5757992155006872" type="System">
+                                    <param id="0" name="Object">Ghost</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="4985046816703404" type="Ghost">
+                                    <param id="0" name="Object">Zombie</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="3061987142439265" type="Zombie">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">Ghost.Life</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="5067102193434795" type="Ghost" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="8531449775756377">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="4305590376133634" type="System">
+                                    <param id="0" name="Object">Hole</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="1454852828884103" type="Hole">
+                                    <param id="0" name="Object">Rock</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="6561011860737229" type="Hole" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="1285940700397033">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="529250934485268" type="System">
+                                    <param id="0" name="Object">Globe</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="4371565906505717" type="Globe">
+                                    <param id="0" name="Object">Rock</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="1928565710257766" type="Globe" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="5335829846230493">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="3613860255554698" type="System">
+                                    <param id="0" name="Object">Lava</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="5705079353107221" type="Lava">
+                                    <param id="0" name="Object">Rock</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="9394735506745854" type="Lava" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -2416,7 +2825,7 @@
         </event-block>
         <event-block sid="5696999372047014">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="7399130055359847" type="System" />
+                <condition id="-18" name="On created" sid="7399130055359847" type="EnemiesThatWander" />
             </conditions>
             <actions>
                 <action behavior="CustomMovement" id="2" name="Set speed" sid="1961191611342436" type="EnemiesThatWander">
