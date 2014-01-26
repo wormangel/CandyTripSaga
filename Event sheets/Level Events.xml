@@ -100,7 +100,7 @@
                         <action id="0" name="Play" sid="7684574595294545" type="BgMusic">
                             <param id="0" name="Audio file">maconha</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;Marijuana&quot;</param>
                         </action>
                     </actions>
@@ -121,12 +121,12 @@
                         <action id="4" name="Set animation" sid="7660126788108941" type="TransparencySprite">
                             <param id="0" name="Animation">&quot;None&quot;</param>
                             <param id="1" name="From">1</param>
-						</action>
+                        </action>
                         <action id="33" name="Stop all" sid="5596116897063417" type="BgMusic" />
                         <action id="0" name="Play" sid="8615113339081241" type="BgMusic">
                             <param id="0" name="Audio file">cocaina</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;Cocaine&quot;</param>
                         </action>
                     </actions>
@@ -147,12 +147,12 @@
                         <action id="4" name="Set animation" sid="8236885609515231" type="TransparencySprite">
                             <param id="0" name="Animation">&quot;LSD&quot;</param>
                             <param id="1" name="From">1</param>
-						</action>
+                        </action>
                         <action id="33" name="Stop all" sid="9223511169706702" type="BgMusic" />
                         <action id="0" name="Play" sid="8259156679885446" type="BgMusic">
                             <param id="0" name="Audio file">lsd</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;LSD&quot;</param>
                         </action>
                     </actions>
@@ -173,12 +173,12 @@
                         <action id="4" name="Set animation" sid="8774923111170004" type="TransparencySprite">
                             <param id="0" name="Animation">&quot;None&quot;</param>
                             <param id="1" name="From">1</param>
-						</action>
+                        </action>
                         <action id="33" name="Stop all" sid="5340475026263653" type="BgMusic" />
                         <action id="0" name="Play" sid="1087760719332127" type="BgMusic">
                             <param id="0" name="Audio file">alcool</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;Alcohol&quot;</param>
                         </action>
                     </actions>
@@ -250,6 +250,12 @@
                         <action id="4" name="Set animation" sid="3906021492318695" type="TransparencySprite">
                             <param id="0" name="Animation">&quot;Marijuana&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="8557676876380983" type="BgMusic">
+                            <param id="0" name="Audio file">sfx_maconha</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -422,11 +428,22 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="33" name="Stop all" sid="9611297661506378" type="BgMusic" />
+                                <action id="6" name="Stop" sid="9611297661506378" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;LSD&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="3390945150564112" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Alcohol&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="1600963075999986" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Cocaine&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="430105444830875" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Marijuana&quot;</param>
+                                </action>
                                 <action id="0" name="Play" sid="7130899038430921" type="BgMusic">
                                     <param id="0" name="Audio file">maconha</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-10</param>
                                     <param id="1" name="Tag (optional)">&quot;Marijuana&quot;</param>
                                 </action>
                             </actions>
@@ -480,6 +497,12 @@
                         <action id="4" name="Set animation" sid="5880736460712993" type="TransparencySprite">
                             <param id="0" name="Animation">&quot;None&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="8286081688446397" type="BgMusic">
+                            <param id="0" name="Audio file">sfx_cocaina</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -652,11 +675,22 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="33" name="Stop all" sid="7685934746943819" type="BgMusic" />
+                                <action id="6" name="Stop" sid="8719422017961777" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;LSD&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="5238595284097972" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Alcohol&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="1075707450325084" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Cocaine&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="9694445296192594" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Marijuana&quot;</param>
+                                </action>
                                 <action id="0" name="Play" sid="6099588142475613" type="BgMusic">
                                     <param id="0" name="Audio file">cocaina</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-10</param>
                                     <param id="1" name="Tag (optional)">&quot;Cocaine&quot;</param>
                                 </action>
                             </actions>
@@ -710,6 +744,12 @@
                         <action id="4" name="Set animation" sid="1715446121333238" type="TransparencySprite">
                             <param id="0" name="Animation">&quot;LSD&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="1522392572280346" type="BgMusic">
+                            <param id="0" name="Audio file">sfx_lsd</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -882,11 +922,22 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="33" name="Stop all" sid="1309760727824234" type="BgMusic" />
+                                <action id="6" name="Stop" sid="3264624057183762" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;LSD&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="294614237038979" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Alcohol&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="5103649461016166" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Cocaine&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="2663215405518901" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Marijuana&quot;</param>
+                                </action>
                                 <action id="0" name="Play" sid="8894373535181694" type="BgMusic">
                                     <param id="0" name="Audio file">lsd</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-10</param>
                                     <param id="1" name="Tag (optional)">&quot;LSD&quot;</param>
                                 </action>
                             </actions>
@@ -944,6 +995,12 @@
                         <action id="4" name="Set animation" sid="6697696581321928" type="TransparencySprite">
                             <param id="0" name="Animation">&quot;None&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="2541430762228359" type="BgMusic">
+                            <param id="0" name="Audio file">sfx_lsd</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -1116,11 +1173,22 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="33" name="Stop all" sid="2376901645617843" type="BgMusic" />
+                                <action id="6" name="Stop" sid="9535934871931706" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;LSD&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="3026076717486595" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Alcohol&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="5830209540087062" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Cocaine&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="5967957476221644" type="BgMusic">
+                                    <param id="0" name="Tag">&quot;Marijuana&quot;</param>
+                                </action>
                                 <action id="0" name="Play" sid="158185106903567" type="BgMusic">
                                     <param id="0" name="Audio file">alcool</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-10</param>
                                     <param id="1" name="Tag (optional)">&quot;Alcohol&quot;</param>
                                 </action>
                             </actions>

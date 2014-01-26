@@ -2540,7 +2540,7 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616741012812246" speed="8">
-                    <frame duration="1" hotspotX="0.507246" hotspotY="0.521739">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625">
                         <collision-poly>
                             <point x="0.101449" y="0.304348" />
                             <point x="0.492754" y="0.173913" />
@@ -2828,7 +2828,20 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder expanded="1" />
+    <sounds-folder expanded="1">
+        <file name="sfx_alcool.m4a" />
+        <file name="sfx_alcool.ogg" />
+        <file name="sfx_alcool.wav" />
+        <file name="sfx_cocaina.m4a" />
+        <file name="sfx_cocaina.ogg" />
+        <file name="sfx_cocaina.wav" />
+        <file name="sfx_lsd.m4a" />
+        <file name="sfx_lsd.ogg" />
+        <file name="sfx_lsd.wav" />
+        <file name="sfx_maconha.m4a" />
+        <file name="sfx_maconha.wav" />
+        <file name="sfx_maconha.ogg" />
+    </sounds-folder>
     <music-folder expanded="1">
         <file name="alcool.m4a" />
         <file name="alcool.ogg" />
