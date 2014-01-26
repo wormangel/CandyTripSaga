@@ -101,11 +101,11 @@
                         <x>223</x>
                         <y>568</y>
                         <z>0</z>
-                        <width>65</width>
-                        <height>65</height>
+                        <width>64</width>
+                        <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.507692337</hotspotX>
-                        <hotspotY>0.507692337</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -521,7 +521,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="CandyHolder" uid="12">
+                <instance type="CandyHolder" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -619,7 +619,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="CandyHudIcon" uid="14">
+                <instance type="CandyHudIcon" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

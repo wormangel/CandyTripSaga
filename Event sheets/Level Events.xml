@@ -74,6 +74,10 @@
                             <param id="0" name="Animation">&quot;Marijuana&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="6618299063817156" type="RandomMovingEnemy">
+                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4472609107412347">
@@ -163,6 +167,10 @@
                             <param id="1" name="Value">50</param>
                         </action>
                         <action id="4" name="Set animation" sid="5990118441258367" type="LevelBackground">
+                            <param id="0" name="Animation">&quot;LSD&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="8694486193957081" type="RandomMovingEnemy">
                             <param id="0" name="Animation">&quot;LSD&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
