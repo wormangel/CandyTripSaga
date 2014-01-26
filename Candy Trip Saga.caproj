@@ -3021,6 +3021,9 @@
         <file name="tiro5.m4a" />
         <file name="tiro5.ogg" />
         <file name="tiro5.wav" />
+        <file name="sfx_gameover.m4a" />
+        <file name="sfx_gameover.ogg" />
+        <file name="sfx_gameover.wav" />
     </sounds-folder>
     <music-folder expanded="1">
         <file name="alcool.m4a" />
