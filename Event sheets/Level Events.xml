@@ -1393,12 +1393,14 @@
         </event-block>
         <event-block sid="739376597424931">
             <conditions>
-                <condition id="-1" name="Compare X" sid="5041158420164322" type="StalkingEnemy">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">Kurt.X</param>
-                </condition>
+                <condition id="-1" name="Every tick" sid="5041158420164322" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="1540019514262027" type="StalkingEnemy">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">50</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

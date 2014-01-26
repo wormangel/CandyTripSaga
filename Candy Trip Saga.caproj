@@ -1054,8 +1054,11 @@
             <object-type name="StalkingEnemy" sid="605700092046381">
                 <plugin id="Sprite" />
                 <behaviors>
-                    <behavior-type name="8Direction" sid="2586685536912783">
-                        <behavior id="EightDir" />
+                    <behavior-type name="BoundToLayout" sid="3917414901575879">
+                        <behavior id="bound" />
+                    </behavior-type>
+                    <behavior-type name="CustomMovement" sid="2943641831491959">
+                        <behavior id="custom" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder expanded="1">

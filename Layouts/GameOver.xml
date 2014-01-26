@@ -91,7 +91,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GameOverScore" uid="29">
+                <instance type="GameOverScore" uid="23">
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
