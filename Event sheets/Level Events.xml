@@ -17,7 +17,32 @@
         <variable constant="1" name="BoundLeft" sid="7131441206905355" static="0" type="number">62</variable>
         <variable comment="Initial Max Speed" constant="1" name="BaseMaxSpeed" sid="9967375517095143" static="0" type="number">300</variable>
         <variable comment="Damage caused by all enemies" constant="0" name="enemiesDamage" sid="1208001635472111" static="0" type="number">10</variable>
-        <comment>When Kurt gets a candy, the candy should disappear</comment>
+        <comment>Layout Init</comment>
+        <event-block sid="1953092471293326">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2592159804770671" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6203964237641216" type="Kurt">
+                    <param id="0" name="Animation">&quot;MovingR&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="8674818833547972" type="Kurt">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="8729379216001739" type="CandyHudIcon">
+                    <param id="0" name="Animation">&quot;None&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="3837960439629143" type="Kurt">
+                    <param id="0" name="Instance variable">Dying</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>When Kurt gets a candy, the candy should disappear</comment>
+            </sub-events>
+        </event-block>
         <event-block sid="3463074638746736">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="9636036512899571" type="Candy">
@@ -74,10 +99,6 @@
                         </action>
                         <action id="4" name="Set animation" sid="1545245379107511" type="LevelBackground">
                             <param id="0" name="Animation">&quot;Marijuana&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="5116192556185658" type="Kurt">
-                            <param id="0" name="Animation">&quot;MovingRG&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="9601337203214711" type="RandomMovingEnemy">
@@ -330,10 +351,6 @@
                         </action>
                         <action id="4" name="Set animation" sid="5990118441258367" type="LevelBackground">
                             <param id="0" name="Animation">&quot;LSD&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="5197142849366741" type="Kurt">
-                            <param id="0" name="Animation">&quot;MovingRP&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="2886036235169434" type="RandomMovingEnemy">
@@ -711,40 +728,96 @@
                 </action>
             </actions>
         </event-block>
-        <comment>When life reaches zero, restore it (TODO KILL IT)</comment>
-        <event-block sid="3114393595112236">
+        <comment>When life reaches zero, die</comment>
+        <event-block any="1" sid="3114393595112236">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="1275985097970072" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Comparison">3</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1426228034091775" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9979619153577598">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8504287293305472" type="Kurt">
+                            <param id="0" name="Instance variable">Dying</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="3555777352605417" type="Kurt">
+                            <param id="0" name="Instance variable">Dying</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="4134119041875883" type="Kurt">
+                            <param id="0" name="Animation">&quot;Dying&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="2485505287041259" type="CandyHudIcon">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="1716241417859856" type="System">
+                            <param id="0" name="Time scale">0.25</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="6902645436102044" type="Kurt">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="7985520746464764" type="Kurt">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5491208188481" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7094376141314203" type="System">
+                            <param id="0" name="Layout">GameOver</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="7325562173577145" type="Kurt">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="4791241057168961" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="3081872763165082" type="Kurt">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2810724849414143">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7523709010387765" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">2</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="3685368074918052" type="Kurt">
+                <action id="-10" name="Set value" sid="5674385778938731" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">0</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="7094376141314203" type="System">
-                    <param id="0" name="Layout">GameOver</param>
-                </action>
             </actions>
         </event-block>
-        <event-block sid="2197046282263689">
+        <event-block sid="1146515680302481">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="8379157013853908" type="Kurt">
+                <condition id="-7" name="Compare instance variable" sid="1816038517544738" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Comparison">4</param>
                     <param id="2" name="Value">100</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="1613513950600983" type="Kurt">
+                <action id="-10" name="Set value" sid="6833561000000676" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">100</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="4038801497836245" type="System">
-                    <param id="0" name="Layout">GameOver</param>
+                    <param id="1" name="Value">101</param>
                 </action>
             </actions>
         </event-block>
@@ -793,6 +866,16 @@
             <conditions>
                 <condition id="0" name="On key pressed" sid="4807222850280381" type="Keyboard">
                     <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3046957318258891" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5885987021269124" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">100</param>
                 </condition>
             </conditions>
             <actions>
@@ -869,6 +952,16 @@
                 <condition id="0" name="On key pressed" sid="914637640361674" type="Keyboard">
                     <param id="0" name="Key">37 (Left arrow)</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="7357707312642555" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3330868047817504" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2710973125453525" type="Kurt">
@@ -943,6 +1036,16 @@
             <conditions>
                 <condition id="0" name="On key pressed" sid="8771085422082938" type="Keyboard">
                     <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5035579745528432" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3419395417133435" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">100</param>
                 </condition>
             </conditions>
             <actions>
@@ -1019,6 +1122,16 @@
                 <condition id="0" name="On key pressed" sid="8715634043765749" type="Keyboard">
                     <param id="0" name="Key">38 (Up arrow)</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="4523867557376892" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6680870905751195" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="16151979396761" type="Kurt">
@@ -1092,6 +1205,16 @@
         <event-block sid="4439485327861176">
             <conditions>
                 <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="8224787568375179" type="Kurt" />
+                <condition id="-7" name="Compare instance variable" sid="1789769129057024" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6433126528237515" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="5" name="Set frame" sid="8744159953368979" type="Kurt">
@@ -1460,6 +1583,16 @@
                 <action id="-12" name="Subtract from" sid="6515589434420438" type="Enemies">
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">10</param>
+                </action>
+                <action id="4" name="Set animation" sid="3028673030382384" type="Projectile">
+                    <param id="0" name="Animation">&quot;Exploding&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="3156537479438996" type="Projectile">
+                    <param id="0" name="Speed">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="5426358177022234" type="System">
+                    <param id="0" name="Seconds">0.35</param>
                 </action>
                 <action id="-9" name="Destroy" sid="5631225345874259" type="Projectile" />
             </actions>
