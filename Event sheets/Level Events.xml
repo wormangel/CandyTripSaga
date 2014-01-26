@@ -2400,7 +2400,7 @@
                 <action behavior="CustomMovement" id="2" name="Set speed" sid="1961191611342436" type="EnemiesThatWander">
                     <param id="0" name="Which">0</param>
                     <param id="1" name="Speed">200</param>
-				</action>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1469034128772192">
