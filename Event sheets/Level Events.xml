@@ -194,7 +194,7 @@
             <actions>
                 <action id="-10" name="Add to" sid="9935331792871583" type="System">
                     <param id="0" name="Variable">score</param>
-                    <param id="1" name="Value">10</param>
+                    <param id="1" name="Value">50</param>
                 </action>
                 <action id="-9" name="Destroy" sid="6227933273435557" type="Candy" />
                 <action id="-13" name="Set boolean" sid="2477722425650409" type="Exit">
