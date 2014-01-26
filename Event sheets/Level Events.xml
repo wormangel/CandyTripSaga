@@ -17,7 +17,16 @@
         <variable constant="1" name="BOUNDTOP" sid="6054817498218233" static="0" type="number">220</variable>
         <variable constant="1" name="BoundLeft" sid="7131441206905355" static="0" type="number">62</variable>
         <variable comment="Initial Max Speed" constant="1" name="BaseMaxSpeed" sid="9967375517095143" static="0" type="number">300</variable>
+        <variable constant="1" name="ZONE1_OFFY" sid="3510505193670367" static="0" type="number">225</variable>
+        <variable constant="1" name="ZONE1_OFFX" sid="1453497817382081" static="0" type="number">65</variable>
+        <variable constant="1" name="ZONE1_W" sid="7293233570071092" static="0" type="number">350</variable>
+        <variable constant="1" name="Zone1_H" sid="6427296097764249" static="0" type="number">264</variable>
+        <variable constant="1" name="ZONE2_OFFY" sid="7851771205215353" static="0" type="number">225</variable>
+        <variable constant="1" name="ZONE2_OFFX" sid="9216967091560225" static="0" type="number">650</variable>
+        <variable constant="1" name="ZONE2_W" sid="2030854168554422" static="0" type="number">350</variable>
+        <variable constant="1" name="ZONE2_H" sid="5194342271585391" static="0" type="number">264</variable>
         <variable comment="Damage caused by all enemies" constant="0" name="enemiesDamage" sid="1208001635472111" static="0" type="number">10</variable>
+        <comment>Zone boundaries</comment>
         <comment>Layout Init</comment>
         <event-block sid="1953092471293326">
             <conditions>
