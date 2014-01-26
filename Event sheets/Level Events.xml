@@ -95,13 +95,13 @@
                         <action id="4" name="Set animation" sid="7119429081908971" type="TransparencySprite">
                             <param id="0" name="Animation">&quot;Marijuana&quot;</param>
                             <param id="1" name="From">1</param>
-						</action>
+                        </action>
                         <action id="33" name="Stop all" sid="3929225724096148" type="BgMusic" />
                         <action id="0" name="Play" sid="7684574595294545" type="BgMusic">
                             <param id="0" name="Audio file">maconha</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;Marijuaha&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;Marijuana&quot;</param>
                         </action>
                     </actions>
                 </event-block>
