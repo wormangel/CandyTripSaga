@@ -10,6 +10,7 @@
     <unique-id>29u83kuz5ho3d</unique-id>
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -1637,6 +1638,64 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder expanded="1" name="Intro">
+            <object-type name="Intro" sid="3552009546380915">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="NextFrame" sid="8001314778101938" type="boolean" />
+                    <instance-variable name="currentFrame" sid="5200010664564884" type="number" />
+                </instance-variables>
+                <animation-folder expanded="1">
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2076374368505131" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.0312195" y="0.0416667" />
+                                <point x="0.967805" y="0.0429688" />
+                                <point x="0.494634" y="0.325521" />
+                                <point x="0.505366" y="0.325521" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.0312195" y="0.0416667" />
+                                <point x="0.967805" y="0.0429688" />
+                                <point x="0.967805" y="0.5" />
+                                <point x="0.732683" y="0.643229" />
+                                <point x="0.267317" y="0.643229" />
+                                <point x="0.0302439" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.0312195" y="0.0416667" />
+                                <point x="0.967805" y="0.0429688" />
+                                <point x="0.967805" y="0.957031" />
+                                <point x="0.0312195" y="0.958333" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SpaceSprite" sid="4359506319982352">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7309261865091717" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.0285714">
+                            <collision-poly>
+                                <point x="0.0165017" y="0.0735294" />
+                                <point x="0.49835" y="0.0147059" />
+                                <point x="0.983498" y="0.0735294" />
+                                <point x="0.9967" y="0.5" />
+                                <point x="0.983498" y="0.926471" />
+                                <point x="0.49835" y="0.985294" />
+                                <point x="0.0165017" y="0.926471" />
+                                <point x="0.00330033" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Candy" sid="8075092672256927">
             <plugin id="Sprite" />
             <instance-variables>
@@ -2516,6 +2575,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BgMusic" sid="9420230523773639">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families>
         <family name="MustBeKilled" plugin-id="Sprite" sid="2458958768239247">
@@ -2623,6 +2685,7 @@
     </families>
     <layout-folder expanded="1">
         <layout>Level.xml</layout>
+		<layout>Intro.xml</layout>
         <layout>GameOver.xml</layout>
         <layout>Menu.xml</layout>
         <layout>Placeholder.xml</layout>
@@ -2631,10 +2694,26 @@
         <event-sheet>Level Events.xml</event-sheet>
         <event-sheet>Game Over Events.xml</event-sheet>
         <event-sheet>Menu Events.xml</event-sheet>
+		<event-sheet>Intro Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="31" />
         <global-instance type="Mouse" uid="32" />
+        <global-instance type="BgMusic" uid="11">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1">
