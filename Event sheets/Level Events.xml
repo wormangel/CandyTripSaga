@@ -94,6 +94,10 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="7974479601988867" type="StalkingEnemy" />
+                        <action id="4" name="Set animation" sid="9157297559022158" type="StaticEnemy">
+                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="4807390042235866">
@@ -216,6 +220,10 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="3529900399395912" type="RandomMovingEnemy" />
+                        <action id="4" name="Set animation" sid="2449844460616094" type="StaticEnemy">
+                            <param id="0" name="Animation">&quot;Cocaine&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="2417338830847492">
@@ -342,6 +350,10 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="5362651863827497" type="StalkingEnemy" />
+                        <action id="4" name="Set animation" sid="8850252316830425" type="StaticEnemy">
+                            <param id="0" name="Animation">&quot;LSD&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="6081260747637158">
@@ -468,6 +480,10 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="816366012286385" type="RandomMovingEnemy" />
+                        <action id="4" name="Set animation" sid="1636161845095341" type="StaticEnemy">
+                            <param id="0" name="Animation">&quot;Alcohol&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="6898792552190126">

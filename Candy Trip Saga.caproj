@@ -899,22 +899,60 @@
             </object-type>
             <object-type name="StaticEnemy" sid="3794374515010828">
                 <plugin id="Sprite" />
-                <container>
-                    <type>StaticEnemy</type>
-                    <type>StaticEnemyShooter</type>
-                </container>
                 <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6584927167314284" speed="5">
+                    <animation framecount="1" loop="0" name="Marijuana" pingpong="0" repeatcount="1" repeatto="0" sid="6584927167314284" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
                             <image-point name="center" x="0.53125" y="0.53125" />
                             <collision-poly>
-                                <point x="0.171875" y="0.171875" />
-                                <point x="0.5" y="0.046875" />
-                                <point x="0.828125" y="0.171875" />
-                                <point x="0.984375" y="0.5" />
-                                <point x="0.84375" y="0.84375" />
-                                <point x="0.5" y="0.984375" />
-                                <point x="0.15625" y="0.84375" />
+                                <point x="0.25" y="0.25" />
+                                <point x="0.5" y="0.09375" />
+                                <point x="0.796875" y="0.203125" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.828125" y="0.828125" />
+                                <point x="0.5" y="1" />
+                                <point x="0.21875" y="0.78125" />
+                                <point x="0.078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Alcohol" pingpong="0" repeatcount="1" repeatto="0" sid="6771305514201862" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.09375" y="0.125" />
+                                <point x="0.5" y="0.109375" />
+                                <point x="0.75" y="0.296875" />
+                                <point x="0.953125" y="0.5" />
+                                <point x="0.859375" y="0.8125" />
+                                <point x="0.5" y="0.921875" />
+                                <point x="0.078125" y="0.890625" />
+                                <point x="0.046875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Cocaine" pingpong="0" repeatcount="1" repeatto="0" sid="1945850746664233" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.21875" y="0.21875" />
+                                <point x="0.5" y="0.09375" />
+                                <point x="0.796875" y="0.203125" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.828125" y="0.828125" />
+                                <point x="0.5" y="1" />
+                                <point x="0.140625" y="0.859375" />
+                                <point x="0.078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="LSD" pingpong="0" repeatcount="1" repeatto="0" sid="4492982393071128" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.171875" y="0.203125" />
+                                <point x="0.5" y="0.109375" />
+                                <point x="0.921875" y="0.109375" />
+                                <point x="0.875" y="0.5" />
+                                <point x="0.78125" y="0.765625" />
+                                <point x="0.5" y="0.921875" />
+                                <point x="0.15625" y="0.828125" />
                                 <point x="0.03125" y="0.5" />
                             </collision-poly>
                         </frame>
@@ -928,10 +966,6 @@
                         <behavior id="Turret" />
                     </behavior-type>
                 </behaviors>
-                <container>
-                    <type>StaticEnemy</type>
-                    <type>StaticEnemyShooter</type>
-                </container>
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5321705929674417" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
