@@ -113,19 +113,10 @@
                                 <bound-by>Edge</bound-by>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="BoundToLayout2">
+                        <behavior-instance type="CustomMovement">
                             <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>300</max-speed>
-                                <acceleration>4096</acceleration>
-                                <deceleration>4096</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>360 degree (smooth)</set-angle>
-                                <default-controls>Yes</default-controls>
+                                <stepping-mode>None</stepping-mode>
+                                <pixels-per-step>5</pixels-per-step>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -194,19 +185,10 @@
                                 <bound-by>Edge</bound-by>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="BoundToLayout2">
+                        <behavior-instance type="CustomMovement">
                             <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>300</max-speed>
-                                <acceleration>4096</acceleration>
-                                <deceleration>4096</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>No</set-angle>
-                                <default-controls>Yes</default-controls>
+                                <stepping-mode>None</stepping-mode>
+                                <pixels-per-step>5</pixels-per-step>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>

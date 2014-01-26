@@ -2736,24 +2736,12 @@
             <members>
                 <member>Fairy</member>
                 <member>Ghost</member>
-            </members>
-            <behaviors>
-                <behavior-type name="CustomMovement" sid="2739485170506089">
-                    <behavior id="custom" />
-                </behavior-type>
-            </behaviors>
-        </family>
-        <family name="EnemiesThatStalk" plugin-id="Sprite" sid="9074107247982501">
-            <members>
                 <member>Monster</member>
                 <member>Zombie</member>
             </members>
             <behaviors>
-                <behavior-type name="BoundToLayout2" sid="9574918168727927">
-                    <behavior id="bound" />
-                </behavior-type>
-                <behavior-type name="8Direction" sid="3371038716590955">
-                    <behavior id="EightDir" />
+                <behavior-type name="CustomMovement" sid="2739485170506089">
+                    <behavior id="custom" />
                 </behavior-type>
             </behaviors>
         </family>
