@@ -1053,6 +1053,11 @@
             </object-type>
             <object-type name="StalkingEnemy" sid="605700092046381">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="8Direction" sid="2586685536912783">
+                        <behavior id="EightDir" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder expanded="1">
                     <animation framecount="3" loop="1" name="Cocaine" pingpong="0" repeatcount="1" repeatto="0" sid="7016876541370556" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
@@ -2105,8 +2110,8 @@
         <event-sheet>Menu Events.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="27" />
-        <global-instance type="Mouse" uid="28" />
+        <global-instance type="Keyboard" uid="28" />
+        <global-instance type="Mouse" uid="30" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />

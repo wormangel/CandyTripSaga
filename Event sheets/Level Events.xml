@@ -49,7 +49,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="288069042863073" type="Kurt">
                             <param id="0" name="Instance variable">MoveSpeedModifier</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0.80</param>
                         </action>
                         <action id="-10" name="Set value" sid="3993558423032718" type="Kurt">
                             <param id="0" name="Instance variable">ShotSpeedModifier</param>
@@ -76,6 +76,10 @@
                         </action>
                         <action id="4" name="Set animation" sid="5116192556185658" type="Kurt">
                             <param id="0" name="Animation">&quot;MovingRG&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="9601337203214711" type="RandomMovingEnemy">
+                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -161,7 +165,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="9172067952805325" type="Kurt">
                             <param id="0" name="Instance variable">MoveSpeedModifier</param>
-                            <param id="1" name="Value">3</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-10" name="Set value" sid="8508520816212695" type="Kurt">
                             <param id="0" name="Instance variable">ShotSpeedModifier</param>
@@ -296,6 +300,10 @@
                         </action>
                         <action id="4" name="Set animation" sid="5197142849366741" type="Kurt">
                             <param id="0" name="Animation">&quot;MovingRP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="2886036235169434" type="RandomMovingEnemy">
+                            <param id="0" name="Animation">&quot;LSD&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -1382,6 +1390,15 @@
                 </action>
                 <action id="-9" name="Destroy" sid="5631225345874259" type="Projectile" />
             </actions>
+        </event-block>
+        <event-block sid="739376597424931">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="5041158420164322" type="StalkingEnemy">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">Kurt.X</param>
+                </condition>
+            </conditions>
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
