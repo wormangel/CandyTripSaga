@@ -1382,8 +1382,8 @@
                 </condition>
                 <condition id="-8" name="Compare two values" sid="9786698419409202" type="System">
                     <param id="0" name="First value">MustBeKilled.Count</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">0</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">5</param>
                 </condition>
             </conditions>
             <actions>
