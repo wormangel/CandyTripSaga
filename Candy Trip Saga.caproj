@@ -2375,7 +2375,7 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616741012812246" speed="8">
-                    <frame duration="1" hotspotX="0.536232" hotspotY="0.434783">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="0.4375">
                         <collision-poly>
                             <point x="0.101449" y="0.304348" />
                             <point x="0.492754" y="0.173913" />

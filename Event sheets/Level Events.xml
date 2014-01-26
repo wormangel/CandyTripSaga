@@ -77,6 +77,66 @@
             </actions>
             <sub-events>
                 <comment>When Kurt gets a candy, the candy should disappear</comment>
+                <event-block sid="9303921906081783">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1891285153540502" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Marijuana&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9463936903738832" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRG&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6400543396753067">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="598362734865846" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Cocaine&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9059878563765815" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRW&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1728051918922158">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1996178300100726" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;LSD&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4274426165174238" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8137552896236793">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7438453689875699" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Alcohol&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8857673488783988" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRY&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="3463074638746736">
