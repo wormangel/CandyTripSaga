@@ -68,17 +68,79 @@
                         </action>
                         <action id="-11" name="Add to" sid="4773897334177184" type="Kurt">
                             <param id="0" name="Instance variable">Life</param>
-                            <param id="1" name="Value">50</param>
+                            <param id="1" name="Value">25</param>
                         </action>
                         <action id="4" name="Set animation" sid="1545245379107511" type="LevelBackground">
                             <param id="0" name="Animation">&quot;Marijuana&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="6618299063817156" type="RandomMovingEnemy">
-                            <param id="0" name="Animation">&quot;Marijuana&quot;</param>
+                        <action id="4" name="Set animation" sid="5116192556185658" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRG&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="4807390042235866">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="9904071204378398" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="444927673392706" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingRG&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1246363784405634">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4368250560406863" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="5588324055303963" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingDG&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2345286935453934">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3236270477225769" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="6768589954075078" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingLG&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7814675591304642">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4751096761048616" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="7472413710654203" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingUG&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="4472609107412347">
                     <conditions>
@@ -118,13 +180,75 @@
                         </action>
                         <action id="-11" name="Add to" sid="4240831422398751" type="Kurt">
                             <param id="0" name="Instance variable">Life</param>
-                            <param id="1" name="Value">50</param>
+                            <param id="1" name="Value">25</param>
                         </action>
                         <action id="4" name="Set animation" sid="2573315139044708" type="LevelBackground">
                             <param id="0" name="Animation">&quot;Cocaine&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="2417338830847492">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="544541393698514" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="6561122511144902" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingRW&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="275512131375663">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6711572477002908" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="1082476574816022" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingDW&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4515256839083843">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="1851131380346995" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="5729422811579146" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingLW&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2342680618608445">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6837618535363976" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="9749660843806725" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingUW&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="3289044759910964">
                     <conditions>
@@ -164,17 +288,79 @@
                         </action>
                         <action id="-11" name="Add to" sid="9522549869947422" type="Kurt">
                             <param id="0" name="Instance variable">Life</param>
-                            <param id="1" name="Value">50</param>
+                            <param id="1" name="Value">25</param>
                         </action>
                         <action id="4" name="Set animation" sid="5990118441258367" type="LevelBackground">
                             <param id="0" name="Animation">&quot;LSD&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="8694486193957081" type="RandomMovingEnemy">
-                            <param id="0" name="Animation">&quot;LSD&quot;</param>
+                        <action id="4" name="Set animation" sid="5197142849366741" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRP&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="6081260747637158">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3650952920462683" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="5896219746091219" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingRP&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1422201446437405">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="5895620500892266" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="4873289105851611" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingDP&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4229577907456086">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6464358739452402" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="7705369166858556" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingLP&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1508366530819036">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3576636857494173" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="3762267937405408" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingUP&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="830793737439712">
                     <conditions>
@@ -214,13 +400,79 @@
                         </action>
                         <action id="-11" name="Add to" sid="4967470342474003" type="Kurt">
                             <param id="0" name="Instance variable">Life</param>
-                            <param id="1" name="Value">50</param>
+                            <param id="1" name="Value">25</param>
                         </action>
                         <action id="4" name="Set animation" sid="5464662414469288" type="LevelBackground">
                             <param id="0" name="Animation">&quot;Alcohol&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="2751942591775166" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRY&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="6898792552190126">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6462738778356629" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="9932207313984606" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingRY&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2930419521428499">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2542982314216565" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="6315355439032675" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingDY&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5192942241038218">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3931985451034062" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="9163990159113642" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingLY&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5162417543889949">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4842097139705503" type="System">
+                                    <param id="0" name="Variable">lastDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="3873307841027159" type="Kurt">
+                                    <param id="0" name="Animation">&quot;MovingUY&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -494,7 +746,37 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="345012086387735" type="Kurt">
-                            <param id="0" name="Animation">&quot;MovingRG&quot;</param>
+                            <param id="0" name="Animation">&quot;MovingRW&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8935571383168747">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9805567953311491" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;LSD&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5971738520813843" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5220220477349234">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3970579655860189" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Alcohol&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="850680961460651" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingRY&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -529,6 +811,51 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="363043614124035">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2870049982462087" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Cocaine&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7896320675654896" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingLW&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3402178663317219">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="6633411396881819" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;LSD&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7861521959620607" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingLP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2214459732268607">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8859270135304049" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Alcohol&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="972662961509921" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingLY&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="9844623800946209">
@@ -559,6 +886,51 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="1215247938695871">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7846273419909833" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Cocaine&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3548294115645501" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingDW&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="806276141021575">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9420346206365024" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;LSD&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1565734098088914" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingDP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7749568941454853">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1158509754395156" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Alcohol&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1341164684843684" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingDY&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="1581629800284058">
@@ -585,6 +957,51 @@
                     <actions>
                         <action id="4" name="Set animation" sid="4209422551658339" type="Kurt">
                             <param id="0" name="Animation">&quot;MovingUG&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="992865968760331">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="643267316892148" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Cocaine&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6207402409792059" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingUW&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2003933924355463">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7978918298832441" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;LSD&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8469695263131765" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingUP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4802828182901225">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2979129730964059" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Alcohol&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4214424571180556" type="Kurt">
+                            <param id="0" name="Animation">&quot;MovingUY&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
