@@ -336,6 +336,9 @@
                                     <param id="1" name="Value">Fairy.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="549632245665033" type="Fairy" />
+                                <action id="-8" name="Set angle" sid="5070020294165673" type="Ghost">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="5269629716266489">
@@ -355,6 +358,9 @@
                                     <param id="1" name="Value">Zombie.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="469286283274007" type="Zombie" />
+                                <action id="-8" name="Set angle" sid="2064163543299487" type="Ghost">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="9609923070294622">
@@ -374,6 +380,9 @@
                                     <param id="1" name="Value">Monster.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="7659625290863519" type="Monster" />
+                                <action id="-8" name="Set angle" sid="5726855642765109" type="Ghost">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="103758117483033">
@@ -389,6 +398,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="2125956891477711" type="Lava" />
+                                <action id="-8" name="Set angle" sid="7096433280796609" type="Hole">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="7563979832454652">
@@ -404,6 +416,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="641090269205375" type="Rock" />
+                                <action id="-8" name="Set angle" sid="2099865535013156" type="Hole">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="5907449986040313">
@@ -419,6 +434,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="3040289861574816" type="Globe" />
+                                <action id="-8" name="Set angle" sid="5665938772956122" type="Hole">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="6534071504161448">
@@ -583,6 +601,9 @@
                                     <param id="1" name="Value">Fairy.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="5608505222159471" type="Fairy" />
+                                <action id="-8" name="Set angle" sid="3810277795596339" type="Monster">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="6626147727733601">
@@ -602,6 +623,9 @@
                                     <param id="1" name="Value">Zombie.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="8847077284847589" type="Zombie" />
+                                <action id="-8" name="Set angle" sid="6431328814880949" type="Monster">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="4124482030620038">
@@ -621,6 +645,9 @@
                                     <param id="1" name="Value">Ghost.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="5265899546820874" type="Ghost" />
+                                <action id="-8" name="Set angle" sid="7121062645808832" type="Monster">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="2130794341769834">
@@ -636,6 +663,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="6171272757215806" type="Hole" />
+                                <action id="-8" name="Set angle" sid="9494434287849972" type="Lava">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="6576129857070603">
@@ -651,6 +681,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="6575997833919919" type="Rock" />
+                                <action id="-8" name="Set angle" sid="6046821359884175" type="Lava">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="1233100963470376">
@@ -666,6 +699,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="9856318536425669" type="Globe" />
+                                <action id="-8" name="Set angle" sid="9411091171637911" type="Lava">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="5573606763387849">
@@ -830,6 +866,9 @@
                                     <param id="1" name="Value">Monster.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="1714037434582858" type="Monster" />
+                                <action id="-8" name="Set angle" sid="7685488242825141" type="Fairy">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="118729836161239">
@@ -849,6 +888,9 @@
                                     <param id="1" name="Value">Zombie.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="6113042287152975" type="Zombie" />
+                                <action id="-8" name="Set angle" sid="8142068237058887" type="Fairy">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="1719571410122463">
@@ -868,6 +910,9 @@
                                     <param id="1" name="Value">Ghost.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="7551295582164389" type="Ghost" />
+                                <action id="-8" name="Set angle" sid="3247853367733693" type="Fairy">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="6687254933778404">
@@ -883,6 +928,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="7278809659007402" type="Hole" />
+                                <action id="-8" name="Set angle" sid="9911977189651194" type="Globe">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="890423950564708">
@@ -898,6 +946,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="7417725741635259" type="Rock" />
+                                <action id="-8" name="Set angle" sid="6748471486373807" type="Globe">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="9602361557393934">
@@ -913,6 +964,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="1259457164239921" type="Lava" />
+                                <action id="-8" name="Set angle" sid="8744991483593854" type="Globe">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="9497012854794007">
@@ -1081,6 +1135,9 @@
                                     <param id="1" name="Value">Monster.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="7648166675282675" type="Monster" />
+                                <action id="-8" name="Set angle" sid="1008593107285603" type="Zombie">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="9260653909511237">
@@ -1100,6 +1157,9 @@
                                     <param id="1" name="Value">Fairy.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="3731132609660668" type="Fairy" />
+                                <action id="-8" name="Set angle" sid="8261314994700558" type="Zombie">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="7053163106483041">
@@ -1119,6 +1179,9 @@
                                     <param id="1" name="Value">Ghost.Life</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="5067102193434795" type="Ghost" />
+                                <action id="-8" name="Set angle" sid="989902992958152" type="Zombie">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="8531449775756377">
@@ -1134,6 +1197,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="6561011860737229" type="Hole" />
+                                <action id="-8" name="Set angle" sid="9632039673137276" type="Rock">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="1285940700397033">
@@ -1149,6 +1215,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="1928565710257766" type="Globe" />
+                                <action id="-8" name="Set angle" sid="8885376736353137" type="Rock">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="5335829846230493">
@@ -1164,6 +1233,9 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="9394735506745854" type="Lava" />
+                                <action id="-8" name="Set angle" sid="8687102015454108" type="Rock">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="3041835373262293">
