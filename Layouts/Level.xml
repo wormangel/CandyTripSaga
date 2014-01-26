@@ -327,7 +327,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-						<InitialX>0</InitialX>
+                        <InitialX>0</InitialX>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -344,7 +344,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SugarLevel" uid="6">
+                <instance type="SugarLevel" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -366,7 +366,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SliderEnd" uid="10">
+                <instance type="SliderEnd" uid="7">
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -410,7 +410,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Kurt" uid="0">
+                <instance type="Kurt" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -465,7 +465,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Candy" uid="2">
+                <instance type="Candy" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -490,7 +490,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Projectile" uid="4">
+                <instance type="Projectile" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -524,7 +524,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="EnemyProjectile" uid="9">
+                <instance type="EnemyProjectile" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -558,7 +558,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Candy" uid="15">
+                <instance type="Candy" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Cocaine</initial-animation>
@@ -583,7 +583,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Candy" uid="16">
+                <instance type="Candy" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>LSD</initial-animation>
@@ -608,7 +608,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="StaticEnemy" uid="7">
+                <instance type="StaticEnemy" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -650,7 +650,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="CandyHudIcon" uid="14">
+                <instance type="CandyHudIcon" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -672,7 +672,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ScoreText" uid="18">
+                <instance type="ScoreText" uid="21">
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>

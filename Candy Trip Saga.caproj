@@ -51,7 +51,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-folder expanded="1" name="Backgrounds">
+        <object-folder expanded="0" name="Backgrounds">
             <object-type name="GameOverBackground" sid="8059131482995241">
                 <plugin id="TiledBg" />
                 <texture />
@@ -1380,7 +1380,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="Other">
+        <object-folder expanded="0" name="Other">
             <object-type name="Keyboard" sid="493858274240027">
                 <plugin id="Keyboard" />
             </object-type>
@@ -1496,6 +1496,72 @@
                                 <point x="0.250923" y="0.178571" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder expanded="1" name="Enemies">
+            <object-type name="Ghost" sid="9570974799698213">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4648923242034711" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fairy" sid="5719330112804714">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8958156035613287" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Zombie" sid="754916048002102">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8130838720307693" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Monster" sid="7716313943575741">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2772479596146585" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rock" sid="1993004053527312">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="777667534039967" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Hole" sid="7630274243945404">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3005886585809513" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Globe" sid="9272660867156006">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6335913039554097" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Lava" sid="3304386648653832">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916307985676856" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -2337,8 +2403,33 @@
                 <instance-variable name="Life" sid="2500653558670109" type="number" />
             </instance-variables>
         </family>
+        <family name="MustBeKilled" plugin-id="Sprite" sid="2458958768239247">
+            <members>
+                <member>Fairy</member>
+                <member>Ghost</member>
+                <member>Globe</member>
+                <member>Monster</member>
+                <member>Zombie</member>
+            </members>
+        </family>
+        <family name="CanBeKilled" plugin-id="Sprite" sid="5508851032609162">
+            <members>
+                <member>Fairy</member>
+                <member>Ghost</member>
+                <member>Globe</member>
+                <member>Monster</member>
+                <member>Rock</member>
+                <member>Zombie</member>
+            </members>
+        </family>
+        <family name="InstantKill" plugin-id="Sprite" sid="8874167040245023">
+            <members>
+                <member>Hole</member>
+                <member>Lava</member>
+            </members>
+        </family>
     </families>
-    <layout-folder expanded="1">
+    <layout-folder expanded="0">
         <layout>Level.xml</layout>
         <layout>GameOver.xml</layout>
         <layout>Menu.xml</layout>
@@ -2349,8 +2440,8 @@
         <event-sheet>Menu Events.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="28" />
-        <global-instance type="Mouse" uid="30" />
+        <global-instance type="Keyboard" uid="31" />
+        <global-instance type="Mouse" uid="32" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
