@@ -3110,5 +3110,17 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2339543217918635">
+            <conditions>
+                <condition id="-16" name="Is on layer" sid="607214086164259" type="Hole">
+                    <param id="0" name="Layer">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Move to layer" sid="4600236133718095" type="Hole">
+                    <param id="0" name="Layer">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
