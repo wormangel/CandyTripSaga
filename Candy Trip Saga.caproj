@@ -2369,19 +2369,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="7" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616741012812246" speed="8">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625">
-                        <collision-poly>
-                            <point x="0.0869565" y="0.26087" />
-                            <point x="0.492754" y="0.130435" />
-                            <point x="0.913043" y="0.26087" />
-                            <point x="0.942029" y="0.478261" />
-                            <point x="0.913043" y="0.73913" />
-                            <point x="0.492754" y="0.913043" />
-                            <point x="0.0869565" y="0.73913" />
-                            <point x="0.057971" y="0.478261" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616741012812246" speed="8">
                     <frame duration="1" hotspotX="0.507246" hotspotY="0.521739">
                         <collision-poly>
                             <point x="0.0869565" y="0.26087" />
@@ -2649,7 +2637,16 @@
         <global-instance type="Mouse" uid="32" />
     </global-instances>
     <sounds-folder expanded="1" />
-    <music-folder expanded="1" />
+    <music-folder expanded="1">
+        <file name="alcool.m4a" />
+        <file name="alcool.ogg" />
+        <file name="cocaina.m4a" />
+        <file name="cocaina.ogg" />
+        <file name="lsd.m4a" />
+        <file name="lsd.ogg" />
+        <file name="maconha.m4a" />
+        <file name="maconha.ogg" />
+    </music-folder>
     <files-folder expanded="0">
         <file-folder expanded="0" name="Icons">
             <file name="icon-16.png" />

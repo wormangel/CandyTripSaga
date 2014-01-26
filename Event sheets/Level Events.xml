@@ -20,28 +20,28 @@
         <variable comment="Initial Max Speed" constant="1" name="BaseMaxSpeed" sid="9967375517095143" static="0" type="number">300</variable>
         <variable constant="1" name="ZONE1_OFFY" sid="3510505193670367" static="0" type="number">225</variable>
         <variable constant="1" name="ZONE1_OFFX" sid="1453497817382081" static="0" type="number">65</variable>
-        <variable constant="1" name="ZONE1_W" sid="7293233570071092" static="0" type="number">350</variable>
-        <variable constant="1" name="ZONE1_H" sid="6427296097764249" static="0" type="number">250</variable>
+        <variable constant="1" name="ZONE1_W" sid="7293233570071092" static="0" type="number">286</variable>
+        <variable constant="1" name="ZONE1_H" sid="6427296097764249" static="0" type="number">186</variable>
         <variable constant="1" name="ZONE2_OFFY" sid="7851771205215353" static="0" type="number">225</variable>
         <variable constant="1" name="ZONE2_OFFX" sid="9216967091560225" static="0" type="number">650</variable>
-        <variable constant="1" name="ZONE2_W" sid="2030854168554422" static="0" type="number">350</variable>
-        <variable constant="1" name="ZONE2_H" sid="5194342271585391" static="0" type="number">250</variable>
+        <variable constant="1" name="ZONE2_W" sid="2030854168554422" static="0" type="number">286</variable>
+        <variable constant="1" name="ZONE2_H" sid="5194342271585391" static="0" type="number">186</variable>
         <variable constant="1" name="ZONE3_OFFY" sid="9145947884972281" static="0" type="number">470</variable>
         <variable constant="1" name="ZONE3_OFFX" sid="7805845782853213" static="0" type="number">65</variable>
-        <variable constant="1" name="ZONE3_W" sid="8989165557435633" static="0" type="number">350</variable>
-        <variable constant="1" name="ZONE3_H" sid="9039231801337287" static="0" type="number">300</variable>
+        <variable constant="1" name="ZONE3_W" sid="8989165557435633" static="0" type="number">286</variable>
+        <variable constant="1" name="ZONE3_H" sid="9039231801337287" static="0" type="number">236</variable>
         <variable constant="1" name="ZONE4_OFFX" sid="4681309274625092" static="0" type="number">365</variable>
         <variable constant="1" name="ZONE4_OFFY" sid="8716829668366116" static="0" type="number">470</variable>
-        <variable constant="1" name="ZONE4_W" sid="6498292212334049" static="0" type="number">150</variable>
-        <variable constant="1" name="ZONE4_H" sid="5428331998225702" static="0" type="number">200</variable>
+        <variable constant="1" name="ZONE4_W" sid="6498292212334049" static="0" type="number">86</variable>
+        <variable constant="1" name="ZONE4_H" sid="5428331998225702" static="0" type="number">136</variable>
         <variable constant="1" name="ZONE5_OFFX" sid="5465349209019775" static="0" type="number">515</variable>
         <variable constant="1" name="ZONE5_OFFY" sid="813960719591489" static="0" type="number">470</variable>
-        <variable constant="1" name="ZONE5_W" sid="49241971887987" static="0" type="number">150</variable>
-        <variable constant="1" name="ZONE5_H" sid="632101532953521" static="0" type="number">200</variable>
+        <variable constant="1" name="ZONE5_W" sid="49241971887987" static="0" type="number">86</variable>
+        <variable constant="1" name="ZONE5_H" sid="632101532953521" static="0" type="number">136</variable>
         <variable constant="1" name="ZONE6_OFFX" sid="9987465166859582" static="0" type="number">665</variable>
         <variable constant="1" name="ZONE6_OFFY" sid="1012685084621702" static="0" type="number">470</variable>
-        <variable constant="1" name="ZONE6_W" sid="8116659738422899" static="0" type="number">300</variable>
-        <variable constant="1" name="ZONE6_H" sid="658915763799277" static="0" type="number">200</variable>
+        <variable constant="1" name="ZONE6_W" sid="8116659738422899" static="0" type="number">236</variable>
+        <variable constant="1" name="ZONE6_H" sid="658915763799277" static="0" type="number">136</variable>
         <variable comment="Damage caused by all enemies" constant="0" name="enemiesDamage" sid="1208001635472111" static="0" type="number">10</variable>
         <comment>Zone boundaries</comment>
         <comment>Layout Init</comment>
@@ -2125,7 +2125,7 @@
                 <condition id="-8" name="Compare two values" sid="9786698419409202" type="System">
                     <param id="0" name="First value">MustBeKilled.Count</param>
                     <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Second value">5</param>
+                    <param id="2" name="Second value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -2149,7 +2149,7 @@
                         <condition id="-8" name="Compare two values" sid="5306493994191351" type="System">
                             <param id="0" name="First value">MustBeKilled.Count</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Second value">5</param>
+                            <param id="2" name="Second value">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -2168,7 +2168,7 @@
                         <condition id="-8" name="Compare two values" sid="1053456840152766" type="System">
                             <param id="0" name="First value">MustBeKilled.Count</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Second value">5</param>
+                            <param id="2" name="Second value">0</param>
                         </condition>
                     </conditions>
                     <actions>
