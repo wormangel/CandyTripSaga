@@ -1389,8 +1389,16 @@
             </actions>
         </event-block>
         <event-block sid="1818946944339115">
-            <conditions />
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8314493934246154" type="Projectile">
+                    <param id="0" name="Object">CanBeKilled</param>
+                </condition>
+            </conditions>
             <actions>
+                <action id="-12" name="Subtract from" sid="2128632250606281" type="CanBeKilled">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
                 <action id="4" name="Set animation" sid="3028673030382384" type="Projectile">
                     <param id="0" name="Animation">&quot;Exploding&quot;</param>
                     <param id="1" name="From">1</param>
@@ -1449,19 +1457,6 @@
                 <action id="-10" name="Set value" sid="9304369719780712" type="Kurt">
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">-1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3192095351175144">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="790499000870112" type="Projectile">
-                    <param id="0" name="Object">CanBeKilled</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="631812029613036" type="CanBeKilled">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">10</param>
                 </action>
             </actions>
         </event-block>
