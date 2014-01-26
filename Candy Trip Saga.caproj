@@ -2592,6 +2592,20 @@
         <object-type name="SliderEnd" sid="4357147284892509">
             <plugin id="Text" />
         </object-type>
+        <object-type name="TransparencySprite" sid="9065187637313599">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Marijuana" pingpong="0" repeatcount="1" repeatto="0" sid="6317693644996385" speed="5">
+                    <frame duration="1" hotspotX="0.500489" hotspotY="0.500652" />
+                </animation>
+                <animation framecount="1" loop="0" name="None" pingpong="0" repeatcount="1" repeatto="0" sid="5346360912197875" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="LSD" pingpong="0" repeatcount="1" repeatto="0" sid="4112751710853362" speed="5">
+                    <frame duration="1" hotspotX="0.500489" hotspotY="0.500652" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="9556733787711666">
