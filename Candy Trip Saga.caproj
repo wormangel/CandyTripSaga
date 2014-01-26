@@ -2629,7 +2629,16 @@
         <global-instance type="Mouse" uid="32" />
     </global-instances>
     <sounds-folder expanded="1" />
-    <music-folder expanded="1" />
+    <music-folder expanded="1">
+        <file name="alcool.m4a" />
+        <file name="alcool.ogg" />
+        <file name="cocaina.m4a" />
+        <file name="cocaina.ogg" />
+        <file name="lsd.m4a" />
+        <file name="lsd.ogg" />
+        <file name="maconha.m4a" />
+        <file name="maconha.ogg" />
+    </music-folder>
     <files-folder expanded="0">
         <file-folder expanded="0" name="Icons">
             <file name="icon-16.png" />
