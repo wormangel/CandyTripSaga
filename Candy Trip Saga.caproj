@@ -1696,6 +1696,112 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder expanded="1" name="Credits">
+            <object-type name="CreditsScreen" sid="553219589212926">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="13" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9023385940175003" speed="0.25">
+                        <frame duration="1" hotspotX="0.00097371" hotspotY="0.00129702">
+                            <collision-poly>
+                                <point x="0.00097371" y="0.00129702" />
+                                <point x="0.998053" y="0.00259403" />
+                                <point x="0.998053" y="0.997406" />
+                                <point x="0.00097371" y="0.998703" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1.2" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.00097561" y="0.00130039" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.00097561" y="0.9987" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.00097561" y="0.00130039" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.00097561" y="0.9987" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.00097561" y="0.00130039" />
+                                <point x="0.999024" y="0.00130039" />
+                                <point x="1" y="1" />
+                                <point x="0.00097561" y="0.9987" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.00097561" y="0.00130039" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.00097561" y="0.9987" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.00097561" y="0.00130039" />
+                                <point x="0.999024" y="0.00130039" />
+                                <point x="0.999024" y="0.9987" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.00097561" y="0.00130039" />
+                                <point x="0.999024" y="0.00130039" />
+                                <point x="1" y="1" />
+                                <point x="0.00097561" y="0.9987" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="2" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.00097561" y="0.00130039" />
+                                <point x="0.999024" y="0.00130039" />
+                                <point x="1" y="1" />
+                                <point x="0.00097561" y="0.9987" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="3" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.00097561" y="0.00130039" />
+                                <point x="0.999024" y="0.00130039" />
+                                <point x="0.999024" y="0.9987" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1.2" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.999024" y="0.9987" />
+                                <point x="0.00097561" y="0.9987" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1.2" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.999024" y="0.9987" />
+                                <point x="0.00097561" y="0.9987" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="10" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.999024" y="0.9987" />
+                                <point x="0.00097561" y="0.9987" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Candy" sid="8075092672256927">
             <plugin id="Sprite" />
             <instance-variables>
@@ -2431,14 +2537,14 @@
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616741012812246" speed="8">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.515625">
                         <collision-poly>
-                            <point x="0.0869565" y="0.26087" />
-                            <point x="0.492754" y="0.130435" />
+                            <point x="0.101449" y="0.304348" />
+                            <point x="0.492754" y="0.173913" />
                             <point x="0.913043" y="0.26087" />
                             <point x="0.942029" y="0.478261" />
                             <point x="0.913043" y="0.73913" />
-                            <point x="0.492754" y="0.913043" />
+                            <point x="0.492754" y="0.869565" />
                             <point x="0.0869565" y="0.73913" />
-                            <point x="0.057971" y="0.478261" />
+                            <point x="0.0724638" y="0.478261" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.507246" hotspotY="0.521739">
@@ -2683,23 +2789,25 @@
             </instance-variables>
         </family>
     </families>
-    <layout-folder expanded="1">
+    <layout-folder expanded="0">
         <layout>Level.xml</layout>
-		<layout>Intro.xml</layout>
+        <layout>Intro.xml</layout>
         <layout>GameOver.xml</layout>
         <layout>Menu.xml</layout>
         <layout>Placeholder.xml</layout>
+        <layout>Credits.xml</layout>
     </layout-folder>
-    <event-folder expanded="0">
+    <event-folder expanded="1">
         <event-sheet>Level Events.xml</event-sheet>
         <event-sheet>Game Over Events.xml</event-sheet>
         <event-sheet>Menu Events.xml</event-sheet>
-		<event-sheet>Intro Events.xml</event-sheet>
+        <event-sheet>Intro Events.xml</event-sheet>
+        <event-sheet>Credit Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="31" />
         <global-instance type="Mouse" uid="32" />
-        <global-instance type="BgMusic" uid="11">
+        <global-instance type="BgMusic" uid="15">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
