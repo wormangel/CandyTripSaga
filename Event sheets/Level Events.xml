@@ -81,6 +81,10 @@
                     <param id="1" name="Value">10</param>
                 </action>
                 <action id="-9" name="Destroy" sid="6227933273435557" type="Candy" />
+                <action id="-13" name="Set boolean" sid="2477722425650409" type="Exit">
+                    <param id="0" name="Instance variable">needsToChange</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="1702068580542295">
@@ -976,7 +980,7 @@
                 </action>
             </actions>
         </event-block>
-        <comment>Kurt&apos;s life never stops dropping</comment>
+        <comment>Kurt&apos;s sugar never stops dropping</comment>
         <event-block sid="3674372772691214">
             <conditions>
                 <condition id="-1" name="Every tick" sid="2346815577418842" type="System" />
@@ -988,7 +992,7 @@
                 </action>
             </actions>
         </event-block>
-        <comment>When life reaches zero, die</comment>
+        <comment>Kurts life mechanic</comment>
         <event-block any="1" sid="3114393595112236">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="1275985097970072" type="Kurt">
@@ -1081,7 +1085,67 @@
                 </action>
             </actions>
         </event-block>
+        <event-block any="1" sid="18575144621071">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="8705962583854009" type="System">
+                    <param id="0" name="First value">Kurt.Life</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">20</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="1224712719287738" type="System">
+                    <param id="0" name="First value">Kurt.Life</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">80</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6066250371016197" type="SugarLevel">
+                    <param id="0" name="Animation">&quot;Danger&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2986351654659074">
+            <conditions>
+                <condition id="-21" name="Is between values" sid="725090149838935" type="System">
+                    <param id="0" name="Value">Kurt.Life</param>
+                    <param id="1" name="Lower bound">20.1</param>
+                    <param id="2" name="Upper bound">79.9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2754971917541548" type="SugarLevel">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>Enemies events</comment>
+        <event-block sid="9499829573525332">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4924985837434858" type="Kurt">
+                    <param id="0" name="Object">InstantKill</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9304369719780712" type="Kurt">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8588605112084777">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2498070971408939" type="CanBeKilled">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5288676222796545" type="CanBeKilled" />
+            </actions>
+        </event-block>
         <comment>Setting Kurt animations</comment>
         <event-block sid="8255972754156182">
             <conditions>
@@ -1727,65 +1791,233 @@
                 <action id="-9" name="Destroy" sid="5631225345874259" type="Projectile" />
             </actions>
         </event-block>
-        <event-block any="1" sid="18575144621071">
+        <comment>Doors mechanic</comment>
+        <comment>When Kurt enters a door, go to next room</comment>
+        <event-block sid="9979674562648613">
             <conditions>
-                <condition id="-8" name="Compare two values" sid="8705962583854009" type="System">
-                    <param id="0" name="First value">Kurt.Life</param>
+                <condition id="0" name="On collision with another object" sid="9410317469518844" type="Exit">
+                    <param id="0" name="Object">Kurt</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="9786698419409202" type="System">
+                    <param id="0" name="First value">MustBeKilled.Count</param>
                     <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Second value">20</param>
-                </condition>
-                <condition id="-8" name="Compare two values" sid="1224712719287738" type="System">
-                    <param id="0" name="First value">Kurt.Life</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Second value">80</param>
+                    <param id="2" name="Second value">5</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="6066250371016197" type="SugarLevel">
-                    <param id="0" name="Animation">&quot;Danger&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="-2" name="Go to layout" sid="1659347250784935" type="System">
+                    <param id="0" name="Layout">Level</param>
+                </action>
+                <action id="-10" name="Add to" sid="7888593016236481" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">20</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="2986351654659074">
+        <event-block sid="4388883504654291">
             <conditions>
-                <condition id="-21" name="Is between values" sid="725090149838935" type="System">
-                    <param id="0" name="Value">Kurt.Life</param>
-                    <param id="1" name="Lower bound">20.1</param>
-                    <param id="2" name="Upper bound">79.9</param>
+                <condition id="-1" name="Every tick" sid="485701006710329" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8189371559513418">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5306493994191351" type="System">
+                            <param id="0" name="First value">MustBeKilled.Count</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="1554172998593061" type="Exit">
+                            <param id="0" name="Instance variable">Closed</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="8554517372469532" type="Exit">
+                            <param id="0" name="Instance variable">needsToChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="102548261738623">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1053456840152766" type="System">
+                            <param id="0" name="First value">MustBeKilled.Count</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="6743722660126816" type="Exit">
+                            <param id="0" name="Instance variable">Closed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="6215878876794754" type="Exit">
+                            <param id="0" name="Instance variable">needsToChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2526046428602695">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="8769948811504815" type="Exit">
+                    <param id="0" name="Instance variable">needsToChange</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="2754971917541548" type="SugarLevel">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="-13" name="Set boolean" sid="1216032951386331" type="Exit">
+                    <param id="0" name="Instance variable">needsToChange</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="9499829573525332">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="4924985837434858" type="Kurt">
-                    <param id="0" name="Object">InstantKill</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Set value" sid="9304369719780712" type="Kurt">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">-1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8588605112084777">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="2498070971408939" type="CanBeKilled">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="5288676222796545" type="CanBeKilled" />
-            </actions>
+            <sub-events>
+                <event-block sid="5576005799460653">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7268176607121222" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Marijuana&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="8755485032941715" type="Exit">
+                            <param id="0" name="Instance variable">Closed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8397797118831448" type="Exit">
+                            <param id="0" name="Animation">&quot;GC&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="577823416706693">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7590215806666744" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Marijuana&quot;</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2836355471406652" type="Exit">
+                            <param id="0" name="Instance variable">Closed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1118887262149796" type="Exit">
+                            <param id="0" name="Animation">&quot;GO&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5490592012899477">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2719790825899985" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Cocaine&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="4000596061672375" type="Exit">
+                            <param id="0" name="Instance variable">Closed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7596258403865003" type="Exit">
+                            <param id="0" name="Animation">&quot;WC&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1651784326381227">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4132158615949285" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Cocaine&quot;</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9678038432044758" type="Exit">
+                            <param id="0" name="Instance variable">Closed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9639841377324612" type="Exit">
+                            <param id="0" name="Animation">&quot;WO&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4303816246919704">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="271363908291327" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;LSD&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="4070018112704928" type="Exit">
+                            <param id="0" name="Instance variable">Closed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4194400360258943" type="Exit">
+                            <param id="0" name="Animation">&quot;PC&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2884922967884456">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9858269117592195" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;LSD&quot;</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2860658450480278" type="Exit">
+                            <param id="0" name="Instance variable">Closed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5203125358299022" type="Exit">
+                            <param id="0" name="Animation">&quot;PO&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5562261407525988">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1166326611524557" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Alcohol&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="5638021402658263" type="Exit">
+                            <param id="0" name="Instance variable">Closed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6017788804238612" type="Exit">
+                            <param id="0" name="Animation">&quot;YC&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7193926168859126">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7797897518494118" type="Kurt">
+                            <param id="0" name="Instance variable">CurrentCandy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Alcohol&quot;</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7261591816053148" type="Exit">
+                            <param id="0" name="Instance variable">Closed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6388453144445965" type="Exit">
+                            <param id="0" name="Animation">&quot;YO&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="6906749762425556">
             <conditions>

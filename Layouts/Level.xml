@@ -58,18 +58,20 @@
                     </properties>
                     <instance-variables>
                         <InitialWidth>0</InitialWidth>
+                        <needsToChange>false</needsToChange>
+                        <Closed>false</Closed>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>512</x>
-                        <y>212</y>
+                        <x>520</x>
+                        <y>247</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -109,31 +111,6 @@
                         <z>0</z>
                         <width>1028</width>
                         <height>194</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Exit" uid="0">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Marijuana</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <InitialWidth>0</InitialWidth>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>512</x>
-                        <y>214</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -387,6 +364,81 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Candy" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>LSD</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Type>LSD</Type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>612</x>
+                        <y>446</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Candy" uid="34">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Cocaine</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Type>Cocaine</Type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>279</x>
+                        <y>414</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>65</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Candy" uid="35">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Alcohol</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Type>Alcohol</Type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>419</x>
+                        <y>573</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>65</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -447,8 +499,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>419</x>
-                        <y>274</y>
+                        <x>490</x>
+                        <y>285</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -535,14 +587,15 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <Life>0</Life>
                         <Life>50</Life>
                         <Damage>10</Damage>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-128</x>
-                        <y>-256</y>
+                        <x>-66</x>
+                        <y>-221</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>

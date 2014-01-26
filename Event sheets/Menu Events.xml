@@ -47,10 +47,10 @@
                     <param id="1" name="Value">&quot;&quot;</param>
                 </action>
                 <action id="-1" name="Set X" sid="7222836640632229" type="Kurt">
-                    <param id="0" name="X">BOUNDLEFT + 20</param>
+                    <param id="0" name="X">490</param>
                 </action>
                 <action id="-2" name="Set Y" sid="7588167048323435" type="Kurt">
-                    <param id="0" name="Y">768/2</param>
+                    <param id="0" name="Y">285</param>
                 </action>
                 <action id="-24" name="Move to top" sid="7483209307497415" type="Kurt" />
                 <action id="-9" name="Set value" sid="7621807792077765" type="System">
