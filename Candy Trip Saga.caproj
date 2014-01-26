@@ -2685,6 +2685,7 @@
     </families>
     <layout-folder expanded="1">
         <layout>Level.xml</layout>
+		<layout>Intro.xml</layout>
         <layout>GameOver.xml</layout>
         <layout>Menu.xml</layout>
         <layout>Placeholder.xml</layout>
@@ -2693,6 +2694,7 @@
         <event-sheet>Level Events.xml</event-sheet>
         <event-sheet>Game Over Events.xml</event-sheet>
         <event-sheet>Menu Events.xml</event-sheet>
+		<event-sheet>Intro Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="31" />
