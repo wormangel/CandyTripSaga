@@ -1402,6 +1402,11 @@
             </object-type>
             <object-type name="Rock" sid="1993004053527312">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="9967090789812572">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="777667534039967" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
@@ -2535,7 +2540,7 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616741012812246" speed="8">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.521739">
                         <collision-poly>
                             <point x="0.101449" y="0.304348" />
                             <point x="0.492754" y="0.173913" />
