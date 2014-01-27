@@ -302,13 +302,13 @@
                     <behavior-instances>
                         <behavior-instance type="Turret">
                             <properties>
-                                <range>600</range>
-                                <rate-of-fire>1</rate-of-fire>
+                                <range>1000</range>
+                                <rate-of-fire>2</rate-of-fire>
                                 <rotate>Yes</rotate>
                                 <rotate-speed>360</rotate-speed>
                                 <target-mode>First in range</target-mode>
                                 <predictive-aim>No</predictive-aim>
-                                <projectile-speed>500</projectile-speed>
+                                <projectile-speed>400</projectile-speed>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>

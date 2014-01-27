@@ -21,6 +21,57 @@
                 <action id="33" name="Stop all" sid="1505680699481497" type="BgMusic" />
             </actions>
         </event-block>
+        <event-block sid="4332393796441386">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3306875440783838" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Publish</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5119838631711392" type="Publish">
+                    <param id="0" name="Animation">&quot;MouseDown&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="2428520384965624">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is user logged in" sid="2257115834949041" type="FacebookAcesser" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Log in" sid="6509130284218869" type="FacebookAcesser">
+                            <param id="0" name="Stream permission">0</param>
+                            <param id="1" name="Action permission">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8531611331681858">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="9378590983867403" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Publish score" sid="9674741038283872" type="FacebookAcesser">
+                            <param id="0" name="Score">score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="778829534402099">
+            <conditions>
+                <condition id="2" inverted="1" name="Mouse button is down" sid="1495875464864743" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4065683131028625" type="Publish">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="5012666755693688">
             <conditions>
                 <condition id="7" name="Cursor is over object" sid="8375132734951552" type="Mouse">

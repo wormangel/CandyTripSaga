@@ -100,7 +100,7 @@
                         <action id="0" name="Play" sid="7684574595294545" type="BgMusic">
                             <param id="0" name="Audio file">maconha</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-10</param>
+                            <param id="3" name="Volume">-5</param>
                             <param id="1" name="Tag (optional)">&quot;Marijuana&quot;</param>
                         </action>
                     </actions>
@@ -126,7 +126,7 @@
                         <action id="0" name="Play" sid="8615113339081241" type="BgMusic">
                             <param id="0" name="Audio file">cocaina</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-10</param>
+                            <param id="3" name="Volume">-5</param>
                             <param id="1" name="Tag (optional)">&quot;Cocaine&quot;</param>
                         </action>
                     </actions>
@@ -152,7 +152,7 @@
                         <action id="0" name="Play" sid="8259156679885446" type="BgMusic">
                             <param id="0" name="Audio file">lsd</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-10</param>
+                            <param id="3" name="Volume">-5</param>
                             <param id="1" name="Tag (optional)">&quot;LSD&quot;</param>
                         </action>
                     </actions>
@@ -178,7 +178,7 @@
                         <action id="0" name="Play" sid="1087760719332127" type="BgMusic">
                             <param id="0" name="Audio file">alcool</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-10</param>
+                            <param id="3" name="Volume">-5</param>
                             <param id="1" name="Tag (optional)">&quot;Alcohol&quot;</param>
                         </action>
                     </actions>
@@ -461,7 +461,7 @@
                                 <action id="0" name="Play" sid="7130899038430921" type="BgMusic">
                                     <param id="0" name="Audio file">maconha</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">-5</param>
                                     <param id="1" name="Tag (optional)">&quot;Marijuana&quot;</param>
                                 </action>
                             </actions>
@@ -726,7 +726,7 @@
                                 <action id="0" name="Play" sid="6099588142475613" type="BgMusic">
                                     <param id="0" name="Audio file">cocaina</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">-5</param>
                                     <param id="1" name="Tag (optional)">&quot;Cocaine&quot;</param>
                                 </action>
                             </actions>
@@ -991,7 +991,7 @@
                                 <action id="0" name="Play" sid="8894373535181694" type="BgMusic">
                                     <param id="0" name="Audio file">lsd</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">-5</param>
                                     <param id="1" name="Tag (optional)">&quot;LSD&quot;</param>
                                 </action>
                             </actions>
@@ -1260,7 +1260,7 @@
                                 <action id="0" name="Play" sid="158185106903567" type="BgMusic">
                                     <param id="0" name="Audio file">alcool</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">-5</param>
                                     <param id="1" name="Tag (optional)">&quot;Alcohol&quot;</param>
                                 </action>
                             </actions>
