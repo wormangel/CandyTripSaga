@@ -274,6 +274,7 @@
                         <CrazyControlsModifier>1</CrazyControlsModifier>
                         <HealthLossModifier>1</HealthLossModifier>
                         <Dying>false</Dying>
+                        <drunk>false</drunk>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">

@@ -98,5 +98,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="5265494435422692">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1089218073200413" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7011034625336886" type="BgMusic">
+                    <param id="0" name="Audio file">bg music calm</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

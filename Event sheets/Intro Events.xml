@@ -20,6 +20,9 @@
                 <action id="5" name="Set frame" sid="4738192518281175" type="Intro">
                     <param id="0" name="Frame number">Self.currentFrame</param>
                 </action>
+                <action id="6" name="Stop" sid="4155235988624899" type="BgMusic">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="9596678373009479">

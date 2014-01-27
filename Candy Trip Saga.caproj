@@ -105,6 +105,7 @@
                     <instance-variable comment="Crazy controls modifier" name="CrazyControlsModifier" sid="8724933913135987" type="number" />
                     <instance-variable comment="Health Loss modifier" name="HealthLossModifier" sid="3917711328254563" type="number" />
                     <instance-variable name="Dying" sid="5017204334853986" type="boolean" />
+                    <instance-variable name="drunk" sid="3924033130286567" type="boolean" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Solid" sid="7693127725273758">
@@ -3077,6 +3078,9 @@
         <file name="lsd.ogg" />
         <file name="maconha.m4a" />
         <file name="maconha.ogg" />
+        <file name="bg music calm.m4a" />
+        <file name="bg music calm.ogg" />
+        <file name="bg music calm.wav" />
     </music-folder>
     <files-folder expanded="0">
         <file-folder expanded="0" name="Icons">
